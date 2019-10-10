@@ -1,7 +1,7 @@
 ﻿Public Class FrmClientes
 
 
-    'PUTO EL QUE LEE
+    'PUTO EL QUE LEEE
 
     Private Sub FrmClientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 

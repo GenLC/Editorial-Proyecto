@@ -60,3 +60,7 @@ C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO P
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.exe
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.xml
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.pdb
+C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\bin\Debug\Editorial-Proyecto.exe.config
+C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.exe
+C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.xml
+C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.pdb

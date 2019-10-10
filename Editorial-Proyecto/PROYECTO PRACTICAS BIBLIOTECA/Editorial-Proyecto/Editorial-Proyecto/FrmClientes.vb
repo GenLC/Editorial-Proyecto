@@ -366,11 +366,11 @@ Public Class frmClientes
         grlClientes.DataSource = oDs.Tables(0)
 
 
-        grlClientes.Columns(0).HeaderText = "Cod."
-        grlClientes.Columns(0).Width = 20
+        'grlClientes.Columns(0).HeaderText = "Cod."
+        'grlClientes.Columns(0).Width = 20
 
-        grlClientes.Columns(1).HeaderText = "Nombre"
-        grlClientes.Columns(1).Width = 100
+        'grlClientes.Columns(1).HeaderText = "Nombre"
+        'grlClientes.Columns(1).Width = 100
 
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 

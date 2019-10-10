@@ -24,6 +24,7 @@ Partial Class frmClientes
     Private Sub InitializeComponent()
         Me.lblAccion = New System.Windows.Forms.Label()
         Me.grbCuotas = New System.Windows.Forms.GroupBox()
+        Me.grlLibrosClientes = New System.Windows.Forms.DataGridView()
         Me.chkEstadoCliente = New System.Windows.Forms.CheckBox()
         Me.txtIdCliente = New System.Windows.Forms.TextBox()
         Me.grlClientes = New System.Windows.Forms.DataGridView()
@@ -43,14 +44,13 @@ Partial Class frmClientes
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.grlLibrosClientes = New System.Windows.Forms.DataGridView()
         Me.grlEstadosCuentaClientes = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.grbCuotas.SuspendLayout()
+        CType(Me.grlLibrosClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grlClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.grlLibrosClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grlEstadosCuentaClientes.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,6 +73,18 @@ Partial Class frmClientes
         Me.grbCuotas.TabIndex = 201
         Me.grbCuotas.TabStop = False
         Me.grbCuotas.Text = "Libros llevados recientemente"
+        '
+        'grlLibrosClientes
+        '
+        Me.grlLibrosClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grlLibrosClientes.Cursor = System.Windows.Forms.Cursors.Default
+        Me.grlLibrosClientes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grlLibrosClientes.Location = New System.Drawing.Point(3, 16)
+        Me.grlLibrosClientes.Name = "grlLibrosClientes"
+        Me.grlLibrosClientes.ReadOnly = True
+        Me.grlLibrosClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.grlLibrosClientes.Size = New System.Drawing.Size(276, 218)
+        Me.grlLibrosClientes.TabIndex = 3
         '
         'chkEstadoCliente
         '
@@ -244,18 +256,6 @@ Partial Class frmClientes
         Me.Panel2.Size = New System.Drawing.Size(812, 170)
         Me.Panel2.TabIndex = 175
         '
-        'grlLibrosClientes
-        '
-        Me.grlLibrosClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grlLibrosClientes.Cursor = System.Windows.Forms.Cursors.Default
-        Me.grlLibrosClientes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.grlLibrosClientes.Location = New System.Drawing.Point(3, 16)
-        Me.grlLibrosClientes.Name = "grlLibrosClientes"
-        Me.grlLibrosClientes.ReadOnly = True
-        Me.grlLibrosClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlLibrosClientes.Size = New System.Drawing.Size(276, 218)
-        Me.grlLibrosClientes.TabIndex = 3
-        '
         'grlEstadosCuentaClientes
         '
         Me.grlEstadosCuentaClientes.Controls.Add(Me.DataGridView1)
@@ -306,11 +306,11 @@ Partial Class frmClientes
         Me.Name = "frmClientes"
         Me.Text = "FrmClientes"
         Me.grbCuotas.ResumeLayout(False)
+        CType(Me.grlLibrosClientes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.grlClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.grlLibrosClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grlEstadosCuentaClientes.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

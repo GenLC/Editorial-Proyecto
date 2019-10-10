@@ -39,12 +39,15 @@ Public Class frmClientes
 
                     grlClientes.Enabled = True
 
+                    cmdAgregar.Enabled = True
+
                     Panel1.BackColor = Color.LightBlue
                     lblAccion.Text = "Consultando"
 
                 Case EstadodelFormulario.eAgregar
 
                     HabililarTXT()
+
                     DeshabilitarGrillas()
 
                     txtIdCliente.Enabled = False
@@ -57,7 +60,7 @@ Public Class frmClientes
                     cmdModif.Enabled = False
                     cmdCancelar.Enabled = True
                     cmdLimpiar.Enabled = True
-                    cmdAceptar.Enabled = False
+                    cmdAceptar.Enabled = True
 
                     grlClientes.Enabled = False
 
@@ -82,11 +85,13 @@ Public Class frmClientes
 
                         cmdLimpiar.Enabled = True
                         cmdCancelar.Enabled = True
+                        cmdAgregar.Enabled = False
+                        cmdModif.Enabled = False
 
                         grlClientes.Enabled = False
 
                         Panel1.BackColor = Color.LightSalmon
-                        lblAccion.Text = "Modificando, Calcue el valor de las cuotas"
+                        lblAccion.Text = "Modificando"
                         'lblAccion.ForeColor = Color.Black
                     Else
                         MsgBox("Seleccione algun Cliente", MsgBoxStyle.Critical, "Error")

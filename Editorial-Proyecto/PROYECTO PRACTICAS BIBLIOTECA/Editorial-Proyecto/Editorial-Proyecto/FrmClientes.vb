@@ -44,6 +44,8 @@ Public Class frmClientes
                 Case EstadodelFormulario.eAgregar
 
                     HabililarTXT()
+                    DeshabilitarGrillas()
+
                     txtIdCliente.Enabled = False
 
                     chkEstadoCliente.Checked = True
@@ -65,23 +67,23 @@ Public Class frmClientes
 
                 Case EstadodelFormulario.eModificar
 
-                    If txtNombreApellido.Text <> Nothing Then
+                    If txtIdCliente.Text <> Nothing Then
+
                         HabililarTXT()
                         HabililarComandos()
-                        HabilitarCombos()
+                        DeshabilitarGrillas()
 
                         txtIdCliente.Enabled = False
-                        txtValorPlan.Enabled = False
+
 
                         grbCuotas.Enabled = True
 
-                        cmdAgregar.Enabled = False
-                        cmdModif.Enabled = False
+
                         cmdLimpiar.Enabled = True
-                        cmdAceptar.Enabled = False
                         cmdCancelar.Enabled = True
 
                         grlClientes.Enabled = False
+
                         Panel1.BackColor = Color.LightSalmon
                         lblAccion.Text = "Modificando, Calcue el valor de las cuotas"
                         'lblAccion.ForeColor = Color.Black
@@ -182,6 +184,7 @@ Public Class frmClientes
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
     End Sub
    
+
 
 
     Private Function Validar() As Boolean
@@ -332,7 +335,7 @@ Public Class frmClientes
         Limpiar()
         Me.Estado = EstadodelFormulario.eConsulta
 
-       
+
     End Sub
 
     Private Sub cmdModif_Click(sender As System.Object, e As System.EventArgs) Handles cmdModif.Click

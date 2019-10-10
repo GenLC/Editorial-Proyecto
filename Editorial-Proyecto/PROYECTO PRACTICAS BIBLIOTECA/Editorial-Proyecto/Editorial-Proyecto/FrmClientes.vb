@@ -349,6 +349,7 @@ Public Class frmClientes
 #Region "Buscador"
 
     Private Sub txtBuscar_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtBuscardor.TextChanged
+
         BuscadorClienteGrilla(txtBuscardor.Text)
 
 
@@ -374,7 +375,6 @@ Public Class frmClientes
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
 
-        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
 
         oDs = Nothing

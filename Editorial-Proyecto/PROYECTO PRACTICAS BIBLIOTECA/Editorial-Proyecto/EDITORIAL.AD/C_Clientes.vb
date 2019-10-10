@@ -36,6 +36,8 @@ Public Class C_Clientes
         Return odatabase.ExecuteScalar("AgregarCliente", Nombre, DNI, TelMovil, Mail, EstadoCliente)
     End Function
 
+   
+
 
 
 

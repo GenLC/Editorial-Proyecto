@@ -1,5 +1,6 @@
 ﻿
-Imports EDITORIAL
+
+Imports EDITORIAL.AD
 
 Public Class frmClientes
 
@@ -12,7 +13,7 @@ Public Class frmClientes
         eModificar = 3
     End Enum
 
- 
+
 
 #Region "Propiedades"
 
@@ -146,7 +147,7 @@ Public Class frmClientes
 
     Private Sub HabililarComandos()
 
-        CmdAgregar.Enabled = True
+        cmdAgregar.Enabled = True
         cmdModif.Enabled = True
         cmdLimpiar.Enabled = True
         cmdAceptar.Enabled = True
@@ -183,7 +184,7 @@ Public Class frmClientes
 
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
     End Sub
-   
+
 
 
 
@@ -214,16 +215,15 @@ Public Class frmClientes
 
                 Dim oCliente As New C_Clientes
 
+                'PASAR TODO A MAYUSCULA
 
                 If Me.Estado = EstadodelFormulario.eModificar Then
-                    oCliente.ModificarCliente(txtIdCliente.Text, txtNombre.Text, txtApellido.Text, txtDNI.Text, cboProvincias.SelectedValue, txtLocalidad.Text, txtBarrio.Text, txtCodPostal.Text, txtCalle.Text, txtNumero.Text, txtTelMovil.Text, txtMail.Text, cboPlanTipo.SelectedValue, txtCantCuotas.Text, txtPrecioCuota.Text, chkEstadoCliente.Checked, txtCantBolsasTotal.Text, txtCantBolsasMes.Text)
+                    oCliente.ModificarCliente(txtIdCliente.Text, txtNombreApellido.Text, txtDNI.Text, txtTelMovil.Text, txtMail.Text, chkEstadoCliente.Checked)
                     MsgBox("Se modificó correctamente el Cliente con el código Nro: " + txtIdCliente.Text, MsgBoxStyle.Information, "Exitos!")
                 End If
 
                 If Me.Estado = EstadodelFormulario.eAgregar Then
-                    'Dim resultado As Integer
-                    'resultado =
-                    oCliente.AgregarCliente(txtNombre.Text, txtApellido.Text, txtDNI.Text, cboProvincias.SelectedValue, txtLocalidad.Text, txtBarrio.Text, txtCodPostal.Text, txtCalle.Text, txtNumero.Text, txtTelMovil.Text, txtMail.Text, cboPlanTipo.SelectedValue, txtCantCuotas.Text, txtPrecioCuota.Text, chkEstadoCliente.Checked, txtCantBolsasTotal.Text, txtCantBolsasMes.Text)
+                    oCliente.AgregarCliente(txtNombreApellido.Text, txtDNI.Text, txtTelMovil.Text, txtMail.Text, chkEstadoCliente.Checked)
                     MsgBox("Se agregó correctamente el Cliente " + txtNombreApellido.Text.ToUpper + " con un nuevo código ", MsgBoxStyle.Information, "Exitos!")
 
 
@@ -298,27 +298,11 @@ Public Class frmClientes
 
 
         txtIdCliente.Text = oDs.Tables(0).Rows(0).Item("IdCliente")
-        txtNombreApellido.Text = oDs.Tables(0).Rows(0).Item("Nombre")
-        txtApellido.Text = oDs.Tables(0).Rows(0).Item("Apellido")
+        txtNombreApellido.Text = oDs.Tables(0).Rows(0).Item("NombreFantasia")
         txtDNI.Text = oDs.Tables(0).Rows(0).Item("DNI")
-
-        cboProvincias.SelectedValue = oDs.Tables(0).Rows(0).Item("IdProvincia")
-        cboPlanTipo.SelectedValue = oDs.Tables(0).Rows(0).Item("IdPlanTipo")
-
-        txtLocalidad.Text = oDs.Tables(0).Rows(0).Item("Localidad")
-        txtBarrio.Text = oDs.Tables(0).Rows(0).Item("Barrio")
-        txtCodPostal.Text = oDs.Tables(0).Rows(0).Item("CodPostal")
-        txtCalle.Text = oDs.Tables(0).Rows(0).Item("Calle")
-        txtNumero.Text = oDs.Tables(0).Rows(0).Item("Numero")
-        txtTelMovil.Text = oDs.Tables(0).Rows(0).Item("TelefonoMovil")
+        txtTelMovil.Text = oDs.Tables(0).Rows(0).Item("Movil")
         txtMail.Text = oDs.Tables(0).Rows(0).Item("Mail")
-        txtCantCuotas.Text = oDs.Tables(0).Rows(0).Item("CantCuotas")
-        chkEstadoCliente.Checked = oDs.Tables(0).Rows(0).Item("EstadoCliente")
-        txtValorPlan.Text = oDs.Tables(0).Rows(0).Item("ValorPlan")
-
-        CantCuotas = oDs.Tables(0).Rows(0).Item("CantCuotas")
-        ValorPlan = oDs.Tables(0).Rows(0).Item("ValorPlan")
-        PrecioCuota = oDs.Tables(0).Rows(0).Item("PrecioCuota")
+        chkEstadoCliente.Checked = oDs.Tables(0).Rows(0).Item("Estado")
 
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 

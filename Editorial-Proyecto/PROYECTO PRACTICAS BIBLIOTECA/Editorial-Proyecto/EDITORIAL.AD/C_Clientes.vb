@@ -15,6 +15,12 @@ Public Class C_Clientes
         Return odatabase.ExecuteDataSet("BuscarCliente", IdCliente)
     End Function
 
+
+    Public Function BuscadorCliente(ByVal Nombre As Integer) As DataSet
+        Return odatabase.ExecuteDataSet("BuscadorCliente", Nombre)
+    End Function
+
+
     Public Function CargarGrillaClientes() As DataSet
         Return odatabase.ExecuteDataSet("CargarGrillaClientes")
     End Function

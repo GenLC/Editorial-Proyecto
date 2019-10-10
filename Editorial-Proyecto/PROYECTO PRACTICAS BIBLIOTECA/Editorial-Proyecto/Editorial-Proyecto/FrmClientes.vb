@@ -346,6 +346,42 @@ Public Class frmClientes
 
     End Sub
 
+#Region "Buscador"
+
+    Private Sub txtBuscar_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtBuscardor.TextChanged
+        BuscadorClienteGrilla(txtBuscardor.Text)
 
 
+    End Sub
+
+    Private Sub BuscadorClienteGrilla(ByVal Nombre As Integer)
+
+
+        Dim oDs As New DataSet
+        Dim oClientes As New C_Clientes
+
+        oDs = oClientes.BuscadorCliente
+
+        grlClientes.DataSource = oDs.Tables(0)
+
+
+        grlClientes.Columns(0).HeaderText = "Cod."
+        grlClientes.Columns(0).Width = 20
+
+        grlClientes.Columns(1).HeaderText = "Nombre"
+        grlClientes.Columns(1).Width = 100
+
+        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+
+        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+
+        oDs = Nothing
+        oClientes = Nothing
+
+    End Sub
+
+
+#End Region
 End Class

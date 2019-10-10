@@ -361,7 +361,7 @@ Public Class frmClientes
         Dim oDs As New DataSet
         Dim oClientes As New C_Clientes
 
-        oDs = oClientes.BuscadorCliente
+        oDs = oClientes.BuscadorCliente(Nombre)
 
         grlClientes.DataSource = oDs.Tables(0)
 

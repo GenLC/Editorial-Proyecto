@@ -348,14 +348,10 @@ Public Class frmClientes
 
 #Region "Buscador"
 
-    Private Sub txtBuscar_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtBuscardor.TextChanged
-
-        BuscadorClienteGrilla(txtBuscardor.Text)
+   
 
 
-    End Sub
-
-    Private Sub BuscadorClienteGrilla(ByVal Nombre As Integer)
+    Private Sub BuscadorClienteGrilla(ByVal Nombre As String)
 
 
         Dim oDs As New DataSet
@@ -374,9 +370,6 @@ Public Class frmClientes
 
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
-
-
-
         oDs = Nothing
         oClientes = Nothing
 
@@ -384,4 +377,16 @@ Public Class frmClientes
 
 
 #End Region
+
+    Private Sub txtBuscardor_Click(sender As Object, e As System.EventArgs) Handles txtBuscardor.Click
+        txtBuscardor.Text = ""
+    End Sub
+
+    Private Sub txtBuscardor_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscardor.KeyUp
+
+        If txtBuscardor.Text <> Nothing Then
+            BuscadorClienteGrilla(txtBuscardor.Text)
+        End If
+    End Sub
+
 End Class

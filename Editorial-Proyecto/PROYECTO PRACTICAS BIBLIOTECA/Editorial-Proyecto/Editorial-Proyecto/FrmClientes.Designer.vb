@@ -137,7 +137,7 @@ Partial Class frmClientes
         'cmdModif
         '
         Me.cmdModif.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdModif.Location = New System.Drawing.Point(670, 176)
+        Me.cmdModif.Location = New System.Drawing.Point(673, 209)
         Me.cmdModif.Name = "cmdModif"
         Me.cmdModif.Size = New System.Drawing.Size(115, 35)
         Me.cmdModif.TabIndex = 194
@@ -167,7 +167,7 @@ Partial Class frmClientes
         'cmdLimpiar
         '
         Me.cmdLimpiar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdLimpiar.Location = New System.Drawing.Point(12, 176)
+        Me.cmdLimpiar.Location = New System.Drawing.Point(15, 209)
         Me.cmdLimpiar.Name = "cmdLimpiar"
         Me.cmdLimpiar.Size = New System.Drawing.Size(115, 35)
         Me.cmdLimpiar.TabIndex = 191
@@ -177,7 +177,7 @@ Partial Class frmClientes
         'cmdAgregar
         '
         Me.cmdAgregar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdAgregar.Location = New System.Drawing.Point(509, 176)
+        Me.cmdAgregar.Location = New System.Drawing.Point(512, 209)
         Me.cmdAgregar.Name = "cmdAgregar"
         Me.cmdAgregar.Size = New System.Drawing.Size(115, 35)
         Me.cmdAgregar.TabIndex = 190
@@ -281,10 +281,11 @@ Partial Class frmClientes
         '
         'txtBuscardor
         '
-        Me.txtBuscardor.Location = New System.Drawing.Point(328, 313)
+        Me.txtBuscardor.Location = New System.Drawing.Point(0, 176)
         Me.txtBuscardor.Name = "txtBuscardor"
-        Me.txtBuscardor.Size = New System.Drawing.Size(156, 20)
+        Me.txtBuscardor.Size = New System.Drawing.Size(312, 20)
         Me.txtBuscardor.TabIndex = 203
+        Me.txtBuscardor.Text = "BUSCADOR..."
         '
         'frmClientes
         '

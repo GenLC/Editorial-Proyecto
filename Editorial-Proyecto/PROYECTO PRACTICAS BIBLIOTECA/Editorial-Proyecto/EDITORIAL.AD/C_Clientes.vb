@@ -16,7 +16,7 @@ Public Class C_Clientes
     End Function
 
 
-    Public Function BuscadorCliente(ByVal Nombre As Integer) As DataSet
+    Public Function BuscadorCliente(ByVal Nombre As String) As DataSet
         Return odatabase.ExecuteDataSet("BuscadorCliente", Nombre)
     End Function
 

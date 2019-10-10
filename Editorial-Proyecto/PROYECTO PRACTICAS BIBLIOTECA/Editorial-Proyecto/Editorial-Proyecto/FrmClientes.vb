@@ -1,5 +1,6 @@
 ﻿
 Imports EDITORIAL
+
 Public Class frmClientes
 
     Private eEstado As EstadodelFormulario
@@ -28,34 +29,26 @@ Public Class frmClientes
                 Case EstadodelFormulario.eConsulta
 
                     Limpiar()
+
                     DesHabililarTXT()
-                    DeshabilitarCombos()
+
                     DesHabililarComandos()
-                    BuscarValorBolsa()
 
-                    txtValorPlan.Enabled = False
-                    grbCuotas.Enabled = False
-
-                    cmdAgregar.Enabled = True
-                    cmdCancelar.Enabled = True
-                    cmdLimpiar.Enabled = True
-
+                    DeshabilitarGrillas()
 
                     grlClientes.Enabled = True
 
                     Panel1.BackColor = Color.LightBlue
                     lblAccion.Text = "Consultando"
 
-
                 Case EstadodelFormulario.eAgregar
 
-                    HabilitarCombos()
                     HabililarTXT()
                     txtIdCliente.Enabled = False
-                    txtValorPlan.Enabled = False
+
                     chkEstadoCliente.Checked = True
 
-                    grbCuotas.Enabled = True
+
 
                     cmdAgregar.Enabled = False
                     cmdModif.Enabled = False
@@ -106,65 +99,46 @@ Public Class frmClientes
     Private Sub Limpiar()
 
         CargarGrilla()
-        CargarPlanTipoCombo()
-        CargarProvinciaCombo()
 
         txtNombreApellido.Text = ""
-        txtApellido.Text = ""
         txtDNI.Text = ""
-        cboProvincias.SelectedValue = 4
-        cboPlanTipo.Text = ""
-        txtLocalidad.Text = ""
-        txtBarrio.Text = ""
-        txtCodPostal.Text = ""
-        txtCalle.Text = ""
-        txtNumero.Text = ""
         txtTelMovil.Text = ""
         txtMail.Text = ""
         txtIdCliente.Text = ""
-        txtCantCuotas.Text = ""
-        txtPrecioCuota.Text = ""
         chkEstadoCliente.Checked = False
-        txtValorPlan.Text = ""
-        txtCantBolsasTotal.Text = ""
-        txtCantBolsasMes.Text = ""
-    End Sub
 
+    End Sub
+    Private Sub HabilitarGrillas()
+
+        grlEstadosCuentaClientes.Enabled = True
+        grlLibrosClientes.Enabled = True
+        grlClientes.Enabled = True
+
+    End Sub
+    Private Sub DeshabilitarGrillas()
+
+        grlEstadosCuentaClientes.Enabled = False
+        grlLibrosClientes.Enabled = False
+        grlClientes.Enabled = False
+    End Sub
     Private Sub HabililarTXT()
 
         txtNombreApellido.Enabled = True
-        txtApellido.Enabled = True
         txtDNI.Enabled = True
-        cboProvincias.Enabled = True
-        txtLocalidad.Enabled = True
-        txtBarrio.Enabled = True
-        txtCodPostal.Enabled = True
-        txtCalle.Enabled = True
-        txtNumero.Enabled = True
         txtTelMovil.Enabled = True
         txtMail.Enabled = True
         txtIdCliente.Enabled = True
-        txtCantCuotas.Enabled = True
         chkEstadoCliente.Enabled = True
 
 
     End Sub
 
     Private Sub DesHabililarTXT()
-
         txtNombreApellido.Enabled = False
-        txtApellido.Enabled = False
         txtDNI.Enabled = False
-        cboProvincias.Enabled = False
-        txtLocalidad.Enabled = False
-        txtBarrio.Enabled = False
-        txtCodPostal.Enabled = False
-        txtCalle.Enabled = False
-        txtNumero.Enabled = False
         txtTelMovil.Enabled = False
         txtMail.Enabled = False
         txtIdCliente.Enabled = False
-        txtCantCuotas.Enabled = False
         chkEstadoCliente.Enabled = False
     End Sub
 
@@ -187,15 +161,6 @@ Public Class frmClientes
         cmdCancelar.Enabled = False
 
     End Sub
-    Private Sub HabilitarCombos()
-        cboPlanTipo.Enabled = True
-        cboProvincias.Enabled = True
-    End Sub
-
-    Private Sub DeshabilitarCombos()
-        cboPlanTipo.Enabled = False
-        cboProvincias.Enabled = False
-    End Sub
 
 
     Private Sub CargarGrilla()
@@ -216,46 +181,12 @@ Public Class frmClientes
 
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
     End Sub
-    Private Sub BuscarValorBolsa()
-
-        Dim oDs As New DataSet
-        Dim oBolsa As New C_Clientes
-
-        oDs = oBolsa.BuscarValorBolsa()
-
-        ValorBolsa = oDs.Tables(0).Rows(0).Item("BolsaPrecio")
-
-        txtValorBolsa.Text = ValorBolsa
-
-    End Sub
-
-    Private Sub CargarPlanTipoCombo()
-        Dim Ods As New DataSet
-        Dim oCliente As New C_Clientes
-
-        Ods = oCliente.CargarPlanTipoCombo
-
-        cboPlanTipo.DataSource = Ods.Tables(0)
-        cboPlanTipo.DisplayMember = Ods.Tables(0).Columns("Nombre").ToString
-        cboPlanTipo.ValueMember = Ods.Tables(0).Columns("IdPlanTipo").ToString
-
-    End Sub
-
-    Private Sub CargarProvinciaCombo()
-        Dim Ods As New DataSet
-        Dim oCliente As New C_Clientes
-
-        Ods = oCliente.CargarProvinciaCombo
-
-        cboProvincias.DataSource = Ods.Tables(0)
-        cboProvincias.DisplayMember = Ods.Tables(0).Columns("Nombre").ToString
-        cboProvincias.ValueMember = Ods.Tables(0).Columns("IdProvincia").ToString
-    End Sub
+   
 
 
     Private Function Validar() As Boolean
 
-        If txtNombre.Text = "" Or txtCantBolsasTotal.Text = "" Or txtCantCuotas.Text = "" Then
+        If txtNombreApellido.Text = "" Or txtDNI.Text = "" Or txtMail.Text = "" Or txtTelMovil.Text = "" Then
 
             MsgBox("Complete todos los datos", MsgBoxStyle.Exclamation, "Mensaje")
             Return False
@@ -362,6 +293,7 @@ Public Class frmClientes
 
         'grlClientes.DataSource = oDs.Tables(0)
 
+
         txtIdCliente.Text = oDs.Tables(0).Rows(0).Item("IdCliente")
         txtNombreApellido.Text = oDs.Tables(0).Rows(0).Item("Nombre")
         txtApellido.Text = oDs.Tables(0).Rows(0).Item("Apellido")
@@ -400,9 +332,7 @@ Public Class frmClientes
         Limpiar()
         Me.Estado = EstadodelFormulario.eConsulta
 
-        txtCantBolsasTotal.Enabled = False
-        txtCantBolsasMes.Enabled = False
-        txtPrecioCuota.Enabled = False
+       
     End Sub
 
     Private Sub cmdModif_Click(sender As System.Object, e As System.EventArgs) Handles cmdModif.Click
@@ -412,50 +342,18 @@ Public Class frmClientes
 
 
 
-    Private Sub cmdCalcularDatos_Click(sender As System.Object, e As System.EventArgs)
-        CantCuotas = txtCantCuotas.Text
 
-        Dim CantBolsasMes As Double
-        Dim CantBolsasTotal As Double
-
-        PrecioCuota = ValorPlan / CantCuotas
-        CantBolsasTotal = ValorPlan / ValorBolsa
-        CantBolsasMes = (ValorPlan / ValorBolsa) / CantCuotas
-
-        txtCantBolsasMes.Text = CantBolsasMes
-        txtPrecioCuota.Text = PrecioCuota
-        txtCantBolsasTotal.Text = CantBolsasTotal
-
-        cmdAceptar.Enabled = True
-    End Sub
 
     Private Sub cmdLimpiarDatos_Click(sender As System.Object, e As System.EventArgs)
-        txtCantCuotas.Text = ""
-        txtPrecioCuota.Text = ""
-        txtCantBolsasMes.Text = ""
+
+        Limpiar()
+
         cmdAceptar.Enabled = False
-        txtCantBolsasTotal.Text = ""
+
         lblAccion.Text = "Modificando, Calcue el valor de las cuotas"
-    End Sub
-
-    Private Sub CargarValorPlan()
-
-
-        Dim ods As New DataSet
-        Dim oValorPlan As New C_Clientes
-
-
-        ods = oValorPlan.CargarValorPlan(cboPlanTipo.SelectedIndex + 1)
-
-
-        txtValorPlan.Text = ods.Tables(0).Rows(0).Item("Precio")
-        ValorPlan = ods.Tables(0).Rows(0).Item("Precio")
 
     End Sub
 
-    Private Sub cboPlanTipo_SelectedIndexChanged(sender As System.Object, e As System.EventArgs)
-        CargarValorPlan()
-    End Sub
 
 
 End Class

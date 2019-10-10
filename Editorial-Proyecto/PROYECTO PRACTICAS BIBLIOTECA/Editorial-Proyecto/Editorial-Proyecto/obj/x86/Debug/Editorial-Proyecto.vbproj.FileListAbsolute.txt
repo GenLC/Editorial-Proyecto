@@ -56,3 +56,7 @@ C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO
 C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.pdb
 C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmClientes.resources
 C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmMenuAltasBajas.resources
+C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\bin\Debug\Editorial-Proyecto.exe.config
+C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.exe
+C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.xml
+C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.pdb

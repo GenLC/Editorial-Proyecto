@@ -23,118 +23,133 @@ Partial Class Menu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelMenuFondo = New System.Windows.Forms.Panel()
+        Me.cmdAdmSistema = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
+        Me.cmdAdmCuentas = New System.Windows.Forms.Button()
+        Me.cmdAdmClientes = New System.Windows.Forms.Button()
+        Me.cmdAdmLibros = New System.Windows.Forms.Button()
+        Me.cmdFacturacion = New System.Windows.Forms.Button()
+        Me.PanelMenuFondo.SuspendLayout()
+        Me.PanelMenu.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'PanelMenuFondo
         '
-        Me.Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Panel1.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.biblio__1_
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(516, 491)
-        Me.Panel1.TabIndex = 1
+        Me.PanelMenuFondo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.PanelMenuFondo.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.biblio__1_
+        Me.PanelMenuFondo.Controls.Add(Me.cmdAdmSistema)
+        Me.PanelMenuFondo.Controls.Add(Me.Button5)
+        Me.PanelMenuFondo.Controls.Add(Me.PanelMenu)
+        Me.PanelMenuFondo.Controls.Add(Me.cmdAdmCuentas)
+        Me.PanelMenuFondo.Controls.Add(Me.cmdAdmClientes)
+        Me.PanelMenuFondo.Controls.Add(Me.cmdAdmLibros)
+        Me.PanelMenuFondo.Controls.Add(Me.cmdFacturacion)
+        Me.PanelMenuFondo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMenuFondo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMenuFondo.Name = "PanelMenuFondo"
+        Me.PanelMenuFondo.Size = New System.Drawing.Size(737, 491)
+        Me.PanelMenuFondo.TabIndex = 1
+        '
+        'cmdAdmSistema
+        '
+        Me.cmdAdmSistema.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAdmSistema.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
+        Me.cmdAdmSistema.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdAdmSistema.Location = New System.Drawing.Point(453, 99)
+        Me.cmdAdmSistema.Name = "cmdAdmSistema"
+        Me.cmdAdmSistema.Size = New System.Drawing.Size(152, 124)
+        Me.cmdAdmSistema.TabIndex = 10
+        Me.cmdAdmSistema.Text = "Administrar Sistema"
+        Me.cmdAdmSistema.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdAdmSistema.UseVisualStyleBackColor = True
         '
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(100, 381)
+        Me.Button5.Location = New System.Drawing.Point(100, 421)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(328, 37)
         Me.Button5.TabIndex = 9
         Me.Button5.Text = "Estadísticas"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Panel2
+        'PanelMenu
         '
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(516, 56)
-        Me.Panel2.TabIndex = 8
+        Me.PanelMenu.BackColor = System.Drawing.Color.Transparent
+        Me.PanelMenu.Controls.Add(Me.Label1)
+        Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMenu.Name = "PanelMenu"
+        Me.PanelMenu.Size = New System.Drawing.Size(737, 56)
+        Me.PanelMenu.TabIndex = 8
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(208, 33)
+        Me.Label1.Size = New System.Drawing.Size(207, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Menu Principal"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button4
+        'cmdAdmCuentas
         '
-        Me.Button4.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button4.Location = New System.Drawing.Point(276, 260)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(152, 98)
-        Me.Button4.TabIndex = 7
-        Me.Button4.Text = "Administrar"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.cmdAdmCuentas.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAdmCuentas.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
+        Me.cmdAdmCuentas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdAdmCuentas.Location = New System.Drawing.Point(276, 260)
+        Me.cmdAdmCuentas.Name = "cmdAdmCuentas"
+        Me.cmdAdmCuentas.Size = New System.Drawing.Size(152, 124)
+        Me.cmdAdmCuentas.TabIndex = 7
+        Me.cmdAdmCuentas.Text = "Administrar Cuentas"
+        Me.cmdAdmCuentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdAdmCuentas.UseVisualStyleBackColor = True
         '
-        'Button3
+        'cmdAdmClientes
         '
-        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Image = Global.Editorial_Proyecto.My.Resources.Resources.usuario
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.Location = New System.Drawing.Point(100, 260)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(152, 98)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Clientes"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.cmdAdmClientes.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAdmClientes.Image = Global.Editorial_Proyecto.My.Resources.Resources.usuario
+        Me.cmdAdmClientes.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdAdmClientes.Location = New System.Drawing.Point(100, 260)
+        Me.cmdAdmClientes.Name = "cmdAdmClientes"
+        Me.cmdAdmClientes.Size = New System.Drawing.Size(152, 124)
+        Me.cmdAdmClientes.TabIndex = 6
+        Me.cmdAdmClientes.Text = "Administrar Clientes"
+        Me.cmdAdmClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdAdmClientes.UseVisualStyleBackColor = True
         '
-        'Button2
+        'cmdAdmLibros
         '
-        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = Global.Editorial_Proyecto.My.Resources.Resources.charla
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(276, 125)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(152, 98)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Consultas"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.cmdAdmLibros.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAdmLibros.Image = Global.Editorial_Proyecto.My.Resources.Resources.charla
+        Me.cmdAdmLibros.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdAdmLibros.Location = New System.Drawing.Point(276, 99)
+        Me.cmdAdmLibros.Name = "cmdAdmLibros"
+        Me.cmdAdmLibros.Size = New System.Drawing.Size(152, 124)
+        Me.cmdAdmLibros.TabIndex = 5
+        Me.cmdAdmLibros.Text = "Administrar Libros"
+        Me.cmdAdmLibros.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdAdmLibros.UseVisualStyleBackColor = True
         '
-        'Button1
+        'cmdFacturacion
         '
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.Editorial_Proyecto.My.Resources.Resources.recibo_1_
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(100, 125)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(152, 98)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Facturacion"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cmdFacturacion.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdFacturacion.Image = Global.Editorial_Proyecto.My.Resources.Resources.recibo_1_
+        Me.cmdFacturacion.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdFacturacion.Location = New System.Drawing.Point(100, 99)
+        Me.cmdFacturacion.Name = "cmdFacturacion"
+        Me.cmdFacturacion.Size = New System.Drawing.Size(152, 124)
+        Me.cmdFacturacion.TabIndex = 4
+        Me.cmdFacturacion.Text = "Facturacion"
+        Me.cmdFacturacion.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdFacturacion.UseVisualStyleBackColor = True
         '
         'Menu
         '
@@ -142,8 +157,8 @@ Partial Class Menu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.biblio__1_
-        Me.ClientSize = New System.Drawing.Size(516, 491)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(737, 491)
+        Me.Controls.Add(Me.PanelMenuFondo)
         Me.DoubleBuffered = True
         Me.HelpButton = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -151,18 +166,19 @@ Partial Class Menu
         Me.Name = "Menu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BIBLIOTECA"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        Me.PanelMenuFondo.ResumeLayout(False)
+        Me.PanelMenu.ResumeLayout(False)
+        Me.PanelMenu.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents PanelMenuFondo As System.Windows.Forms.Panel
+    Friend WithEvents cmdAdmCuentas As System.Windows.Forms.Button
+    Friend WithEvents cmdAdmClientes As System.Windows.Forms.Button
+    Friend WithEvents cmdAdmLibros As System.Windows.Forms.Button
+    Friend WithEvents cmdFacturacion As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents PanelMenu As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents cmdAdmSistema As System.Windows.Forms.Button
 End Class

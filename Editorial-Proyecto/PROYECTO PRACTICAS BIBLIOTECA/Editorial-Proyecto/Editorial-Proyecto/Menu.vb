@@ -25,28 +25,32 @@
     End Sub
 
     Private Sub ClientesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
-        FrmClientes.Show()
+        FrmABMClientes.Show()
 
     End Sub
 
 
-    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmCuentas.Click
         FrmMenuAltasBajas.Show()
 
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles cmdFacturacion.Click
         FrmFacturacion.Show()
 
     End Sub
 
-    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmClientes.Click
         FrmClientes.Show()
 
     End Sub
 
 
     Private Sub Menu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmLibros.Click
 
     End Sub
 End Class

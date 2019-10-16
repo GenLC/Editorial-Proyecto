@@ -111,6 +111,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmAdmLibros.Designer.vb">
+      <DependentUpon>FrmAdmLibros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmLibros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlquileres.Designer.vb">
+      <DependentUpon>FrmAlquileres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlquileres.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmArticulos.Designer.vb">
       <DependentUpon>FrmArticulos.vb</DependentUpon>
     </Compile>
@@ -129,6 +141,12 @@
     <Compile Include="FrmAutores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmABMClientes.Designer.vb">
+      <DependentUpon>FrmABMClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmABMClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmClientes.Designer.vb">
       <DependentUpon>FrmClientes.vb</DependentUpon>
     </Compile>
@@ -139,6 +157,12 @@
       <DependentUpon>FrmProveedores.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentas.Designer.vb">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVentas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_ArticulosFormato.Designer.vb">
@@ -185,20 +209,32 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmLibros.resx">
+      <DependentUpon>FrmAdmLibros.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmArticulosGenero.resx">
       <DependentUpon>FrmArticulosGenero.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutores.resx">
       <DependentUpon>FrmAutores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmABMClientes.resx">
+      <DependentUpon>FrmABMClientes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturacion.resx">
+      <DependentUpon>FrmFacturacion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAltasBajas.resx">
       <DependentUpon>FrmMenuAltasBajas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProveedores.resx">
       <DependentUpon>FrmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentas.resx">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ArticulosFormato.resx">
       <DependentUpon>Frm_ArticulosFormato.vb</DependentUpon>

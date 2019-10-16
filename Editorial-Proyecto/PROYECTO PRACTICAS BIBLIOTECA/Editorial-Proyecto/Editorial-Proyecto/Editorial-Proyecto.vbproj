@@ -292,6 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="biblio.ico" />
+    <None Include="Resources\01.png" />
     <None Include="Resources\escritorio.png" />
     <None Include="Resources\usuario.png" />
     <None Include="Resources\charla.png" />

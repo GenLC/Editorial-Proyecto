@@ -15,6 +15,10 @@ Editorial-Proyecto
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources._01">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.biblio">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

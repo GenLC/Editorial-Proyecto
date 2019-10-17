@@ -30,9 +30,9 @@ Public Class FrmVentas
     Dim TipoFactura As String
     Dim PuntoVenta As Integer
     Dim CompNum As Integer
-    Dim LibroSeleccionado As Integer
+    Dim LibroSeleccionado As String
     Dim PrecioLibro As Double
-    Dim NroVenta As Integer
+
 
     Public Property Estado() As EstadodelFormulario
         Get
@@ -44,7 +44,7 @@ Public Class FrmVentas
             Select Case vNewValue
 
                 Case EstadodelFormulario.eFacturacion
-                    CargarNroVenta()
+
                     DesactivarClientes()
                     DesactivarLibros()
                     DesactivarResumen()
@@ -177,7 +177,6 @@ Public Class FrmVentas
         cboTipoFactura.SelectedItem = 2
         txtCompNum.Text = Nothing
         txtPuntoVenta.Text = Nothing
-        CargarNroVenta()
 
 
     End Sub
@@ -230,20 +229,6 @@ Public Class FrmVentas
 
     End Sub
 
-    Private Sub CargarNroVenta()
-
-        Dim oDs As New DataSet
-        Dim oCargarNroVenta As New C_Ventas
-
-        oDs = oCargarNroVenta.CargarNroVenta
-
-        lblNroVenta.Text = oDs.Tables(0).Rows(0).Item("IdVenta")
-
-        NroVenta = lblNroVenta.Text
-
-        oDs = Nothing        oCargarNroVenta = Nothing
-
-    End Sub
 
 #End Region
 
@@ -344,7 +329,7 @@ Public Class FrmVentas
         LibroSeleccionado = Nothing
         PrecioLibro = Nothing
         LibroSeleccionado = grlLibros.CurrentRow.Cells(0).Value
-        NroVenta = NroVenta.Text
+        'NroVenta = NroVenta.Text
 
         'PrecioLibro = grlLibros.CurrentRow.Cells(0).Value
 
@@ -354,8 +339,7 @@ Public Class FrmVentas
         oObjeto.CargarDetalleVenta(ClienteSeleccionado, LibroSeleccionado, "1", "9999")
 
     End Sub
-
-
+ 
 #End Region
 
     
@@ -366,4 +350,7 @@ Public Class FrmVentas
 
     
     
+    Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles cmdFinalizar.Click
+
+    End Sub
 End Class

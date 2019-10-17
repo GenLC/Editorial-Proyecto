@@ -22,95 +22,142 @@ Partial Class FrmVentas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelCompleto = New System.Windows.Forms.Panel()
+        Me.cmdCancelarLibro = New System.Windows.Forms.Button()
+        Me.cmdCacelarCliente = New System.Windows.Forms.Button()
         Me.lblClienteSeleccionado = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.cmdAgregarLibro = New System.Windows.Forms.Button()
         Me.grpFactura = New System.Windows.Forms.GroupBox()
+        Me.cmdLimpiarFactura = New System.Windows.Forms.Button()
+        Me.cmdCargarFactura = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtCompNum = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtPuntoVenta = New System.Windows.Forms.TextBox()
+        Me.FechaFactura = New System.Windows.Forms.DateTimePicker()
+        Me.cboTipoFactura = New System.Windows.Forms.ComboBox()
+        Me.cmdAgregarCliente = New System.Windows.Forms.Button()
         Me.grpLibros = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtBuscadoLibros = New System.Windows.Forms.TextBox()
         Me.grlLibros = New System.Windows.Forms.DataGridView()
         Me.grpCliente = New System.Windows.Forms.GroupBox()
         Me.txtBuscador = New System.Windows.Forms.TextBox()
         Me.grlClientes = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PanelResumen = New System.Windows.Forms.Panel()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.grlResumenVenta = New System.Windows.Forms.DataGridView()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblNroVenta = New System.Windows.Forms.Label()
+        Me.PanelCompleto.SuspendLayout()
         Me.grpFactura.SuspendLayout()
         Me.grpLibros.SuspendLayout()
         CType(Me.grlLibros, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpCliente.SuspendLayout()
         CType(Me.grlClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.PanelResumen.SuspendLayout()
         CType(Me.grlResumenVenta, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'PanelCompleto
         '
-        Me.Panel1.AutoSize = True
-        Me.Panel1.Controls.Add(Me.lblClienteSeleccionado)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.grpFactura)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.grpLibros)
-        Me.Panel1.Controls.Add(Me.grpCliente)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1050, 562)
-        Me.Panel1.TabIndex = 0
+        Me.PanelCompleto.AutoSize = True
+        Me.PanelCompleto.Controls.Add(Me.cmdCancelarLibro)
+        Me.PanelCompleto.Controls.Add(Me.cmdCacelarCliente)
+        Me.PanelCompleto.Controls.Add(Me.lblClienteSeleccionado)
+        Me.PanelCompleto.Controls.Add(Me.cmdAgregarLibro)
+        Me.PanelCompleto.Controls.Add(Me.grpFactura)
+        Me.PanelCompleto.Controls.Add(Me.cmdAgregarCliente)
+        Me.PanelCompleto.Controls.Add(Me.grpLibros)
+        Me.PanelCompleto.Controls.Add(Me.grpCliente)
+        Me.PanelCompleto.Controls.Add(Me.Panel2)
+        Me.PanelCompleto.Location = New System.Drawing.Point(0, 0)
+        Me.PanelCompleto.Name = "PanelCompleto"
+        Me.PanelCompleto.Size = New System.Drawing.Size(1050, 562)
+        Me.PanelCompleto.TabIndex = 0
+        '
+        'cmdCancelarLibro
+        '
+        Me.cmdCancelarLibro.Location = New System.Drawing.Point(888, 503)
+        Me.cmdCancelarLibro.Name = "cmdCancelarLibro"
+        Me.cmdCancelarLibro.Size = New System.Drawing.Size(144, 33)
+        Me.cmdCancelarLibro.TabIndex = 10
+        Me.cmdCancelarLibro.Text = "Cancelar Libro"
+        Me.cmdCancelarLibro.UseVisualStyleBackColor = True
+        '
+        'cmdCacelarCliente
+        '
+        Me.cmdCacelarCliente.Location = New System.Drawing.Point(235, 460)
+        Me.cmdCacelarCliente.Name = "cmdCacelarCliente"
+        Me.cmdCacelarCliente.Size = New System.Drawing.Size(203, 37)
+        Me.cmdCacelarCliente.TabIndex = 9
+        Me.cmdCacelarCliente.Text = "Cancelar Cliente"
+        Me.cmdCacelarCliente.UseVisualStyleBackColor = True
         '
         'lblClienteSeleccionado
         '
         Me.lblClienteSeleccionado.AutoSize = True
-        Me.lblClienteSeleccionado.Location = New System.Drawing.Point(462, 82)
+        Me.lblClienteSeleccionado.Font = New System.Drawing.Font("Century Gothic", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblClienteSeleccionado.Location = New System.Drawing.Point(474, 276)
         Me.lblClienteSeleccionado.Name = "lblClienteSeleccionado"
-        Me.lblClienteSeleccionado.Size = New System.Drawing.Size(104, 13)
+        Me.lblClienteSeleccionado.Size = New System.Drawing.Size(223, 25)
         Me.lblClienteSeleccionado.TabIndex = 8
         Me.lblClienteSeleccionado.Text = "ClienteSeleccionado"
         '
-        'Button2
+        'cmdAgregarLibro
         '
-        Me.Button2.Location = New System.Drawing.Point(718, 517)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(317, 33)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Agregar Libro"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.cmdAgregarLibro.Location = New System.Drawing.Point(718, 503)
+        Me.cmdAgregarLibro.Name = "cmdAgregarLibro"
+        Me.cmdAgregarLibro.Size = New System.Drawing.Size(144, 33)
+        Me.cmdAgregarLibro.TabIndex = 7
+        Me.cmdAgregarLibro.Text = "Agregar Libro"
+        Me.cmdAgregarLibro.UseVisualStyleBackColor = True
         '
         'grpFactura
         '
-        Me.grpFactura.Controls.Add(Me.Button5)
-        Me.grpFactura.Controls.Add(Me.Button4)
-        Me.grpFactura.Controls.Add(Me.Button3)
+        Me.grpFactura.Controls.Add(Me.lblNroVenta)
+        Me.grpFactura.Controls.Add(Me.Label6)
+        Me.grpFactura.Controls.Add(Me.cmdLimpiarFactura)
+        Me.grpFactura.Controls.Add(Me.cmdCargarFactura)
         Me.grpFactura.Controls.Add(Me.Label5)
         Me.grpFactura.Controls.Add(Me.Label4)
-        Me.grpFactura.Controls.Add(Me.TextBox3)
+        Me.grpFactura.Controls.Add(Me.txtCompNum)
         Me.grpFactura.Controls.Add(Me.Label3)
         Me.grpFactura.Controls.Add(Me.Label2)
-        Me.grpFactura.Controls.Add(Me.TextBox2)
-        Me.grpFactura.Controls.Add(Me.DateTimePicker1)
-        Me.grpFactura.Controls.Add(Me.ComboBox1)
-        Me.grpFactura.Location = New System.Drawing.Point(12, 113)
+        Me.grpFactura.Controls.Add(Me.txtPuntoVenta)
+        Me.grpFactura.Controls.Add(Me.FechaFactura)
+        Me.grpFactura.Controls.Add(Me.cboTipoFactura)
+        Me.grpFactura.Location = New System.Drawing.Point(12, 82)
         Me.grpFactura.Name = "grpFactura"
-        Me.grpFactura.Size = New System.Drawing.Size(438, 161)
+        Me.grpFactura.Size = New System.Drawing.Size(605, 161)
         Me.grpFactura.TabIndex = 6
         Me.grpFactura.TabStop = False
         Me.grpFactura.Text = "Factura"
+        '
+        'cmdLimpiarFactura
+        '
+        Me.cmdLimpiarFactura.Location = New System.Drawing.Point(467, 49)
+        Me.cmdLimpiarFactura.Name = "cmdLimpiarFactura"
+        Me.cmdLimpiarFactura.Size = New System.Drawing.Size(110, 73)
+        Me.cmdLimpiarFactura.TabIndex = 10
+        Me.cmdLimpiarFactura.Text = "Limpiar Facturacion"
+        Me.cmdLimpiarFactura.UseVisualStyleBackColor = True
+        '
+        'cmdCargarFactura
+        '
+        Me.cmdCargarFactura.Location = New System.Drawing.Point(351, 49)
+        Me.cmdCargarFactura.Name = "cmdCargarFactura"
+        Me.cmdCargarFactura.Size = New System.Drawing.Size(110, 73)
+        Me.cmdCargarFactura.TabIndex = 9
+        Me.cmdCargarFactura.Text = "Cargar Factura"
+        Me.cmdCargarFactura.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -130,12 +177,12 @@ Partial Class FrmVentas
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Comp. Nro."
         '
-        'TextBox3
+        'txtCompNum
         '
-        Me.TextBox3.Location = New System.Drawing.Point(245, 79)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(71, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.txtCompNum.Location = New System.Drawing.Point(245, 79)
+        Me.txtCompNum.Name = "txtCompNum"
+        Me.txtCompNum.Size = New System.Drawing.Size(71, 20)
+        Me.txtCompNum.TabIndex = 5
         '
         'Label3
         '
@@ -155,57 +202,57 @@ Partial Class FrmVentas
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Tipo De factura"
         '
-        'TextBox2
+        'txtPuntoVenta
         '
-        Me.TextBox2.Location = New System.Drawing.Point(106, 79)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(71, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.txtPuntoVenta.Location = New System.Drawing.Point(106, 79)
+        Me.txtPuntoVenta.Name = "txtPuntoVenta"
+        Me.txtPuntoVenta.Size = New System.Drawing.Size(71, 20)
+        Me.txtPuntoVenta.TabIndex = 2
         '
-        'DateTimePicker1
+        'FechaFactura
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(106, 124)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 1
+        Me.FechaFactura.Location = New System.Drawing.Point(106, 124)
+        Me.FechaFactura.Name = "FechaFactura"
+        Me.FechaFactura.Size = New System.Drawing.Size(200, 20)
+        Me.FechaFactura.TabIndex = 1
         '
-        'ComboBox1
+        'cboTipoFactura
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"A", "B", "C"})
-        Me.ComboBox1.Location = New System.Drawing.Point(106, 33)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(71, 21)
-        Me.ComboBox1.TabIndex = 0
+        Me.cboTipoFactura.FormattingEnabled = True
+        Me.cboTipoFactura.Items.AddRange(New Object() {"A", "B", "C"})
+        Me.cboTipoFactura.Location = New System.Drawing.Point(106, 33)
+        Me.cboTipoFactura.Name = "cboTipoFactura"
+        Me.cboTipoFactura.Size = New System.Drawing.Size(71, 21)
+        Me.cboTipoFactura.TabIndex = 0
         '
-        'Button1
+        'cmdAgregarCliente
         '
-        Me.Button1.Location = New System.Drawing.Point(22, 511)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(320, 33)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Agregar Cliente"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cmdAgregarCliente.Location = New System.Drawing.Point(15, 460)
+        Me.cmdAgregarCliente.Name = "cmdAgregarCliente"
+        Me.cmdAgregarCliente.Size = New System.Drawing.Size(199, 37)
+        Me.cmdAgregarCliente.TabIndex = 5
+        Me.cmdAgregarCliente.Text = "Agregar Nuevo Cliente"
+        Me.cmdAgregarCliente.UseVisualStyleBackColor = True
         '
         'grpLibros
         '
-        Me.grpLibros.Controls.Add(Me.TextBox1)
+        Me.grpLibros.Controls.Add(Me.txtBuscadoLibros)
         Me.grpLibros.Controls.Add(Me.grlLibros)
-        Me.grpLibros.Location = New System.Drawing.Point(715, 82)
+        Me.grpLibros.Location = New System.Drawing.Point(715, 71)
         Me.grpLibros.Name = "grpLibros"
         Me.grpLibros.Size = New System.Drawing.Size(323, 429)
         Me.grpLibros.TabIndex = 4
         Me.grpLibros.TabStop = False
         Me.grpLibros.Text = "SELECCIONE LOS LIBROS A VENDER"
         '
-        'TextBox1
+        'txtBuscadoLibros
         '
-        Me.TextBox1.Location = New System.Drawing.Point(9, 31)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(307, 20)
-        Me.TextBox1.TabIndex = 5
-        Me.TextBox1.Text = "Buscador"
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBuscadoLibros.Location = New System.Drawing.Point(9, 31)
+        Me.txtBuscadoLibros.Name = "txtBuscadoLibros"
+        Me.txtBuscadoLibros.Size = New System.Drawing.Size(307, 20)
+        Me.txtBuscadoLibros.TabIndex = 5
+        Me.txtBuscadoLibros.Text = "Buscador"
+        Me.txtBuscadoLibros.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'grlLibros
         '
@@ -223,18 +270,18 @@ Partial Class FrmVentas
         '
         Me.grpCliente.Controls.Add(Me.txtBuscador)
         Me.grpCliente.Controls.Add(Me.grlClientes)
-        Me.grpCliente.Location = New System.Drawing.Point(21, 303)
+        Me.grpCliente.Location = New System.Drawing.Point(12, 249)
         Me.grpCliente.Name = "grpCliente"
-        Me.grpCliente.Size = New System.Drawing.Size(324, 205)
+        Me.grpCliente.Size = New System.Drawing.Size(429, 205)
         Me.grpCliente.TabIndex = 2
         Me.grpCliente.TabStop = False
         Me.grpCliente.Text = "SELECCIONE EL CLIENTE"
         '
         'txtBuscador
         '
-        Me.txtBuscador.Location = New System.Drawing.Point(3, 31)
+        Me.txtBuscador.Location = New System.Drawing.Point(6, 31)
         Me.txtBuscador.Name = "txtBuscador"
-        Me.txtBuscador.Size = New System.Drawing.Size(317, 20)
+        Me.txtBuscador.Size = New System.Drawing.Size(420, 20)
         Me.txtBuscador.TabIndex = 1
         Me.txtBuscador.Text = "Buscador"
         Me.txtBuscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -248,7 +295,7 @@ Partial Class FrmVentas
         Me.grlClientes.Name = "grlClientes"
         Me.grlClientes.ReadOnly = True
         Me.grlClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlClientes.Size = New System.Drawing.Size(318, 145)
+        Me.grlClientes.Size = New System.Drawing.Size(423, 145)
         Me.grlClientes.TabIndex = 3
         '
         'Panel2
@@ -271,66 +318,97 @@ Partial Class FrmVentas
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Cargar Ventas"
         '
-        'Panel3
+        'PanelResumen
         '
-        Me.Panel3.Controls.Add(Me.grlResumenVenta)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel3.Location = New System.Drawing.Point(0, 560)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1050, 157)
-        Me.Panel3.TabIndex = 1
+        Me.PanelResumen.Controls.Add(Me.Button9)
+        Me.PanelResumen.Controls.Add(Me.Button7)
+        Me.PanelResumen.Controls.Add(Me.Button6)
+        Me.PanelResumen.Controls.Add(Me.Button8)
+        Me.PanelResumen.Controls.Add(Me.grlResumenVenta)
+        Me.PanelResumen.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelResumen.Location = New System.Drawing.Point(0, 546)
+        Me.PanelResumen.Name = "PanelResumen"
+        Me.PanelResumen.Size = New System.Drawing.Size(1050, 157)
+        Me.PanelResumen.TabIndex = 1
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(887, 85)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(151, 60)
+        Me.Button9.TabIndex = 11
+        Me.Button9.Text = "Button9"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(730, 85)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(151, 60)
+        Me.Button7.TabIndex = 10
+        Me.Button7.Text = "Cancelar"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(730, 8)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(151, 60)
+        Me.Button6.TabIndex = 9
+        Me.Button6.Text = "Finalizar "
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(887, 8)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(151, 60)
+        Me.Button8.TabIndex = 8
+        Me.Button8.Text = "Limpiar"
+        Me.Button8.UseVisualStyleBackColor = True
         '
         'grlResumenVenta
         '
         Me.grlResumenVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grlResumenVenta.Cursor = System.Windows.Forms.Cursors.Default
-        Me.grlResumenVenta.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grlResumenVenta.Dock = System.Windows.Forms.DockStyle.Left
         Me.grlResumenVenta.Location = New System.Drawing.Point(0, 0)
         Me.grlResumenVenta.Name = "grlResumenVenta"
         Me.grlResumenVenta.ReadOnly = True
         Me.grlResumenVenta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlResumenVenta.Size = New System.Drawing.Size(1050, 157)
+        Me.grlResumenVenta.Size = New System.Drawing.Size(717, 157)
         Me.grlResumenVenta.TabIndex = 5
         '
-        'Button3
+        'Label6
         '
-        Me.Button3.Location = New System.Drawing.Point(345, 36)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Cargar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(195, 35)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(55, 13)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "Venta Nro"
         '
-        'Button4
+        'lblNroVenta
         '
-        Me.Button4.Location = New System.Drawing.Point(345, 79)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 10
-        Me.Button4.Text = "Limpiar "
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(345, 120)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 11
-        Me.Button5.Text = "Nueva"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.lblNroVenta.AutoSize = True
+        Me.lblNroVenta.Location = New System.Drawing.Point(267, 36)
+        Me.lblNroVenta.Name = "lblNroVenta"
+        Me.lblNroVenta.Size = New System.Drawing.Size(22, 13)
+        Me.lblNroVenta.TabIndex = 13
+        Me.lblNroVenta.Text = "-----"
         '
         'FrmVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1050, 717)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(1050, 703)
+        Me.Controls.Add(Me.PanelResumen)
+        Me.Controls.Add(Me.PanelCompleto)
         Me.Name = "FrmVentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmVentas"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.PanelCompleto.ResumeLayout(False)
+        Me.PanelCompleto.PerformLayout()
         Me.grpFactura.ResumeLayout(False)
         Me.grpFactura.PerformLayout()
         Me.grpLibros.ResumeLayout(False)
@@ -341,36 +419,44 @@ Partial Class FrmVentas
         CType(Me.grlClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
+        Me.PanelResumen.ResumeLayout(False)
         CType(Me.grlResumenVenta, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents PanelCompleto As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents grpCliente As System.Windows.Forms.GroupBox
     Friend WithEvents grpLibros As System.Windows.Forms.GroupBox
     Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
     Friend WithEvents grlClientes As System.Windows.Forms.DataGridView
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cmdAgregarCliente As System.Windows.Forms.Button
     Friend WithEvents grlLibros As System.Windows.Forms.DataGridView
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents txtBuscadoLibros As System.Windows.Forms.TextBox
+    Friend WithEvents PanelResumen As System.Windows.Forms.Panel
+    Friend WithEvents cmdAgregarLibro As System.Windows.Forms.Button
     Friend WithEvents grpFactura As System.Windows.Forms.GroupBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtCompNum As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtPuntoVenta As System.Windows.Forms.TextBox
+    Friend WithEvents FechaFactura As System.Windows.Forms.DateTimePicker
+    Friend WithEvents cboTipoFactura As System.Windows.Forms.ComboBox
     Friend WithEvents grlResumenVenta As System.Windows.Forms.DataGridView
     Friend WithEvents lblClienteSeleccionado As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents cmdLimpiarFactura As System.Windows.Forms.Button
+    Friend WithEvents cmdCargarFactura As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents cmdCacelarCliente As System.Windows.Forms.Button
+    Friend WithEvents cmdCancelarLibro As System.Windows.Forms.Button
+    Friend WithEvents NroVenta As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents lblNroVenta As System.Windows.Forms.Label
 End Class

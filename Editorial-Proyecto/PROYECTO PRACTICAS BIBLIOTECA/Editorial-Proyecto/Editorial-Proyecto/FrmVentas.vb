@@ -4,16 +4,13 @@ Imports EDITORIAL.AD
 Public Class FrmVentas
 
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        FrmABMClientes.Show()
-    End Sub
 
 
 
-    Private Sub FrmVentas_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Public Sub FrmVentas_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         Me.Estado = EstadodelFormulario.eFacturacion
-       
+
     End Sub
 
     Private eEstado As EstadodelFormulario
@@ -21,14 +18,21 @@ Public Class FrmVentas
 
     Public Enum EstadodelFormulario
         eFacturacion = 1
-        eAgregar = 2
-        eModificar = 3
+        eSeleccionarCliente = 2
+        eSeleccionarLibros = 3
     End Enum
 
 
 
 #Region "Propiedades"
+
     Dim ClienteSeleccionado As String
+    Dim TipoFactura As String
+    Dim PuntoVenta As Integer
+    Dim CompNum As Integer
+    Dim LibroSeleccionado As Integer
+    Dim PrecioLibro As Double
+    Dim NroVenta As Integer
 
     Public Property Estado() As EstadodelFormulario
         Get
@@ -40,64 +44,37 @@ Public Class FrmVentas
             Select Case vNewValue
 
                 Case EstadodelFormulario.eFacturacion
-
+                    CargarNroVenta()
                     DesactivarClientes()
                     DesactivarLibros()
                     DesactivarResumen()
+                    ActivarFacturas()
+
+                    LimpiarFactura()
+                    cmdCargarFactura.Enabled = True
+                    cmdLimpiarFactura.Enabled = True
+                    cmdCacelarCliente.Enabled = False
 
 
-                Case EstadodelFormulario.eAgregar
+                Case EstadodelFormulario.eSeleccionarCliente
 
-                    'HabililarTXT()
+                    DesactivarFacturas()
+                    ActivarClientes()
+                    DesactivarLibros()
+                    DesactivarResumen()
+                    CargarGrillaClientes()
 
-                    'DeshabilitarGrillas()
+                    cmdCacelarCliente.Enabled = True
 
-                    'txtIdCliente.Enabled = False
+                Case EstadodelFormulario.eSeleccionarLibros
 
-                    'chkEstadoCliente.Checked = True
+                    ActivarLibros()
+                    DesactivarFacturas()
+                    DesactivarClientes()
+                    CargarGrillaLibros()
 
+                    cmdCacelarCliente.Enabled = False
 
-
-                    'cmdAgregar.Enabled = False
-                    'cmdModif.Enabled = False
-                    'cmdCancelar.Enabled = True
-                    'cmdLimpiar.Enabled = True
-                    'cmdAceptar.Enabled = True
-
-                    'grlClientes.Enabled = False
-
-                    'txtNombreApellido.Focus()
-                    'Panel1.BackColor = Color.LightGreen
-                    'lblAccion.Text = "Agregando, Calcule el precio de las cuotas antes de agregar"
-                    'lblAccion.ForeColor = Color.Black
-
-                Case EstadodelFormulario.eModificar
-
-                    'If txtIdCliente.Text <> Nothing Then
-
-                    '    HabililarTXT()
-                    '    HabililarComandos()
-                    '    DeshabilitarGrillas()
-
-                    '    txtIdCliente.Enabled = False
-
-
-                    '    grbCuotas.Enabled = True
-
-
-                    '    cmdLimpiar.Enabled = True
-                    '    cmdCancelar.Enabled = True
-                    '    cmdAgregar.Enabled = False
-                    '    cmdModif.Enabled = False
-
-                    '    grlClientes.Enabled = False
-
-                    '    Panel1.BackColor = Color.LightSalmon
-                    '    lblAccion.Text = "Modificando"
-                    '    'lblAccion.ForeColor = Color.Black
-                    'Else
-                    MsgBox("ERROR CRITICO", MsgBoxStyle.Critical, "Error")
-                    'End If
             End Select
             eEstado = vNewValue
         End Set
@@ -116,17 +93,20 @@ Public Class FrmVentas
 
     Private Sub ActivarClientes()
         grpCliente.Enabled = True
+        cmdAgregarCliente.Enabled = True
     End Sub
 
     Private Sub ActivarLibros()
         grpLibros.Enabled = True
+        cmdAgregarLibro.Enabled = True
     End Sub
 
     Private Sub ActivarResumen()
         grlResumenVenta.Enabled = True
+        PanelResumen.Enabled = True
     End Sub
 
-  
+
 
     'DESCACTIVO
     Private Sub DesactivarFacturas()
@@ -135,19 +115,22 @@ Public Class FrmVentas
 
     Private Sub DesactivarClientes()
         grpCliente.Enabled = False
+        cmdAgregarCliente.Enabled = False
     End Sub
 
     Private Sub DesactivarLibros()
         grpLibros.Enabled = False
+        cmdAgregarLibro.Enabled = False
     End Sub
 
     Private Sub DesactivarResumen()
         grlResumenVenta.Enabled = False
+        PanelResumen.Enabled = False
     End Sub
 
    
 
-    'GRILLA
+    'GRILLAS
 
     Private Sub CargarGrillaClientes()
 
@@ -167,17 +150,220 @@ Public Class FrmVentas
 
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
     End Sub
-   
+
+
+    Private Sub CargarGrillaLibros()
+
+        Dim ods As New Data.DataSet
+        Dim oClientes As New C_Ventas
+
+        ods = oClientes.CargarGrillaLibros
+
+        grlLibros.DataSource = ods.Tables(0)
+
+
+        'grlClientes.Columns(0).HeaderText = "Cod."
+        'grlClientes.Columns(0).Width = 20
+
+        'grlClientes.Columns(1).HeaderText = "Nombre"
+        'grlClientes.Columns(1).Width = 100
+
+        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+    End Sub
+
+
+    Private Sub LimpiarFactura()
+
+        cboTipoFactura.SelectedItem = 2
+        txtCompNum.Text = Nothing
+        txtPuntoVenta.Text = Nothing
+        CargarNroVenta()
+
+
+    End Sub
+
+    Private Sub BuscadorClienteGrilla(ByVal Nombre As String)
+
+
+        Dim oDs As New DataSet
+        Dim oClientes As New C_Clientes
+
+        oDs = oClientes.BuscadorCliente(Nombre)
+
+        grlClientes.DataSource = oDs.Tables(0)
+
+
+        'grlClientes.Columns(0).HeaderText = "Cod."
+        'grlClientes.Columns(0).Width = 20
+
+        'grlClientes.Columns(1).HeaderText = "Nombre"
+        'grlClientes.Columns(1).Width = 100
+
+        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+        oDs = Nothing
+        oClientes = Nothing
+
+    End Sub
+
+    Private Sub BuscadorLibrosGrilla(ByVal Nombre As String)
+
+
+        Dim oDs As New DataSet
+        Dim oLibro As New C_Ventas
+
+        oDs = oLibro.BuscadorLibros(Nombre)
+
+        grlLibros.DataSource = oDs.Tables(0)
+
+
+        'grlClientes.Columns(0).HeaderText = "Cod."
+        'grlClientes.Columns(0).Width = 20
+
+        'grlClientes.Columns(1).HeaderText = "Nombre"
+        'grlClientes.Columns(1).Width = 100
+
+        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+        oDs = Nothing
+        oLibro = Nothing
+
+    End Sub
+
+    Private Sub CargarNroVenta()
+
+        Dim oDs As New DataSet
+        Dim oCargarNroVenta As New C_Ventas
+
+        oDs = oCargarNroVenta.CargarNroVenta
+
+        lblNroVenta.Text = oDs.Tables(0).Rows(0).Item("IdVenta")
+
+        NroVenta = lblNroVenta.Text
+
+        oDs = Nothing        oCargarNroVenta = Nothing
+
+    End Sub
 
 #End Region
 
 
+  
+
+   
+#Region "Grp Factura"
+    Private Sub cmdCargarFactura_Click(sender As System.Object, e As System.EventArgs) Handles cmdCargarFactura.Click
+
+        TipoFactura = cboTipoFactura.Text
+        PuntoVenta = txtPuntoVenta.Text
+        CompNum = txtCompNum.Text
+        cmdCargarFactura.Enabled = False
+        cmdLimpiarFactura.Enabled = False
+
+        Me.Estado = EstadodelFormulario.eSeleccionarCliente
+
+    End Sub
+
+    Private Sub cmdLimpiarFactura_Click(sender As System.Object, e As System.EventArgs) Handles cmdLimpiarFactura.Click
+
+        LimpiarFactura()
+
+    End Sub
+
+
+    
+#End Region
+
+    
+   
+#Region "grp Cliente"
+
+    Private Sub cmdAgregarCliente_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregarCliente.Click
+
+        FrmABMClientes.Show()
+        CargarGrillaClientes()
+
+    End Sub
+
+    Private Sub cmdCacelarCliente_Click(sender As System.Object, e As System.EventArgs) Handles cmdCacelarCliente.Click
+
+        Me.Estado = EstadodelFormulario.eFacturacion
+
+
+    End Sub
+
     Private Sub grlClientes_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellContentClick
+
         ClienteSeleccionado = grlClientes.CurrentRow.Cells(0).Value
 
         lblClienteSeleccionado.Text = grlClientes.CurrentRow.Cells(1).Value
 
+        Me.Estado = EstadodelFormulario.eSeleccionarLibros
+
     End Sub
 
+
+    Private Sub txtBuscardor_Click(sender As Object, e As System.EventArgs) Handles txtBuscador.Click
+        txtBuscador.Text = ""
+        CargarGrillaClientes()
+
+    End Sub
+
+    Private Sub txtBuscardor_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscador.KeyUp
+
+        If txtBuscador.Text <> Nothing Then
+            BuscadorClienteGrilla(txtBuscador.Text)
+        End If
+    End Sub
+
+#End Region
+
+
+#Region "grp Libros"
+
+    Private Sub cmdCancelarLibro_Click(sender As System.Object, e As System.EventArgs) Handles cmdCancelarLibro.Click
+
+        Me.Estado = EstadodelFormulario.eSeleccionarCliente
+
+    End Sub
+
+
+    Private Sub txtBuscadoLibros_Click(sender As Object, e As System.EventArgs) Handles txtBuscadoLibros.Click
+        txtBuscadoLibros.Text = ""
+        CargarGrillaLibros()
+
+    End Sub
+
+    Private Sub txtBuscadoLibros_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscadoLibros.KeyUp
+        If txtBuscadoLibros.Text <> Nothing Then
+            BuscadorLibrosGrilla(txtBuscadoLibros.Text)
+        End If
+    End Sub
+
+    Private Sub grlLibros_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlLibros.CellContentClick
+        LibroSeleccionado = Nothing
+        PrecioLibro = Nothing
+        LibroSeleccionado = grlLibros.CurrentRow.Cells(0).Value
+        NroVenta = NroVenta.Text
+
+        'PrecioLibro = grlLibros.CurrentRow.Cells(0).Value
+
+
+        Dim oObjeto As New C_Ventas
+
+        oObjeto.CargarDetalleVenta(ClienteSeleccionado, LibroSeleccionado, "1", "9999")
+
+    End Sub
+
+
+#End Region
+
+    
+    
    
+
+    
+
+    
+    
 End Class

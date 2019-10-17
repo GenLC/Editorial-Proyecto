@@ -375,18 +375,20 @@ Public Class FrmABMClientes
 
     End Sub
 
-
-#End Region
-
-    Private Sub txtBuscardor_Click(sender As Object, e As System.EventArgs) Handles txtBuscardor.Click
-        txtBuscardor.Text = ""
+    Private Sub txtBuscardor_Click(sender As Object, e As System.EventArgs) Handles txtBuscador.Click
+        txtBuscador.Text = ""
+        CargarGrilla()
     End Sub
 
-    Private Sub txtBuscardor_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscardor.KeyUp
+    Private Sub txtBuscardor_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscador.KeyUp
 
-        If txtBuscardor.Text <> Nothing Then
-            BuscadorClienteGrilla(txtBuscardor.Text)
+        If txtBuscador.Text <> Nothing Then
+            BuscadorClienteGrilla(txtBuscador.Text)
         End If
     End Sub
+#End Region
 
+
+
+    
 End Class

@@ -142,6 +142,7 @@ Partial Class FrmClientes
         Me.ClientSize = New System.Drawing.Size(571, 477)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FrmClientes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmClientes"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)

@@ -46,7 +46,7 @@ Partial Class FrmABMClientes
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.grlEstadosCuentaClientes = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.txtBuscardor = New System.Windows.Forms.TextBox()
+        Me.txtBuscador = New System.Windows.Forms.TextBox()
         Me.grbCuotas.SuspendLayout()
         CType(Me.grlLibrosClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grlClientes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -279,20 +279,20 @@ Partial Class FrmABMClientes
         Me.DataGridView1.Size = New System.Drawing.Size(435, 131)
         Me.DataGridView1.TabIndex = 3
         '
-        'txtBuscardor
+        'txtBuscador
         '
-        Me.txtBuscardor.Location = New System.Drawing.Point(0, 176)
-        Me.txtBuscardor.Name = "txtBuscardor"
-        Me.txtBuscardor.Size = New System.Drawing.Size(312, 20)
-        Me.txtBuscardor.TabIndex = 203
-        Me.txtBuscardor.Text = "BUSCADOR..."
+        Me.txtBuscador.Location = New System.Drawing.Point(0, 176)
+        Me.txtBuscador.Name = "txtBuscador"
+        Me.txtBuscador.Size = New System.Drawing.Size(312, 20)
+        Me.txtBuscador.TabIndex = 203
+        Me.txtBuscador.Text = "BUSCADOR..."
         '
         'FrmABMClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(812, 647)
-        Me.Controls.Add(Me.txtBuscardor)
+        Me.Controls.Add(Me.txtBuscador)
         Me.Controls.Add(Me.grlEstadosCuentaClientes)
         Me.Controls.Add(Me.grbCuotas)
         Me.Controls.Add(Me.chkEstadoCliente)
@@ -351,5 +351,5 @@ Partial Class FrmABMClientes
     Friend WithEvents grlLibrosClientes As System.Windows.Forms.DataGridView
     Friend WithEvents grlEstadosCuentaClientes As System.Windows.Forms.GroupBox
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents txtBuscardor As System.Windows.Forms.TextBox
+    Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
 End Class

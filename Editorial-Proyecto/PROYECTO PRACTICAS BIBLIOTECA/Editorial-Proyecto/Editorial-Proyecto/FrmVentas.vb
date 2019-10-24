@@ -32,6 +32,7 @@ Public Class FrmVentas
     Dim CompNum As Integer
     Dim LibroSeleccionado As String
     Dim PrecioLibro As Double
+    Dim TotalPrecio As Double
 
 
     Public Property Estado() As EstadodelFormulario
@@ -40,38 +41,45 @@ Public Class FrmVentas
         End Get
         Set(ByVal vNewValue As EstadodelFormulario)
 
+            'Actualizar estados
 
             Select Case vNewValue
 
                 Case EstadodelFormulario.eFacturacion
 
-                    DesactivarClientes()
-                    DesactivarLibros()
-                    DesactivarResumen()
-                    ActivarFacturas()
+                   
+
+
+
+                    'DesactivarClientes()
+
+
+
+                    'DesactivarResumen()
+                    'ActivarFacturas()
 
                     LimpiarFactura()
-                    cmdCargarFactura.Enabled = True
-                    cmdLimpiarFactura.Enabled = True
-                    cmdCacelarCliente.Enabled = False
+                    'cmdCargarFactura.Enabled = True
+                    'cmdLimpiarFactura.Enabled = True
+                    'cmdCacelarCliente.Enabled = False
 
 
                 Case EstadodelFormulario.eSeleccionarCliente
 
-                    DesactivarFacturas()
-                    ActivarClientes()
-                    DesactivarLibros()
-                    DesactivarResumen()
-                    CargarGrillaClientes()
+                    'DesactivarFacturas()
+                    'ActivarClientes()
 
-                    cmdCacelarCliente.Enabled = True
+                    'DesactivarResumen()
+                    'CargarGrillaClientes()
+
+                    'cmdCacelarCliente.Enabled = True
 
                 Case EstadodelFormulario.eSeleccionarLibros
 
-                    ActivarLibros()
+
                     DesactivarFacturas()
-                    DesactivarClientes()
-                    CargarGrillaLibros()
+                    ' DesactivarClientes()
+
 
                     cmdCacelarCliente.Enabled = False
 
@@ -96,10 +104,10 @@ Public Class FrmVentas
         cmdAgregarCliente.Enabled = True
     End Sub
 
-    Private Sub ActivarLibros()
-        grpLibros.Enabled = True
-        cmdAgregarLibro.Enabled = True
-    End Sub
+    'Private Sub ActivarLibros()
+    '    grpLibros.Enabled = True
+    '    cmdAgregarLibro.Enabled = True
+    'End Sub
 
     Private Sub ActivarResumen()
         grlResumenVenta.Enabled = True
@@ -118,10 +126,10 @@ Public Class FrmVentas
         cmdAgregarCliente.Enabled = False
     End Sub
 
-    Private Sub DesactivarLibros()
-        grpLibros.Enabled = False
-        cmdAgregarLibro.Enabled = False
-    End Sub
+    'Private Sub DesactivarLibros()
+    '    grpLibros.Enabled = False
+    '    cmdAgregarLibro.Enabled = False
+    'End Sub
 
     Private Sub DesactivarResumen()
         grlResumenVenta.Enabled = False
@@ -152,32 +160,16 @@ Public Class FrmVentas
     End Sub
 
 
-    Private Sub CargarGrillaLibros()
-
-        Dim ods As New Data.DataSet
-        Dim oClientes As New C_Ventas
-
-        ods = oClientes.CargarGrillaLibros
-
-        grlLibros.DataSource = ods.Tables(0)
-
-
-        'grlClientes.Columns(0).HeaderText = "Cod."
-        'grlClientes.Columns(0).Width = 20
-
-        'grlClientes.Columns(1).HeaderText = "Nombre"
-        'grlClientes.Columns(1).Width = 100
-
-        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
-    End Sub
-
 
     Private Sub LimpiarFactura()
 
-        cboTipoFactura.SelectedItem = 2
-        txtCompNum.Text = Nothing
-        txtPuntoVenta.Text = Nothing
+        'ver luego como renumero
+        cboTipoFactura.SelectedIndex = 2
+        txtPuntoVenta.Text = "0001"
+        txtCompNum.Text = "0001"
 
+        txtTotalPrecio.Text = "0.00"
+      
 
     End Sub
 
@@ -192,11 +184,6 @@ Public Class FrmVentas
         grlClientes.DataSource = oDs.Tables(0)
 
 
-        'grlClientes.Columns(0).HeaderText = "Cod."
-        'grlClientes.Columns(0).Width = 20
-
-        'grlClientes.Columns(1).HeaderText = "Nombre"
-        'grlClientes.Columns(1).Width = 100
 
         grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
@@ -205,29 +192,7 @@ Public Class FrmVentas
 
     End Sub
 
-    Private Sub BuscadorLibrosGrilla(ByVal Nombre As String)
-
-
-        Dim oDs As New DataSet
-        Dim oLibro As New C_Ventas
-
-        oDs = oLibro.BuscadorLibros(Nombre)
-
-        grlLibros.DataSource = oDs.Tables(0)
-
-
-        'grlClientes.Columns(0).HeaderText = "Cod."
-        'grlClientes.Columns(0).Width = 20
-
-        'grlClientes.Columns(1).HeaderText = "Nombre"
-        'grlClientes.Columns(1).Width = 100
-
-        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
-
-        oDs = Nothing
-        oLibro = Nothing
-
-    End Sub
+   
 
 
 #End Region
@@ -277,15 +242,7 @@ Public Class FrmVentas
 
     End Sub
 
-    Private Sub grlClientes_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellContentClick
-
-        ClienteSeleccionado = grlClientes.CurrentRow.Cells(0).Value
-
-        lblClienteSeleccionado.Text = grlClientes.CurrentRow.Cells(1).Value
-
-        Me.Estado = EstadodelFormulario.eSeleccionarLibros
-
-    End Sub
+  
 
 
     Private Sub txtBuscardor_Click(sender As Object, e As System.EventArgs) Handles txtBuscador.Click
@@ -301,46 +258,22 @@ Public Class FrmVentas
         End If
     End Sub
 
+    Private Sub grlClientes_CellDoubleClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellDoubleClick
+
+        'IdCliente
+        SeleccionClienteId = grlClientes.CurrentRow.Cells(0).Value
+
+        'Nombre
+        SeleccionClienteNombre = grlClientes.CurrentRow.Cells(1).Value
+
+        lblClienteSeleccionado.Text = SeleccionClienteNombre
+
+        Me.Estado = EstadodelFormulario.eSeleccionarLibros
+
+    End Sub
+
 #End Region
 
-
-#Region "grp Libros"
-
-    Private Sub cmdCancelarLibro_Click(sender As System.Object, e As System.EventArgs) Handles cmdCancelarLibro.Click
-
-        Me.Estado = EstadodelFormulario.eSeleccionarCliente
-
-    End Sub
-
-
-    Private Sub txtBuscadoLibros_Click(sender As Object, e As System.EventArgs) Handles txtBuscadoLibros.Click
-        txtBuscadoLibros.Text = ""
-        CargarGrillaLibros()
-
-    End Sub
-
-    Private Sub txtBuscadoLibros_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscadoLibros.KeyUp
-        If txtBuscadoLibros.Text <> Nothing Then
-            BuscadorLibrosGrilla(txtBuscadoLibros.Text)
-        End If
-    End Sub
-
-    Private Sub grlLibros_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlLibros.CellContentClick
-        LibroSeleccionado = Nothing
-        PrecioLibro = Nothing
-        LibroSeleccionado = grlLibros.CurrentRow.Cells(0).Value
-        'NroVenta = NroVenta.Text
-
-        'PrecioLibro = grlLibros.CurrentRow.Cells(0).Value
-
-
-        Dim oObjeto As New C_Ventas
-
-        oObjeto.CargarDetalleVenta(ClienteSeleccionado, LibroSeleccionado, "1", "9999")
-
-    End Sub
- 
-#End Region
 
     
     
@@ -348,9 +281,75 @@ Public Class FrmVentas
 
     
 
-    
-    
-    Private Sub Button6_Click(sender As System.Object, e As System.EventArgs) Handles cmdFinalizar.Click
+#Region "Finalzar"
+
+    Private Sub cmdFinalizar_Click(sender As System.Object, e As System.EventArgs) Handles cmdFinalizar.Click
+
+        Dim oFactura As New C_Ventas
+        Dim res As Integer
+        Dim oFacturaDetalle As New C_Ventas
+
+
+        res = oFactura.CargarFacturaVenta(cboTipoFactura.SelectedItem, txtPuntoVenta.Text, txtCompNum.Text, SeleccionClienteId, CDbl(txtTotalPrecio.Text), dtFecha.Value, chkEstadoFactura.Checked)
+
+        For i = 0 To grlResumenVenta.RowCount - 2
+            oFacturaDetalle.CargarFacturaVentaDetalle(res, CDbl(grlResumenVenta.Rows(i).Cells(0).Value), CDbl(grlResumenVenta.Rows(i).Cells(3).Value), CDbl(grlResumenVenta.Rows(i).Cells(2).Value), CDbl(txtTotalPrecio.Text))
+        Next
+
+        MsgBox("todo oka")
 
     End Sub
+
+#End Region
+
+
+
+
+#Region "Boton Seleccionar venta Libro"
+
+
+
+
+    Private Sub txtCantidadLibros_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs)
+
+        TotalPrecio = PrecioLibro + TotalPrecio
+
+        txtTotalPrecio.Text = TotalPrecio
+
+    End Sub
+
+
+
+
+
+    Private Sub cmdSeleccionarLibro_Click(sender As System.Object, e As System.EventArgs) Handles cmdSeleccionarLibro.Click
+
+        FrmVentaLibroSeleccion.ShowDialog()
+        calculartotales()
+
+    End Sub
+
+
+    Private Sub calculartotales()
+
+        txtTotalPrecio.Text = "0.00"
+
+
+        For i = 0 To grlResumenVenta.Rows.Count - 1
+
+
+            txtTotalPrecio.Text = CDbl(txtTotalPrecio.Text) + CDbl(grlResumenVenta.Rows(i).Cells(4).Value)
+
+        Next
+
+        txtTotalPrecio.Text = FormatNumber(txtTotalPrecio.Text, 2)
+
+    End Sub
+
+#End Region
+
+
+
+
+
 End Class

@@ -30,8 +30,14 @@ Public Class C_Ventas
         Return odatabase.ExecuteScalar("CargarDetalleVenta", IdCliente, IdLibro, IdVenta, PrecioLibro)
     End Function
 
-    Public Function CargarNroVenta() As DataSet
-        Return odatabase.ExecuteDataSet("CargarNroVenta")
+
+    Public Function CargarFacturaVenta(ByVal Letra As String, ByVal PuntoVenta As Integer, ByVal Nro As Integer, ByVal IdCliente As Integer, ByVal Total As Double, ByVal Fecha As DateTime, ByVal Estado As Integer) As Double
+        Return odatabase.ExecuteScalar("CargarFacturaVenta", Letra, PuntoVenta, Nro, IdCliente, Total, Fecha, Estado)
+    End Function
+
+
+    Public Function CargarFacturaVentaDetalle(ByVal IdFactura As Integer, ByVal IdLibro As Integer, ByVal Cantidad As Integer, ByVal PrecioUnitario As Double, ByVal Total As Double) As Double
+        Return odatabase.ExecuteScalar("CargarFacturaVentaDetalle", IdFactura, IdLibro, Cantidad, PrecioUnitario, Total)
     End Function
 
 

@@ -1,4 +1,4 @@
-﻿Public Class FrmAdmLibros
+﻿Public Class FrmAbmLibros
 
     Private Sub cmdArticulosFormato_Click(sender As System.Object, e As System.EventArgs) Handles cmdArticulosFormato.Click
         Frm_ArticulosFormato.Show()

@@ -31,7 +31,7 @@
 
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmStock.Click
-        FrmArticulos.Show()
+        FrmStock.Show()
 
     End Sub
 

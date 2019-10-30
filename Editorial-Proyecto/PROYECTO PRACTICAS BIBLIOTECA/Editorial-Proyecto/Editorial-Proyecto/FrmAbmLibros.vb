@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub cmdArticulos_Click(sender As System.Object, e As System.EventArgs) Handles cmdArticulos.Click
-        FrmArticulos.Show()
+        FrmStock.Show()
     End Sub
 
     Private Sub cmdArticulosGenero_Click(sender As System.Object, e As System.EventArgs) Handles cmdArticulosGenero.Click

@@ -30,8 +30,8 @@
     End Sub
 
 
-    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmCuentas.Click
-        FrmMenuAltasBajas.Show()
+    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmStock.Click
+        FrmArticulos.Show()
 
     End Sub
 
@@ -50,7 +50,7 @@
 
     End Sub
 
-    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmLibros.Click
-
+    Private Sub cmdAdmSistema_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmSistema.Click
+        FrmMenuAltasBajas.Show()
     End Sub
 End Class

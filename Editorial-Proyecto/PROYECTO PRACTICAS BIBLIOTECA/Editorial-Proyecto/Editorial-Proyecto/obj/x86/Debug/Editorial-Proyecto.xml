@@ -19,6 +19,46 @@ Editorial-Proyecto
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources._69602ff8dbe0f3dc982f7cf834d49ac3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources._69602ff8dbe0f3dc982f7cf834d49ac31">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources._9f996626135ea0506d5e3de41a70e0db">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources._9f996626135ea0506d5e3de41a70e0db__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources._9f996626135ea0506d5e3de41a70e0db1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.a6537467ad00a76a7af8948075f9a5e4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.a6537467ad00a76a7af8948075f9a5e41">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.administrarstock">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.administrarstock1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.AMBclientes">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.biblio">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -27,7 +67,47 @@ Editorial-Proyecto
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.bill">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.book">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.budget">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.charla">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.charla1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.clientes">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.contacts">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.coupons">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.coupons1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.delivery">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.ebook">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -35,11 +115,63 @@ Editorial-Proyecto
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.escritorio1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.growth">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.label">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.money">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.receipt">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.recibo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.recibo_1_">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.recibo_1_1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.rent">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.safebox">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.safebox1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.shopping_cart">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.system">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.usuario">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.usuario1">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

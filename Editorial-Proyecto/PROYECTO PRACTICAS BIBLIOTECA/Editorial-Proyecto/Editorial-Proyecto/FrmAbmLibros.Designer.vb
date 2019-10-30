@@ -150,13 +150,13 @@ Partial Class FrmAbmLibros
         Me.cmdArticulosFormato.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdArticulosFormato.UseVisualStyleBackColor = True
         '
-        'FrmAdmLibros
+        'FrmAbmLibros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(679, 496)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "FrmAdmLibros"
+        Me.Name = "FrmAbmLibros"
         Me.Text = "FrmAdmLibros"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)

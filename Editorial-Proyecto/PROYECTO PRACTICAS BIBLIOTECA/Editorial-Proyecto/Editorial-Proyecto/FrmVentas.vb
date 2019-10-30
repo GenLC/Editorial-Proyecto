@@ -9,7 +9,7 @@ Public Class FrmVentas
 
     Public Sub FrmVentas_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
-        Me.Estado = EstadodelFormulario.eFacturacion
+        Me.Estado = EstadodelFormulario.eSeleccionarCliente
 
     End Sub
 
@@ -42,46 +42,53 @@ Public Class FrmVentas
         Set(ByVal vNewValue As EstadodelFormulario)
 
             'Actualizar estados
+            'Hacer actualizacion automatica de facturas
+            'AGREGAR CUANTE CORRIENTE
+
 
             Select Case vNewValue
 
                 Case EstadodelFormulario.eFacturacion
 
-                   
+                    DesactivarClientes()
 
-
-
-                    'DesactivarClientes()
-
-
-
-                    'DesactivarResumen()
-                    'ActivarFacturas()
-
+                    ActivarFacturas()
                     LimpiarFactura()
-                    'cmdCargarFactura.Enabled = True
-                    'cmdLimpiarFactura.Enabled = True
-                    'cmdCacelarCliente.Enabled = False
+                    cmdModificarFactura.Enabled = False
 
+                    DesactivarResumen()
 
                 Case EstadodelFormulario.eSeleccionarCliente
+                    LimpiarFactura()
+                    'DATOS DE FACTURACION
+                    TipoFactura = cboTipoFactura.Text
+                    PuntoVenta = txtPuntoVenta.Text
+                    CompNum = txtCompNum.Text
 
-                    'DesactivarFacturas()
-                    'ActivarClientes()
 
-                    'DesactivarResumen()
-                    'CargarGrillaClientes()
 
-                    'cmdCacelarCliente.Enabled = True
+                    DesactivarFacturas()
+                    ActivarClientes()
+
+                    DesactivarResumen()
+                    CargarGrillaClientes()
+
+
+                    cmdModificarFactura.Enabled = True
+
+                    If grlResumenVenta.RowCount <> 0 Then
+                        ActivarBotones()
+                    End If
 
                 Case EstadodelFormulario.eSeleccionarLibros
 
 
-                    DesactivarFacturas()
-                    ' DesactivarClientes()
+                    'DesactivarFacturas()
 
 
-                    cmdCacelarCliente.Enabled = False
+
+
+
 
             End Select
             eEstado = vNewValue
@@ -95,6 +102,11 @@ Public Class FrmVentas
 #Region "Funciones"
     'ACTIVO
 
+    Private Sub ActivarBotones()
+        cmdFinalizar.Enabled = True
+        cmdCancelar.Enabled = True
+        cmdLimpiar.Enabled = True
+    End Sub
     Private Sub ActivarFacturas()
         grpFactura.Enabled = True
     End Sub
@@ -117,8 +129,15 @@ Public Class FrmVentas
 
 
     'DESCACTIVO
+    Private Sub DesactivarBotones()
+        cmdFinalizar.Enabled = False
+        cmdCancelar.Enabled = False
+        cmdLimpiar.Enabled = False
+    End Sub
+
     Private Sub DesactivarFacturas()
         grpFactura.Enabled = False
+
     End Sub
 
     Private Sub DesactivarClientes()
@@ -163,11 +182,12 @@ Public Class FrmVentas
 
     Private Sub LimpiarFactura()
 
-        'ver luego como renumero
+        'ver luego como renumero AGREGAR FUNCION FACTURACION Y TRAER DE BD NUEVOS DATOS
+
         cboTipoFactura.SelectedIndex = 2
         txtPuntoVenta.Text = "0001"
         txtCompNum.Text = "0001"
-
+        chkEstadoFactura.Checked = True
         txtTotalPrecio.Text = "0.00"
       
 
@@ -202,16 +222,19 @@ Public Class FrmVentas
 
    
 #Region "Grp Factura"
-    Private Sub cmdCargarFactura_Click(sender As System.Object, e As System.EventArgs) Handles cmdCargarFactura.Click
 
-        TipoFactura = cboTipoFactura.Text
-        PuntoVenta = txtPuntoVenta.Text
-        CompNum = txtCompNum.Text
-        cmdCargarFactura.Enabled = False
+    Private Sub cmdAceptarFacturac_Click(sender As System.Object, e As System.EventArgs) Handles cmdAceptarFacturac.Click
+     
+
+        cmdModificarFactura.Enabled = True
+        cmdAceptarFacturac.Enabled = False
         cmdLimpiarFactura.Enabled = False
 
         Me.Estado = EstadodelFormulario.eSeleccionarCliente
+    End Sub
 
+    Private Sub cmdModificarFactura_Click(sender As System.Object, e As System.EventArgs) Handles cmdModificarFactura.Click
+        Me.Estado = EstadodelFormulario.eFacturacion
     End Sub
 
     Private Sub cmdLimpiarFactura_Click(sender As System.Object, e As System.EventArgs) Handles cmdLimpiarFactura.Click
@@ -221,7 +244,7 @@ Public Class FrmVentas
     End Sub
 
 
-    
+
 #End Region
 
     
@@ -235,7 +258,7 @@ Public Class FrmVentas
 
     End Sub
 
-    Private Sub cmdCacelarCliente_Click(sender As System.Object, e As System.EventArgs) Handles cmdCacelarCliente.Click
+    Private Sub cmdCacelarCliente_Click(sender As System.Object, e As System.EventArgs)
 
         Me.Estado = EstadodelFormulario.eFacturacion
 
@@ -322,7 +345,7 @@ Public Class FrmVentas
 
 
 
-    Private Sub cmdSeleccionarLibro_Click(sender As System.Object, e As System.EventArgs) Handles cmdSeleccionarLibro.Click
+    Private Sub cmdSeleccionarLibro_Click(sender As System.Object, e As System.EventArgs)
 
         FrmVentaLibroSeleccion.ShowDialog()
         calculartotales()
@@ -351,5 +374,20 @@ Public Class FrmVentas
 
 
 
+
+   
+    Private Sub cmdSeleccionarLibro_Click_1(sender As System.Object, e As System.EventArgs) Handles cmdSeleccionarLibro.Click
+        If SeleccionClienteNombre <> Nothing Then
+
+            FrmVentaLibroSeleccion.ShowDialog()
+            calculartotales()
+
+        Else
+
+            MsgBox("seleccione un cliente", vbInformation, "ALERTA")
+        End If
+       
+
+    End Sub
 
 End Class

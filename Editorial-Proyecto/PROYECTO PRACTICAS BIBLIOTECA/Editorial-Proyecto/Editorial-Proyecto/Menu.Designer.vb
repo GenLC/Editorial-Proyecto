@@ -24,41 +24,78 @@ Partial Class Menu
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
         Me.PanelMenuFondo = New System.Windows.Forms.Panel()
+        Me.PanelDer = New System.Windows.Forms.Panel()
+        Me.PanelIzq = New System.Windows.Forms.Panel()
+        Me.cmdCupones = New System.Windows.Forms.Button()
         Me.cmdAdmSistema = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cmdAdmCuentas = New System.Windows.Forms.Button()
+        Me.cmdAdmStock = New System.Windows.Forms.Button()
         Me.cmdAdmClientes = New System.Windows.Forms.Button()
-        Me.cmdAdmLibros = New System.Windows.Forms.Button()
         Me.cmdFacturacion = New System.Windows.Forms.Button()
         Me.PanelMenuFondo.SuspendLayout()
+        Me.PanelIzq.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelMenuFondo
         '
         Me.PanelMenuFondo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.PanelMenuFondo.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.biblio__1_
+        Me.PanelMenuFondo.BackColor = System.Drawing.Color.Transparent
+        Me.PanelMenuFondo.Controls.Add(Me.PanelDer)
+        Me.PanelMenuFondo.Controls.Add(Me.PanelIzq)
         Me.PanelMenuFondo.Controls.Add(Me.cmdAdmSistema)
         Me.PanelMenuFondo.Controls.Add(Me.Button5)
         Me.PanelMenuFondo.Controls.Add(Me.PanelMenu)
-        Me.PanelMenuFondo.Controls.Add(Me.cmdAdmCuentas)
+        Me.PanelMenuFondo.Controls.Add(Me.cmdAdmStock)
         Me.PanelMenuFondo.Controls.Add(Me.cmdAdmClientes)
-        Me.PanelMenuFondo.Controls.Add(Me.cmdAdmLibros)
         Me.PanelMenuFondo.Controls.Add(Me.cmdFacturacion)
         Me.PanelMenuFondo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelMenuFondo.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenuFondo.Name = "PanelMenuFondo"
-        Me.PanelMenuFondo.Size = New System.Drawing.Size(737, 491)
+        Me.PanelMenuFondo.Size = New System.Drawing.Size(1012, 515)
         Me.PanelMenuFondo.TabIndex = 1
+        '
+        'PanelDer
+        '
+        Me.PanelDer.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelDer.Location = New System.Drawing.Point(812, 50)
+        Me.PanelDer.Name = "PanelDer"
+        Me.PanelDer.Size = New System.Drawing.Size(200, 465)
+        Me.PanelDer.TabIndex = 12
+        '
+        'PanelIzq
+        '
+        Me.PanelIzq.Controls.Add(Me.cmdCupones)
+        Me.PanelIzq.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelIzq.Location = New System.Drawing.Point(0, 50)
+        Me.PanelIzq.Name = "PanelIzq"
+        Me.PanelIzq.Size = New System.Drawing.Size(200, 465)
+        Me.PanelIzq.TabIndex = 11
+        '
+        'cmdCupones
+        '
+        Me.cmdCupones.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdCupones.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdCupones.Image = Global.Editorial_Proyecto.My.Resources.Resources.coupons1
+        Me.cmdCupones.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdCupones.Location = New System.Drawing.Point(28, 151)
+        Me.cmdCupones.Name = "cmdCupones"
+        Me.cmdCupones.Size = New System.Drawing.Size(147, 119)
+        Me.cmdCupones.TabIndex = 5
+        Me.cmdCupones.Text = "Cupones"
+        Me.cmdCupones.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdCupones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.cmdCupones.UseVisualStyleBackColor = True
         '
         'cmdAdmSistema
         '
+        Me.cmdAdmSistema.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdAdmSistema.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAdmSistema.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
+        Me.cmdAdmSistema.Image = Global.Editorial_Proyecto.My.Resources.Resources.system
         Me.cmdAdmSistema.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdAdmSistema.Location = New System.Drawing.Point(453, 99)
+        Me.cmdAdmSistema.Location = New System.Drawing.Point(622, 94)
         Me.cmdAdmSistema.Name = "cmdAdmSistema"
         Me.cmdAdmSistema.Size = New System.Drawing.Size(152, 124)
         Me.cmdAdmSistema.TabIndex = 10
@@ -68,10 +105,11 @@ Partial Class Menu
         '
         'Button5
         '
+        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button5.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(100, 421)
+        Me.Button5.Location = New System.Drawing.Point(248, 466)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(328, 37)
+        Me.Button5.Size = New System.Drawing.Size(526, 37)
         Me.Button5.TabIndex = 9
         Me.Button5.Text = "Estadísticas"
         Me.Button5.UseVisualStyleBackColor = True
@@ -83,7 +121,7 @@ Partial Class Menu
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelMenu.Location = New System.Drawing.Point(0, 0)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(737, 56)
+        Me.PanelMenu.Size = New System.Drawing.Size(1012, 50)
         Me.PanelMenu.TabIndex = 8
         '
         'Label1
@@ -99,25 +137,27 @@ Partial Class Menu
         Me.Label1.Text = "Menu Principal"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'cmdAdmCuentas
+        'cmdAdmStock
         '
-        Me.cmdAdmCuentas.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAdmCuentas.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
-        Me.cmdAdmCuentas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdAdmCuentas.Location = New System.Drawing.Point(276, 260)
-        Me.cmdAdmCuentas.Name = "cmdAdmCuentas"
-        Me.cmdAdmCuentas.Size = New System.Drawing.Size(152, 124)
-        Me.cmdAdmCuentas.TabIndex = 7
-        Me.cmdAdmCuentas.Text = "Administrar Cuentas"
-        Me.cmdAdmCuentas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdAdmCuentas.UseVisualStyleBackColor = True
+        Me.cmdAdmStock.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdAdmStock.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAdmStock.Image = Global.Editorial_Proyecto.My.Resources.Resources.safebox
+        Me.cmdAdmStock.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdAdmStock.Location = New System.Drawing.Point(622, 285)
+        Me.cmdAdmStock.Name = "cmdAdmStock"
+        Me.cmdAdmStock.Size = New System.Drawing.Size(152, 124)
+        Me.cmdAdmStock.TabIndex = 7
+        Me.cmdAdmStock.Text = "Administrar Stock"
+        Me.cmdAdmStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdAdmStock.UseVisualStyleBackColor = True
         '
         'cmdAdmClientes
         '
+        Me.cmdAdmClientes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdAdmClientes.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAdmClientes.Image = Global.Editorial_Proyecto.My.Resources.Resources.usuario
+        Me.cmdAdmClientes.Image = Global.Editorial_Proyecto.My.Resources.Resources.contacts
         Me.cmdAdmClientes.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdAdmClientes.Location = New System.Drawing.Point(100, 260)
+        Me.cmdAdmClientes.Location = New System.Drawing.Point(248, 285)
         Me.cmdAdmClientes.Name = "cmdAdmClientes"
         Me.cmdAdmClientes.Size = New System.Drawing.Size(152, 124)
         Me.cmdAdmClientes.TabIndex = 6
@@ -125,25 +165,13 @@ Partial Class Menu
         Me.cmdAdmClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdAdmClientes.UseVisualStyleBackColor = True
         '
-        'cmdAdmLibros
-        '
-        Me.cmdAdmLibros.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdAdmLibros.Image = Global.Editorial_Proyecto.My.Resources.Resources.charla
-        Me.cmdAdmLibros.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdAdmLibros.Location = New System.Drawing.Point(276, 99)
-        Me.cmdAdmLibros.Name = "cmdAdmLibros"
-        Me.cmdAdmLibros.Size = New System.Drawing.Size(152, 124)
-        Me.cmdAdmLibros.TabIndex = 5
-        Me.cmdAdmLibros.Text = "Administrar Libros"
-        Me.cmdAdmLibros.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdAdmLibros.UseVisualStyleBackColor = True
-        '
         'cmdFacturacion
         '
+        Me.cmdFacturacion.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdFacturacion.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdFacturacion.Image = Global.Editorial_Proyecto.My.Resources.Resources.recibo_1_
+        Me.cmdFacturacion.Image = Global.Editorial_Proyecto.My.Resources.Resources.clientes
         Me.cmdFacturacion.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdFacturacion.Location = New System.Drawing.Point(100, 99)
+        Me.cmdFacturacion.Location = New System.Drawing.Point(248, 94)
         Me.cmdFacturacion.Name = "cmdFacturacion"
         Me.cmdFacturacion.Size = New System.Drawing.Size(152, 124)
         Me.cmdFacturacion.TabIndex = 4
@@ -156,8 +184,8 @@ Partial Class Menu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.biblio__1_
-        Me.ClientSize = New System.Drawing.Size(737, 491)
+        Me.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.a6537467ad00a76a7af8948075f9a5e41
+        Me.ClientSize = New System.Drawing.Size(1012, 515)
         Me.Controls.Add(Me.PanelMenuFondo)
         Me.DoubleBuffered = True
         Me.HelpButton = True
@@ -167,18 +195,21 @@ Partial Class Menu
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BIBLIOTECA"
         Me.PanelMenuFondo.ResumeLayout(False)
+        Me.PanelIzq.ResumeLayout(False)
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents PanelMenuFondo As System.Windows.Forms.Panel
-    Friend WithEvents cmdAdmCuentas As System.Windows.Forms.Button
+    Friend WithEvents cmdAdmStock As System.Windows.Forms.Button
     Friend WithEvents cmdAdmClientes As System.Windows.Forms.Button
-    Friend WithEvents cmdAdmLibros As System.Windows.Forms.Button
     Friend WithEvents cmdFacturacion As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents PanelMenu As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cmdAdmSistema As System.Windows.Forms.Button
+    Friend WithEvents PanelDer As System.Windows.Forms.Panel
+    Friend WithEvents PanelIzq As System.Windows.Forms.Panel
+    Friend WithEvents cmdCupones As System.Windows.Forms.Button
 End Class

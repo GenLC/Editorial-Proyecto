@@ -37,7 +37,7 @@ Partial Class FrmClientes
         'Panel1
         '
         Me.Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Panel1.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.biblio__1_
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Button4)
@@ -86,7 +86,7 @@ Partial Class FrmClientes
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
+        Me.Button4.Image = Global.Editorial_Proyecto.My.Resources.Resources.label
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button4.Location = New System.Drawing.Point(276, 260)
         Me.Button4.Name = "Button4"
@@ -99,7 +99,7 @@ Partial Class FrmClientes
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Image = Global.Editorial_Proyecto.My.Resources.Resources.usuario
+        Me.Button3.Image = Global.Editorial_Proyecto.My.Resources.Resources.AMBclientes
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button3.Location = New System.Drawing.Point(100, 260)
         Me.Button3.Name = "Button3"
@@ -112,7 +112,7 @@ Partial Class FrmClientes
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = Global.Editorial_Proyecto.My.Resources.Resources.charla
+        Me.Button2.Image = Global.Editorial_Proyecto.My.Resources.Resources.coupons
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button2.Location = New System.Drawing.Point(276, 99)
         Me.Button2.Name = "Button2"
@@ -125,7 +125,7 @@ Partial Class FrmClientes
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.Editorial_Proyecto.My.Resources.Resources.recibo_1_
+        Me.Button1.Image = Global.Editorial_Proyecto.My.Resources.Resources.budget
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button1.Location = New System.Drawing.Point(100, 99)
         Me.Button1.Name = "Button1"
@@ -139,6 +139,7 @@ Partial Class FrmClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.a6537467ad00a76a7af8948075f9a5e41
         Me.ClientSize = New System.Drawing.Size(571, 477)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FrmClientes"

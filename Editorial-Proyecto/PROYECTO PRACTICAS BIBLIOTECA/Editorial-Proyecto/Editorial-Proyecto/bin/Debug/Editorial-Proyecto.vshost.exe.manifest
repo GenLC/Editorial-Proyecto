@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1308672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1622528">
       <assemblyIdentity name="Editorial-Proyecto" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>SUj1prXmtQJ0ZXnVG2n79YZNJWg=</dsig:DigestValue>
+        <dsig:DigestValue>cV4lUFpnIi1WOhdPCZyFoktP1T8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

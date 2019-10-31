@@ -30,7 +30,6 @@ Partial Class FrmAbmLibros
         Me.cmdProveedores = New System.Windows.Forms.Button()
         Me.cmdAutores = New System.Windows.Forms.Button()
         Me.cmdArticulos = New System.Windows.Forms.Button()
-        Me.cmdArticulosFormato = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -38,26 +37,25 @@ Partial Class FrmAbmLibros
         'Panel1
         '
         Me.Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.Panel1.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.biblio__1_
+        Me.Panel1.BackgroundImage = Global.Editorial_Proyecto.My.Resources.Resources.a6537467ad00a76a7af8948075f9a5e42
         Me.Panel1.Controls.Add(Me.cmdArticulosGenero)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.cmdProveedores)
         Me.Panel1.Controls.Add(Me.cmdAutores)
         Me.Panel1.Controls.Add(Me.cmdArticulos)
-        Me.Panel1.Controls.Add(Me.cmdArticulosFormato)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(679, 496)
+        Me.Panel1.Size = New System.Drawing.Size(515, 496)
         Me.Panel1.TabIndex = 2
         '
         'cmdArticulosGenero
         '
         Me.cmdArticulosGenero.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdArticulosGenero.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
+        Me.cmdArticulosGenero.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio1
         Me.cmdArticulosGenero.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdArticulosGenero.Location = New System.Drawing.Point(453, 99)
+        Me.cmdArticulosGenero.Location = New System.Drawing.Point(100, 99)
         Me.cmdArticulosGenero.Name = "cmdArticulosGenero"
         Me.cmdArticulosGenero.Size = New System.Drawing.Size(152, 124)
         Me.cmdArticulosGenero.TabIndex = 10
@@ -82,7 +80,7 @@ Partial Class FrmAbmLibros
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(679, 56)
+        Me.Panel2.Size = New System.Drawing.Size(515, 56)
         Me.Panel2.TabIndex = 8
         '
         'Label1
@@ -93,15 +91,15 @@ Partial Class FrmAbmLibros
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(333, 33)
+        Me.Label1.Size = New System.Drawing.Size(371, 33)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Administracion de Libros"
+        Me.Label1.Text = "Administracion de Articulos"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'cmdProveedores
         '
         Me.cmdProveedores.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdProveedores.Image = Global.Editorial_Proyecto.My.Resources.Resources.escritorio
+        Me.cmdProveedores.Image = Global.Editorial_Proyecto.My.Resources.Resources.delivery
         Me.cmdProveedores.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.cmdProveedores.Location = New System.Drawing.Point(276, 260)
         Me.cmdProveedores.Name = "cmdProveedores"
@@ -127,7 +125,7 @@ Partial Class FrmAbmLibros
         'cmdArticulos
         '
         Me.cmdArticulos.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdArticulos.Image = Global.Editorial_Proyecto.My.Resources.Resources.charla
+        Me.cmdArticulos.Image = Global.Editorial_Proyecto.My.Resources.Resources.administrarstock2
         Me.cmdArticulos.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.cmdArticulos.Location = New System.Drawing.Point(276, 99)
         Me.cmdArticulos.Name = "cmdArticulos"
@@ -137,24 +135,11 @@ Partial Class FrmAbmLibros
         Me.cmdArticulos.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdArticulos.UseVisualStyleBackColor = True
         '
-        'cmdArticulosFormato
-        '
-        Me.cmdArticulosFormato.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdArticulosFormato.Image = Global.Editorial_Proyecto.My.Resources.Resources.recibo_1_
-        Me.cmdArticulosFormato.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdArticulosFormato.Location = New System.Drawing.Point(100, 99)
-        Me.cmdArticulosFormato.Name = "cmdArticulosFormato"
-        Me.cmdArticulosFormato.Size = New System.Drawing.Size(152, 124)
-        Me.cmdArticulosFormato.TabIndex = 4
-        Me.cmdArticulosFormato.Text = "Articulos Formato"
-        Me.cmdArticulosFormato.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdArticulosFormato.UseVisualStyleBackColor = True
-        '
         'FrmAbmLibros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(679, 496)
+        Me.ClientSize = New System.Drawing.Size(515, 496)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FrmAbmLibros"
         Me.Text = "FrmAdmLibros"
@@ -172,5 +157,4 @@ Partial Class FrmAbmLibros
     Friend WithEvents cmdProveedores As System.Windows.Forms.Button
     Friend WithEvents cmdAutores As System.Windows.Forms.Button
     Friend WithEvents cmdArticulos As System.Windows.Forms.Button
-    Friend WithEvents cmdArticulosFormato As System.Windows.Forms.Button
 End Class

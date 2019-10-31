@@ -43,9 +43,11 @@ Public Class FrmVentas
         End Get
         Set(ByVal vNewValue As EstadodelFormulario)
 
-            'Actualizar estados
-            'Hacer actualizacion automatica de facturas
+
             'AGREGAR CUANTE CORRIENTE
+            'Hacer funcion limpiar y agegar al boton finalizar
+            'boton finalizar tiene que tener CargarNumComp()
+            'boton aceptar en frmClientes no carga la grilla
 
 
             Select Case vNewValue
@@ -79,7 +81,9 @@ Public Class FrmVentas
                     cmdModificarFactura.Enabled = True
 
                     If grlResumenVenta.RowCount <> 0 Then
+                        ActivarResumen()
                         ActivarBotones()
+
                     End If
 
                 Case EstadodelFormulario.eSeleccionarLibros
@@ -298,6 +302,10 @@ Public Class FrmVentas
         End If
     End Sub
 
+    Private Sub grlClientes_CellContentDoubleClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellContentDoubleClick
+
+    End Sub
+
     Private Sub grlClientes_CellDoubleClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellDoubleClick
 
         'IdCliente
@@ -337,6 +345,7 @@ Public Class FrmVentas
         Next
 
         MsgBox("Factura regitrada con el nro " + txtCompNum.Text, MsgBoxStyle.OkCancel, "EXITO")
+
 
     End Sub
 
@@ -408,4 +417,7 @@ Public Class FrmVentas
 
     End Sub
 
+    Private Sub grlClientes_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellContentClick
+
+    End Sub
 End Class

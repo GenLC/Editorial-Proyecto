@@ -47,11 +47,19 @@ Editorial-Proyecto
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.a6537467ad00a76a7af8948075f9a5e42">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.administrarstock">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.administrarstock1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.administrarstock2">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

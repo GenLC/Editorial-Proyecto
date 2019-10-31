@@ -147,6 +147,12 @@
     <Compile Include="FrmClientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmFacturas.Designer.vb">
+      <DependentUpon>FrmFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmProveedores.Designer.vb">
       <DependentUpon>FrmProveedores.vb</DependentUpon>
     </Compile>
@@ -228,6 +234,9 @@
     <EmbeddedResource Include="FrmFacturacion.resx">
       <DependentUpon>FrmFacturacion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturas.resx">
+      <DependentUpon>FrmFacturas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAltasBajas.resx">
       <DependentUpon>FrmMenuAltasBajas.vb</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +305,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="biblio.ico" />
+    <None Include="Resources\a6537467ad00a76a7af8948075f9a5e42.jpg" />
+    <None Include="Resources\administrarstock2.png" />
     <None Include="Resources\delivery.png" />
     <None Include="Resources\budget.png" />
     <None Include="Resources\AMBclientes.png" />

@@ -11,6 +11,8 @@ Public Class FrmVentas
 
         Me.Estado = EstadodelFormulario.eSeleccionarCliente
 
+        CargarNumComp()
+
     End Sub
 
     Private eEstado As EstadodelFormulario
@@ -101,6 +103,21 @@ Public Class FrmVentas
 
 #Region "Funciones"
     'ACTIVO
+    Private Sub CargarNumComp()
+        Dim numeroparamostras As Integer
+
+        Dim oDs As New DataSet
+        Dim NumComp1 As New C_Ventas
+
+        oDs = NumComp1.CargarCompNum()
+
+        txtCompNum.Text = oDs.Tables(0).Rows(0).Item("IdFacturaVenta")
+
+        numeroparamostras = oDs.Tables(0).Rows(0).Item("IdFacturaVenta")
+
+        oDs = Nothing
+
+    End Sub
 
     Private Sub ActivarBotones()
         cmdFinalizar.Enabled = True
@@ -319,7 +336,7 @@ Public Class FrmVentas
             oFacturaDetalle.CargarFacturaVentaDetalle(res, CDbl(grlResumenVenta.Rows(i).Cells(0).Value), CDbl(grlResumenVenta.Rows(i).Cells(3).Value), CDbl(grlResumenVenta.Rows(i).Cells(2).Value), CDbl(txtTotalPrecio.Text))
         Next
 
-        MsgBox("todo oka")
+        MsgBox("Factura regitrada con el nro " + txtCompNum.Text, MsgBoxStyle.OkCancel, "EXITO")
 
     End Sub
 
@@ -381,6 +398,7 @@ Public Class FrmVentas
 
             FrmVentaLibroSeleccion.ShowDialog()
             calculartotales()
+            ActivarResumen()
 
         Else
 

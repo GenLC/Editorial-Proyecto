@@ -40,5 +40,9 @@ Public Class C_Ventas
         Return odatabase.ExecuteScalar("CargarFacturaVentaDetalle", IdFactura, IdLibro, Cantidad, PrecioUnitario, Total)
     End Function
 
+    Public Function CargarCompNum() As DataSet
+        Return odatabase.ExecuteDataSet("CargarCompNum")
+    End Function
+
 
 End Class

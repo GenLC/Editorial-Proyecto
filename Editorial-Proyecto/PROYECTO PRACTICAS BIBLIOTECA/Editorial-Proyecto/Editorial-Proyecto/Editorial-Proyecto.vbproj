@@ -123,12 +123,6 @@
     <Compile Include="FrmAlquileres.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmArticulos.Designer.vb">
-      <DependentUpon>FrmArticulos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmArticulos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmArticulosGenero.Designer.vb">
       <DependentUpon>FrmArticulosGenero.vb</DependentUpon>
     </Compile>

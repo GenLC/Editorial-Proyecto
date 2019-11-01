@@ -109,6 +109,9 @@ Public Class FrmVentaLibroSeleccion
     End Sub
 
    
+    Private Sub grlLibros_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlLibros.CellContentClick
+
+    End Sub
 End Class
 
 

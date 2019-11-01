@@ -123,21 +123,12 @@
     <Compile Include="FrmAlquileres.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="FrmLibros.Designer.vb">
       <DependentUpon>FrmLibros.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmLibros.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStock.Designer.vb">
-      <DependentUpon>FrmStock.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmStock.vb">
-      <SubType>Form</SubType>
-    </Compile>
-=======
->>>>>>> 4448efc83d08eaa8d9319335171b48f32653ff6e
     <Compile Include="FrmArticulosGenero.Designer.vb">
       <DependentUpon>FrmArticulosGenero.vb</DependentUpon>
     </Compile>
@@ -160,12 +151,6 @@
       <DependentUpon>FrmClientes.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmClientes.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmFacturas.Designer.vb">
-      <DependentUpon>FrmFacturas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmFacturas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmProveedores.Designer.vb">
@@ -249,22 +234,14 @@
     <EmbeddedResource Include="FrmFacturacion.resx">
       <DependentUpon>FrmFacturacion.vb</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="FrmLibros.resx">
       <DependentUpon>FrmLibros.vb</DependentUpon>
-=======
-    <EmbeddedResource Include="FrmFacturas.resx">
-      <DependentUpon>FrmFacturas.vb</DependentUpon>
->>>>>>> 4448efc83d08eaa8d9319335171b48f32653ff6e
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAltasBajas.resx">
       <DependentUpon>FrmMenuAltasBajas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProveedores.resx">
       <DependentUpon>FrmProveedores.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmStock.resx">
-      <DependentUpon>FrmStock.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentaLibroSeleccion.resx">
       <DependentUpon>FrmVentaLibroSeleccion.vb</DependentUpon>
@@ -328,8 +305,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="biblio.ico" />
-    <None Include="Resources\a6537467ad00a76a7af8948075f9a5e42.jpg" />
-    <None Include="Resources\administrarstock2.png" />
     <None Include="Resources\delivery.png" />
     <None Include="Resources\budget.png" />
     <None Include="Resources\AMBclientes.png" />

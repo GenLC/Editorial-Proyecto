@@ -43,6 +43,17 @@ Public Class C_Libros
 
     End Function
 
+    Public Function BuscarLibro(ByVal NombreLibro As String) As DataSet
+        Try
+            Return objLibros.ExecuteDataSet("BuscarLibroNombre", NombreLibro)
+        Catch ex As System.Exception
+            Throw ex
+        End Try
+
+    End Function
+
+
+
     Public Function BuscarporIDLibro(ByVal IdLibro As Integer) As DataSet
         Try
             Return objLibros.ExecuteDataSet("BuscarporIDLibro", IdLibro)
@@ -51,6 +62,7 @@ Public Class C_Libros
         End Try
 
     End Function
+
 
 
     Public Function RestarStock(ByVal IdLibro As Integer, ByVal Cantidad As Integer) As DataSet

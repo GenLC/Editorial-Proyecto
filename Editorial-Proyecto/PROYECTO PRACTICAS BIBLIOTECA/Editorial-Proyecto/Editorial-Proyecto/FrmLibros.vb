@@ -315,5 +315,50 @@ Public Class FrmLibros
 #End Region
 
 
+    Private Sub BuscadorLibroGrilla(ByVal NombreLibro As String)
 
+        Dim oDs As New DataSet
+        Dim objLibro As New C_Libros
+
+
+        oDs = objLibro.BuscarLibro(NombreLibro)
+
+        grl_GrillaLibros.DataSource = oDs.Tables(0)
+
+
+        grl_GrillaLibros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.AllCells
+
+
+        oDs = Nothing
+        objLibro = Nothing
+
+
+
+
+
+
+
+    End Sub
+
+    Private Sub txtBuscardor_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtBuscardor.Click
+        txtBuscardor.Text = ""
+        CargarGrilla()
+    End Sub
+
+    Private Sub txtBuscardor_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBuscardor.KeyUp
+
+        If txtBuscardor.Text <> Nothing Then
+
+            BuscadorLibroGrilla(txtBuscardor.Text)
+
+
+        End If
+    End Sub
+
+
+
+ 
+    Private Sub txtBuscardor_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscardor.TextChanged
+
+    End Sub
 End Class

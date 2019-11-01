@@ -41,6 +41,7 @@ Partial Class FrmLibros
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
         Me.Cantidad = New System.Windows.Forms.Label()
+        Me.txtBuscardor = New System.Windows.Forms.TextBox()
         CType(Me.grl_GrillaLibros, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -215,11 +216,19 @@ Partial Class FrmLibros
         Me.Cantidad.TabIndex = 42
         Me.Cantidad.Text = "Cantidad"
         '
+        'txtBuscardor
+        '
+        Me.txtBuscardor.Location = New System.Drawing.Point(422, 272)
+        Me.txtBuscardor.Name = "txtBuscardor"
+        Me.txtBuscardor.Size = New System.Drawing.Size(100, 20)
+        Me.txtBuscardor.TabIndex = 43
+        '
         'FrmLibros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(575, 471)
+        Me.Controls.Add(Me.txtBuscardor)
         Me.Controls.Add(Me.txtCantidad)
         Me.Controls.Add(Me.Cantidad)
         Me.Controls.Add(Me.txtPrecio)
@@ -266,4 +275,5 @@ Partial Class FrmLibros
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents txtCantidad As System.Windows.Forms.TextBox
     Friend WithEvents Cantidad As System.Windows.Forms.Label
+    Friend WithEvents txtBuscardor As System.Windows.Forms.TextBox
 End Class

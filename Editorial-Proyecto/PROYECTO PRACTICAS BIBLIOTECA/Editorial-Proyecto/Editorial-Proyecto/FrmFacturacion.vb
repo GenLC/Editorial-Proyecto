@@ -9,6 +9,6 @@
     End Sub
 
     Private Sub cmdAdmClientes_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmClientes.Click
-        FrmFacturas.Show()
+        FrmVentaLibroSeleccion.Show()
     End Sub
 End Class

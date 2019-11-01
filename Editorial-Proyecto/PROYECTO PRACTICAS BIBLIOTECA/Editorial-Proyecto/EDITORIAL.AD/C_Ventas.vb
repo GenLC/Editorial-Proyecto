@@ -40,5 +40,10 @@ Public Class C_Ventas
         Return odatabase.ExecuteScalar("CargarFacturaVentaDetalle", IdFactura, IdLibro, Cantidad, PrecioUnitario, Total)
     End Function
 
+    Public Function RestaStock(ByVal IdLibro As Integer, ByVal Cantidad As Integer) As Double
+
+        Return odatabase.ExecuteScalar("RestaStock", IdLibro, Cantidad)
+
+    End Function
 
 End Class

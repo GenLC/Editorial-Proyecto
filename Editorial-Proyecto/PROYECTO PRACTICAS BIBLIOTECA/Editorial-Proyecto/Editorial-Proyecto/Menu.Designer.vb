@@ -147,7 +147,7 @@ Partial Class Menu
         Me.cmdAdmStock.Name = "cmdAdmStock"
         Me.cmdAdmStock.Size = New System.Drawing.Size(152, 124)
         Me.cmdAdmStock.TabIndex = 7
-        Me.cmdAdmStock.Text = "Administrar Stock"
+        Me.cmdAdmStock.Text = "Libros"
         Me.cmdAdmStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdAdmStock.UseVisualStyleBackColor = True
         '

@@ -123,10 +123,16 @@
     <Compile Include="FrmAlquileres.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmArticulos.Designer.vb">
-      <DependentUpon>FrmArticulos.vb</DependentUpon>
+    <Compile Include="FrmLibros.Designer.vb">
+      <DependentUpon>FrmLibros.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmArticulos.vb">
+    <Compile Include="FrmLibros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStock.Designer.vb">
+      <DependentUpon>FrmStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStock.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmArticulosGenero.Designer.vb">
@@ -234,11 +240,17 @@
     <EmbeddedResource Include="FrmFacturacion.resx">
       <DependentUpon>FrmFacturacion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibros.resx">
+      <DependentUpon>FrmLibros.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAltasBajas.resx">
       <DependentUpon>FrmMenuAltasBajas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProveedores.resx">
       <DependentUpon>FrmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStock.resx">
+      <DependentUpon>FrmStock.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentaLibroSeleccion.resx">
       <DependentUpon>FrmVentaLibroSeleccion.vb</DependentUpon>

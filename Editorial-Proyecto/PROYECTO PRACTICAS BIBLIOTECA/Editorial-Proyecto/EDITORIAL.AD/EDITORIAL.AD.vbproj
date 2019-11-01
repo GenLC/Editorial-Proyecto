@@ -85,6 +85,7 @@
     <Compile Include="C_Autores.vb" />
     <Compile Include="C_Clientes.vb" />
     <Compile Include="C_Editorial.vb" />
+    <Compile Include="C_Libros.vb" />
     <Compile Include="C_Proveedores.vb" />
     <Compile Include="C_Ventas.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

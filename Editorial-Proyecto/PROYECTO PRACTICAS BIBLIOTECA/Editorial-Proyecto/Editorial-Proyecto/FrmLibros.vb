@@ -6,6 +6,7 @@ Public Class FrmLibros
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Me.Estado = EstadodelFormulario.eConsulta
+        txtBuscardor.Text = "Buscador por Nombre"
 
     End Sub
 
@@ -315,6 +316,7 @@ Public Class FrmLibros
 #End Region
 
 
+#Region "Buscar por nombre Libro"
     Private Sub BuscadorLibroGrilla(ByVal NombreLibro As String)
 
         Dim oDs As New DataSet
@@ -333,16 +335,14 @@ Public Class FrmLibros
         objLibro = Nothing
 
 
-
-
-
-
-
     End Sub
 
     Private Sub txtBuscardor_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtBuscardor.Click
+
         txtBuscardor.Text = ""
+
         CargarGrilla()
+
     End Sub
 
     Private Sub txtBuscardor_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBuscardor.KeyUp
@@ -353,12 +353,14 @@ Public Class FrmLibros
 
 
         End If
-    End Sub
-
-
-
- 
-    Private Sub txtBuscardor_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscardor.TextChanged
 
     End Sub
+
+#End Region
+
+
+
+
+  
+  
 End Class

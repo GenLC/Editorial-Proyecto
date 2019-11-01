@@ -91,6 +91,7 @@ C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO P
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.exe
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.xml
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.pdb
+<<<<<<< HEAD
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.vbprojResolveAssemblyReference.cache
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.Form1.resources
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmAbmLibros.resources
@@ -128,3 +129,6 @@ C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PR
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.exe
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.xml
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.pdb
+=======
+C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmFacturas.resources
+>>>>>>> 4448efc83d08eaa8d9319335171b48f32653ff6e

@@ -85,7 +85,11 @@
     <Compile Include="C_Autores.vb" />
     <Compile Include="C_Clientes.vb" />
     <Compile Include="C_Editorial.vb" />
+<<<<<<< HEAD
     <Compile Include="C_Libros.vb" />
+=======
+    <Compile Include="C_Facturas.vb" />
+>>>>>>> 4448efc83d08eaa8d9319335171b48f32653ff6e
     <Compile Include="C_Proveedores.vb" />
     <Compile Include="C_Ventas.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

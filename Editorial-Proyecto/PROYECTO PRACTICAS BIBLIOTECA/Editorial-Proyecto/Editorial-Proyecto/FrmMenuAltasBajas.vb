@@ -31,10 +31,10 @@
     End Sub
 
     Private Sub Button7_Click(sender As System.Object, e As System.EventArgs)
-        FrmStock.Show()
+        'FrmStock.Show()
     End Sub
 
     Private Sub cmdStock_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdStock.Click
-        FrmStock.Show()
+        'FrmStock.Show()
     End Sub
 End Class

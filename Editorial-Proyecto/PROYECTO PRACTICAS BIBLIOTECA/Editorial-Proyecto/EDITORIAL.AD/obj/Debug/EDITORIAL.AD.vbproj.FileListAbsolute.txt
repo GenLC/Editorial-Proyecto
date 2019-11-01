@@ -38,3 +38,4 @@ C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PR
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.dll
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.xml
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.pdb
+C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.vbprojResolveAssemblyReference.cache

@@ -95,7 +95,7 @@ Public Class FrmVentaLibroSeleccion
     End Sub
 
     Private Sub cmdAgregarNuevoLibro_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregarNuevoLibro.Click
-        FrmAbmLibros.Show()
+        FrmLibros.Show()
         CargarGrillaLibros()
 
     End Sub

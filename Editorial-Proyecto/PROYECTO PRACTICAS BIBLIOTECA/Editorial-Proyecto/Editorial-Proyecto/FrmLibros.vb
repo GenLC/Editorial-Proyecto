@@ -6,16 +6,21 @@ Public Class FrmLibros
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Me.Estado = EstadodelFormulario.eConsulta
-        txtBuscardor.Text = "Buscador por Nombre"
+
+        txtBuscardor.Text = "Buscar por Nombre"
 
     End Sub
 
     Private eEstado As EstadodelFormulario
 
     Public Enum EstadodelFormulario
+
         eConsulta = 1
+
         eAgregar = 2
+
         eModificar = 3
+
     End Enum
 #End Region
 

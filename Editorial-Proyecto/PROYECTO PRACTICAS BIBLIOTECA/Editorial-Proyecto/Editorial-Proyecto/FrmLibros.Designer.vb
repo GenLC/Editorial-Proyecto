@@ -63,7 +63,7 @@ Partial Class FrmLibros
         Me.txtPrecio.Location = New System.Drawing.Point(183, 368)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(69, 20)
-        Me.txtPrecio.TabIndex = 39
+        Me.txtPrecio.TabIndex = 6
         '
         'Label4
         '
@@ -79,7 +79,7 @@ Partial Class FrmLibros
         Me.txtDescripcion.Location = New System.Drawing.Point(183, 304)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(163, 20)
-        Me.txtDescripcion.TabIndex = 37
+        Me.txtDescripcion.TabIndex = 4
         '
         'Label3
         '
@@ -113,7 +113,7 @@ Partial Class FrmLibros
         Me.cmd_Cancelar.Location = New System.Drawing.Point(471, 395)
         Me.cmd_Cancelar.Name = "cmd_Cancelar"
         Me.cmd_Cancelar.Size = New System.Drawing.Size(92, 37)
-        Me.cmd_Cancelar.TabIndex = 35
+        Me.cmd_Cancelar.TabIndex = 8
         Me.cmd_Cancelar.Text = "Cancelar"
         Me.cmd_Cancelar.UseVisualStyleBackColor = True
         '
@@ -139,7 +139,7 @@ Partial Class FrmLibros
         Me.cmd_Aceptar.Location = New System.Drawing.Point(373, 395)
         Me.cmd_Aceptar.Name = "cmd_Aceptar"
         Me.cmd_Aceptar.Size = New System.Drawing.Size(92, 37)
-        Me.cmd_Aceptar.TabIndex = 34
+        Me.cmd_Aceptar.TabIndex = 7
         Me.cmd_Aceptar.Text = "Aceptar"
         Me.cmd_Aceptar.UseVisualStyleBackColor = True
         '
@@ -148,7 +148,7 @@ Partial Class FrmLibros
         Me.txtLibro.Location = New System.Drawing.Point(183, 269)
         Me.txtLibro.Name = "txtLibro"
         Me.txtLibro.Size = New System.Drawing.Size(163, 20)
-        Me.txtLibro.TabIndex = 32
+        Me.txtLibro.TabIndex = 3
         '
         'Label1
         '
@@ -166,7 +166,7 @@ Partial Class FrmLibros
         Me.cmd_Modificar.Location = New System.Drawing.Point(471, 187)
         Me.cmd_Modificar.Name = "cmd_Modificar"
         Me.cmd_Modificar.Size = New System.Drawing.Size(92, 37)
-        Me.cmd_Modificar.TabIndex = 29
+        Me.cmd_Modificar.TabIndex = 2
         Me.cmd_Modificar.Text = "Modificar"
         Me.cmd_Modificar.UseVisualStyleBackColor = True
         '
@@ -177,7 +177,7 @@ Partial Class FrmLibros
         Me.cmd_Agregar.Location = New System.Drawing.Point(373, 187)
         Me.cmd_Agregar.Name = "cmd_Agregar"
         Me.cmd_Agregar.Size = New System.Drawing.Size(92, 37)
-        Me.cmd_Agregar.TabIndex = 28
+        Me.cmd_Agregar.TabIndex = 1
         Me.cmd_Agregar.Text = "Agregar"
         Me.cmd_Agregar.UseVisualStyleBackColor = True
         '
@@ -205,7 +205,7 @@ Partial Class FrmLibros
         Me.txtCantidad.Location = New System.Drawing.Point(183, 342)
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(69, 20)
-        Me.txtCantidad.TabIndex = 41
+        Me.txtCantidad.TabIndex = 5
         '
         'Cantidad
         '

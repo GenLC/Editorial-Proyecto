@@ -36,7 +36,7 @@
 
     End Sub
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles cmdFacturacion.Click
-        FrmFacturacion.Show()
+        FrmVentas.Show()
 
     End Sub
 

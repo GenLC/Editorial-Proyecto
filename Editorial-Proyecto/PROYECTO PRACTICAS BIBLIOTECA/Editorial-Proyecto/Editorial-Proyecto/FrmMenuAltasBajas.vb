@@ -35,6 +35,6 @@
     End Sub
 
     Private Sub cmdStock_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdStock.Click
-        'FrmStock.Show()
+        FrmStock.Show()
     End Sub
 End Class

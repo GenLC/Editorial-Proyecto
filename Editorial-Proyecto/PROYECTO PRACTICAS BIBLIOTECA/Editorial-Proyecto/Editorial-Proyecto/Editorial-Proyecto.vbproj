@@ -163,6 +163,12 @@
     <Compile Include="FrmProveedores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmStock.Designer.vb">
+      <DependentUpon>FrmStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmVentaLibroSeleccion.Designer.vb">
       <DependentUpon>FrmVentaLibroSeleccion.vb</DependentUpon>
     </Compile>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProveedores.resx">
       <DependentUpon>FrmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStock.resx">
+      <DependentUpon>FrmStock.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentaLibroSeleccion.resx">
       <DependentUpon>FrmVentaLibroSeleccion.vb</DependentUpon>

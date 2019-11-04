@@ -391,4 +391,7 @@ Public Class FrmABMClientes
 
 
     
+    Private Sub txtBuscador_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscador.TextChanged
+
+    End Sub
 End Class

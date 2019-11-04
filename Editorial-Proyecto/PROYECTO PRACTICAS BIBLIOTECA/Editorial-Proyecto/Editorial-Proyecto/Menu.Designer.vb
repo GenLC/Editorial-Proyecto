@@ -26,16 +26,13 @@ Partial Class Menu
         Me.PanelMenuFondo = New System.Windows.Forms.Panel()
         Me.PanelDer = New System.Windows.Forms.Panel()
         Me.PanelIzq = New System.Windows.Forms.Panel()
-        Me.cmdCupones = New System.Windows.Forms.Button()
         Me.cmdAdmSistema = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmdAdmStock = New System.Windows.Forms.Button()
         Me.cmdAdmClientes = New System.Windows.Forms.Button()
         Me.cmdFacturacion = New System.Windows.Forms.Button()
         Me.PanelMenuFondo.SuspendLayout()
-        Me.PanelIzq.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,7 +43,6 @@ Partial Class Menu
         Me.PanelMenuFondo.Controls.Add(Me.PanelDer)
         Me.PanelMenuFondo.Controls.Add(Me.PanelIzq)
         Me.PanelMenuFondo.Controls.Add(Me.cmdAdmSistema)
-        Me.PanelMenuFondo.Controls.Add(Me.Button5)
         Me.PanelMenuFondo.Controls.Add(Me.PanelMenu)
         Me.PanelMenuFondo.Controls.Add(Me.cmdAdmStock)
         Me.PanelMenuFondo.Controls.Add(Me.cmdAdmClientes)
@@ -67,27 +63,11 @@ Partial Class Menu
         '
         'PanelIzq
         '
-        Me.PanelIzq.Controls.Add(Me.cmdCupones)
         Me.PanelIzq.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelIzq.Location = New System.Drawing.Point(0, 50)
         Me.PanelIzq.Name = "PanelIzq"
         Me.PanelIzq.Size = New System.Drawing.Size(200, 465)
         Me.PanelIzq.TabIndex = 11
-        '
-        'cmdCupones
-        '
-        Me.cmdCupones.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdCupones.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdCupones.Image = Global.Editorial_Proyecto.My.Resources.Resources.coupons1
-        Me.cmdCupones.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdCupones.Location = New System.Drawing.Point(28, 151)
-        Me.cmdCupones.Name = "cmdCupones"
-        Me.cmdCupones.Size = New System.Drawing.Size(147, 119)
-        Me.cmdCupones.TabIndex = 5
-        Me.cmdCupones.Text = "Cupones"
-        Me.cmdCupones.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdCupones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.cmdCupones.UseVisualStyleBackColor = True
         '
         'cmdAdmSistema
         '
@@ -102,17 +82,6 @@ Partial Class Menu
         Me.cmdAdmSistema.Text = "Administrar Sistema"
         Me.cmdAdmSistema.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdAdmSistema.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button5.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(248, 466)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(526, 37)
-        Me.Button5.TabIndex = 9
-        Me.Button5.Text = "Estadísticas"
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'PanelMenu
         '
@@ -147,7 +116,7 @@ Partial Class Menu
         Me.cmdAdmStock.Name = "cmdAdmStock"
         Me.cmdAdmStock.Size = New System.Drawing.Size(152, 124)
         Me.cmdAdmStock.TabIndex = 7
-        Me.cmdAdmStock.Text = "Administrar Stock"
+        Me.cmdAdmStock.Text = "Libros"
         Me.cmdAdmStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdAdmStock.UseVisualStyleBackColor = True
         '
@@ -195,7 +164,6 @@ Partial Class Menu
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BIBLIOTECA"
         Me.PanelMenuFondo.ResumeLayout(False)
-        Me.PanelIzq.ResumeLayout(False)
         Me.PanelMenu.ResumeLayout(False)
         Me.PanelMenu.PerformLayout()
         Me.ResumeLayout(False)
@@ -205,11 +173,9 @@ Partial Class Menu
     Friend WithEvents cmdAdmStock As System.Windows.Forms.Button
     Friend WithEvents cmdAdmClientes As System.Windows.Forms.Button
     Friend WithEvents cmdFacturacion As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents PanelMenu As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cmdAdmSistema As System.Windows.Forms.Button
     Friend WithEvents PanelDer As System.Windows.Forms.Panel
     Friend WithEvents PanelIzq As System.Windows.Forms.Panel
-    Friend WithEvents cmdCupones As System.Windows.Forms.Button
 End Class

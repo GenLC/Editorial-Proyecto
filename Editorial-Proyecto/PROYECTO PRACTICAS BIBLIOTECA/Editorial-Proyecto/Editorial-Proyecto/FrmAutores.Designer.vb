@@ -162,10 +162,10 @@ Partial Class FrmAutores
         '
         Me.lblAccion.AutoSize = True
         Me.lblAccion.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lblAccion.Font = New System.Drawing.Font("OCR A Extended", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAccion.Location = New System.Drawing.Point(640, 0)
+        Me.lblAccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAccion.Location = New System.Drawing.Point(646, 0)
         Me.lblAccion.Name = "lblAccion"
-        Me.lblAccion.Size = New System.Drawing.Size(32, 30)
+        Me.lblAccion.Size = New System.Drawing.Size(26, 33)
         Me.lblAccion.TabIndex = 0
         Me.lblAccion.Text = "-"
         '

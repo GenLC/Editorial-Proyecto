@@ -30,13 +30,13 @@
     End Sub
 
 
-    'Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmStock.Click
-    '    'FrmStock.Show()
 
-    'End Sub
+    Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmStock.Click
+        FrmLibros.Show()
 
+    End Sub
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles cmdFacturacion.Click
-        FrmFacturacion.Show()
+        FrmVentas.Show()
 
     End Sub
 

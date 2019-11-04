@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDITORIAL.AD.dll" size="22016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDITORIAL.AD.dll" size="22528">
       <assemblyIdentity name="EDITORIAL.AD" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>cYbYNUCHlHN6W/T/Hok7TMzgxao=</dsig:DigestValue>
+        <dsig:DigestValue>TrGkvETb8kRlGbvRcU5J9bTwVho=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1678336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1678848">
       <assemblyIdentity name="Editorial-Proyecto" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>3Sg0EE+ichldos6cYunWORYYQgk=</dsig:DigestValue>
+        <dsig:DigestValue>awiq5iJxNgGBQs1Joll8GcS3MrE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -135,13 +135,13 @@
       <dsig:DigestValue>QXjIcRsQTSsptaSnCewTiERp0iM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Editorial-Proyecto.exe.config" size="1462">
+  <file name="Editorial-Proyecto.exe.config" size="1714">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>/N2vMBL/fPr4Qkkdez4oxtlHO+4=</dsig:DigestValue>
+      <dsig:DigestValue>9y9Nrm3oZjtL2+m87Di6SJjNMuo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

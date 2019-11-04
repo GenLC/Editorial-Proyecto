@@ -32,6 +32,7 @@ Partial Class Menu
         Me.cmdAdmStock = New System.Windows.Forms.Button()
         Me.cmdAdmClientes = New System.Windows.Forms.Button()
         Me.cmdFacturacion = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelMenuFondo.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
         Me.SuspendLayout()
@@ -40,6 +41,7 @@ Partial Class Menu
         '
         Me.PanelMenuFondo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.PanelMenuFondo.BackColor = System.Drawing.Color.Transparent
+        Me.PanelMenuFondo.Controls.Add(Me.Button1)
         Me.PanelMenuFondo.Controls.Add(Me.PanelDer)
         Me.PanelMenuFondo.Controls.Add(Me.PanelIzq)
         Me.PanelMenuFondo.Controls.Add(Me.cmdAdmSistema)
@@ -148,6 +150,15 @@ Partial Class Menu
         Me.cmdFacturacion.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdFacturacion.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(490, 155)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 13
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -178,4 +189,5 @@ Partial Class Menu
     Friend WithEvents cmdAdmSistema As System.Windows.Forms.Button
     Friend WithEvents PanelDer As System.Windows.Forms.Panel
     Friend WithEvents PanelIzq As System.Windows.Forms.Panel
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

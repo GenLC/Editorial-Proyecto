@@ -46,11 +46,10 @@
     End Sub
 
 
-    Private Sub Menu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 
     Private Sub cmdAdmSistema_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmSistema.Click
         FrmMenuAltasBajas.Show()
     End Sub
+
+ 
 End Class

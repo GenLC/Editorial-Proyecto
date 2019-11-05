@@ -9,7 +9,7 @@ Public Class FrmFacturas
     ' doble click en factura seleccionada no trae factura detalle
 
     'CARGAR GRILLA
-    Private Sub CargarGrillaLibros()
+    Private Sub CargarGrillaFacturas()
 
         Dim ods As New Data.DataSet
         Dim oFacturas As New C_Facturas
@@ -65,12 +65,12 @@ Public Class FrmFacturas
         oDs = oFacturas.BuscadorFacturasGrillaNroFactura(NroFactura)
 
         grlFacturas.DataSource = oDs.Tables(0)
-        grlFacturas.Columns(0).HeaderText = "Cod. Cliente"
-        grlFacturas.Columns(0).Width = 5
+        'grlFacturas.Columns(0).HeaderText = "Cod. Cliente"
+        'grlFacturas.Columns(0).Width = 5
 
-        grlFacturas.Columns(6).HeaderText = "Nro Factura"
-        grlFacturas.Columns(6).Width = 5
-        grlFacturas.Columns(0).Width = 100
+        'grlFacturas.Columns(6).HeaderText = "Nro Factura"
+        'grlFacturas.Columns(6).Width = 5
+        'grlFacturas.Columns(0).Width = 100
 
         grlFacturas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
@@ -119,15 +119,16 @@ Public Class FrmFacturas
     Private Sub Limpiar()
 
         rbtNombreCliente.Checked = True
-        CargarGrillaLibros()
-        grlFacturaDetalle.Rows.Clear()
-        grlFacturaDetalle.Columns.Clear()
+        CargarGrillaFacturas()
+        'grlFacturaDetalle.Rows.Clear()
+        'grlFacturaDetalle.Columns.Clear()
+        grlFacturaDetalle.DataSource = Nothing
         txtBuscador.Text = "BUSCADOR"
     End Sub
 
 #End Region
 
-    Dim IdClienteSeleccionado As Integer
+    Dim NroFacturaClienteSeleccionado As Integer
 
 
     Private Sub FrmFacturas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -148,30 +149,41 @@ Public Class FrmFacturas
         txtBuscador.Text = ""
     End Sub
 
-    Private Sub txtBuscador_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBuscador.KeyUp
+
+    Private Sub grlFacturas_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlFacturas.CellDoubleClick
+        'grlFacturaDetalle.Columns.Clear()
+        'grlFacturaDetalle.Rows.Clear()
+        grlFacturaDetalle.DataSource = Nothing
+        NroFacturaClienteSeleccionado = grlFacturas.CurrentRow.Cells(6).Value
+
+
+        CargarFacturaDetalle(NroFacturaClienteSeleccionado)
+
+    End Sub
+
+  
+
+    Private Sub txtBuscador_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscador.KeyUp
         If txtBuscador.Text <> "" Then
 
             If rbtNombreCliente.Checked = True Then
+
                 BuscadorFacturasGrillaNombre(txtBuscador.Text)
             End If
             If rbtNroFactura.Checked = True Then
+
                 BuscadorFacturasGrillaNroFactura(CInt(txtBuscador.Text))
             End If
             If rbtMontoMenor.Checked = True Then
+
                 BuscadorFacturasGrillaMontoMenor(CDbl(txtBuscador.Text))
             End If
 
         End If
     End Sub
 
-
-
-
-    Private Sub grlFacturas_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlFacturas.CellDoubleClick
-        IdClienteSeleccionado = grlFacturas.CurrentRow.Cells(0).Value
-
-
-        CargarFacturaDetalle(IdClienteSeleccionado)
+   
+    Private Sub grlFacturas_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlFacturas.CellContentClick
 
     End Sub
 End Class

@@ -34,22 +34,22 @@ Partial Class FrmFacturas
         Me.rbtNombreCliente = New System.Windows.Forms.RadioButton()
         Me.rbtNroFactura = New System.Windows.Forms.RadioButton()
         Me.PanelDetalleFacturaCartel = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelFacturaCartel = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelFactura = New System.Windows.Forms.Panel()
+        Me.grlFacturas = New System.Windows.Forms.DataGridView()
         Me.PanelGeneral = New System.Windows.Forms.Panel()
         Me.PanelDetalleFactura = New System.Windows.Forms.Panel()
-        Me.grlFacturas = New System.Windows.Forms.DataGridView()
         Me.grlFacturaDetalle = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.PanelBotones.SuspendLayout()
         Me.Encabezado.SuspendLayout()
         Me.PanelFacturaCartel.SuspendLayout()
         Me.PanelFactura.SuspendLayout()
+        CType(Me.grlFacturas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelGeneral.SuspendLayout()
         Me.PanelDetalleFactura.SuspendLayout()
-        CType(Me.grlFacturas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grlFacturaDetalle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -174,15 +174,6 @@ Partial Class FrmFacturas
         Me.PanelDetalleFacturaCartel.Size = New System.Drawing.Size(200, 64)
         Me.PanelDetalleFacturaCartel.TabIndex = 1
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 239)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(149, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "DETALLES DE LA FACTURA"
-        '
         'PanelFacturaCartel
         '
         Me.PanelFacturaCartel.Controls.Add(Me.Label1)
@@ -201,6 +192,15 @@ Partial Class FrmFacturas
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "FACTURAS"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(3, 239)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(149, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "DETALLES DE LA FACTURA"
+        '
         'PanelFactura
         '
         Me.PanelFactura.Controls.Add(Me.grlFacturas)
@@ -209,6 +209,15 @@ Partial Class FrmFacturas
         Me.PanelFactura.Name = "PanelFactura"
         Me.PanelFactura.Size = New System.Drawing.Size(675, 133)
         Me.PanelFactura.TabIndex = 1
+        '
+        'grlFacturas
+        '
+        Me.grlFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.grlFacturas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grlFacturas.Location = New System.Drawing.Point(0, 0)
+        Me.grlFacturas.Name = "grlFacturas"
+        Me.grlFacturas.Size = New System.Drawing.Size(675, 133)
+        Me.grlFacturas.TabIndex = 0
         '
         'PanelGeneral
         '
@@ -230,15 +239,6 @@ Partial Class FrmFacturas
         Me.PanelDetalleFactura.Name = "PanelDetalleFactura"
         Me.PanelDetalleFactura.Size = New System.Drawing.Size(675, 129)
         Me.PanelDetalleFactura.TabIndex = 3
-        '
-        'grlFacturas
-        '
-        Me.grlFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grlFacturas.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.grlFacturas.Location = New System.Drawing.Point(0, 0)
-        Me.grlFacturas.Name = "grlFacturas"
-        Me.grlFacturas.Size = New System.Drawing.Size(675, 133)
-        Me.grlFacturas.TabIndex = 0
         '
         'grlFacturaDetalle
         '
@@ -267,10 +267,10 @@ Partial Class FrmFacturas
         Me.PanelFacturaCartel.ResumeLayout(False)
         Me.PanelFacturaCartel.PerformLayout()
         Me.PanelFactura.ResumeLayout(False)
+        CType(Me.grlFacturas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelGeneral.ResumeLayout(False)
         Me.PanelGeneral.PerformLayout()
         Me.PanelDetalleFactura.ResumeLayout(False)
-        CType(Me.grlFacturas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.grlFacturaDetalle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

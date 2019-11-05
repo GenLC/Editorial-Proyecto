@@ -51,5 +51,9 @@
         FrmMenuAltasBajas.Show()
     End Sub
 
- 
+
+
+    Private Sub Menu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        FrmFacturas.Show()
+    End Sub
 End Class

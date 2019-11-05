@@ -35,8 +35,8 @@ Public Class C_Facturas
     End Function
 
 
-    Public Function CargarFacturaDetalle(ByVal IdCliente As Double) As DataSet
-        Return odatabase.ExecuteDataSet("CargarFacturaDetalle", IdCliente)
+    Public Function CargarFacturaDetalle(ByVal NroFacturaClienteSeleccionado As Double) As DataSet
+        Return odatabase.ExecuteDataSet("CargarFacturaDetalle", NroFacturaClienteSeleccionado)
     End Function
 
 

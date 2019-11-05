@@ -1,26 +1,3 @@
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.dll
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.pdb
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.xml
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\Microsoft.Practices.ServiceLocation.dll
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\Microsoft.Practices.Unity.Interception.dll
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.Resources.resources
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.vbproj.GenerateResource.Cache
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.dll
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.xml
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.pdb
-C:\Users\Olbap\Desktop\Programas\Visual Studio\2019\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.vbprojResolveAssemblyReference.cache
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.dll
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.pdb
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.xml
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.Resources.resources
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.vbproj.GenerateResource.Cache
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.dll
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.xml
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.pdb
-C:\Users\genar\Documents\Desarrollo de Software\Segundo Año\PRÁCTICAS\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.vbprojResolveAssemblyReference.cache
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.dll
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.pdb
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.xml
@@ -30,11 +7,3 @@ C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO P
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.dll
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.xml
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.pdb
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.Resources.resources
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.vbproj.GenerateResource.Cache
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.dll
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.pdb
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.xml
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.dll
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.xml
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.pdb

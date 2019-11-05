@@ -50,19 +50,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QPr7J8XL2Xipe2f/7tfvf3OZgak=</dsig:DigestValue>
+        <dsig:DigestValue>hGgtAakNxnXPAOe5lAqZFu1GZdY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1690624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1690112">
       <assemblyIdentity name="Editorial-Proyecto" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PTKHAYb6tNpkfFm9/5H0kDOaClE=</dsig:DigestValue>
+        <dsig:DigestValue>5RiT5Xy2mS4QCCRELGLPIjUvPsI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -141,7 +141,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9y9Nrm3oZjtL2+m87Di6SJjNMuo=</dsig:DigestValue>
+      <dsig:DigestValue>/9I9hBOXcLrN2AmiKs3Tm2tPYz4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

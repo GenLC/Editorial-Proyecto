@@ -42,4 +42,7 @@ Public Class C_Stock
 
     End Function
 
+
+
+
 End Class

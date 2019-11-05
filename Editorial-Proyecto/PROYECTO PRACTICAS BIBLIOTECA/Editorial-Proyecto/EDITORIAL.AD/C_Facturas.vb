@@ -9,7 +9,9 @@ Imports System.Configuration
 Public Class C_Facturas
 
     Dim odatabase As Database
+
     Public Sub New()
+
         odatabase = DatabaseFactory.CreateDatabase("Conn")
     End Sub
 

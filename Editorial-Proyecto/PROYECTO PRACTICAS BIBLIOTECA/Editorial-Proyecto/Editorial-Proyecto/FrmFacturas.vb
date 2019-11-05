@@ -182,8 +182,5 @@ Public Class FrmFacturas
         End If
     End Sub
 
-   
-    Private Sub grlFacturas_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlFacturas.CellContentClick
 
-    End Sub
 End Class

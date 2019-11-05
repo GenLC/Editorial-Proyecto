@@ -130,7 +130,7 @@ Public Class FrmStock
         Ods = objStock.CargarGrilla
 
         cboLibro.DataSource = Ods.Tables(0)
-        cboLibro.DisplayMember = Ods.Tables(0).Columns("NombreLibro").ToString.Trim
+        cboLibro.DisplayMember = Ods.Tables(0).Columns("IdLibro").ToString.Trim
         cboLibro.ValueMember = Ods.Tables(0).Columns("IdLibro").ToString.Trim
         'cboLibro.SelectedValue = Nothing
         'cboLibro.DataBind()
@@ -247,42 +247,39 @@ Public Class FrmStock
 #Region "Comando"
     Private Sub cmd_Aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Aceptar.Click
 
-        Try
-
-            If Validar() = True Then
 
 
-                Dim objStock As New C_Stock
+        Dim objStock As New C_Stock
+        Dim objLibro As New C_Libros
 
 
-                If Me.Estado = EstadoDelFormulario.Modificar Then
+        If Me.Estado = EstadoDelFormulario.Modificar Then
 
-                    objStock.Modificar(txtBuscardor.Text, cboLibro.Text, txtCantidad.Text)
+            objStock.Modificar(txtBuscardor.Text, cboLibro.Text, txtCantidad.Text)
 
-                    MsgBox("Se modificó correctamente" + cboLibro.SelectedValue + "" + txtCantidad.Text, MsgBoxStyle.Information, "Exitos!")
+            MsgBox("Se modificó correctamente" + cboLibro.SelectedValue + "" + txtCantidad.Text, MsgBoxStyle.Information, "Exitos!")
 
-                End If
+        End If
 
 
-                If Me.Estado = EstadoDelFormulario.Agregar Then
+        If Me.Estado = EstadoDelFormulario.Agregar Then
 
-                    Dim resultado As Integer
+            Dim resultado As Integer
 
-                    resultado = objStock.Cargar(cboLibro.SelectedText, txtCantidad.Text)
+            resultado = objStock.Cargar(cboLibro.Text, txtCantidad.Text)
 
-                    MsgBox("Se agregó correctamente" + cboLibro.SelectedText + "" + txtCantidad.Text + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
+            For i = 0 To grl_GrillaStock.RowCount - 2
 
-                End If
+                objLibro.RestarStock(grl_GrillaStock.Rows(i).Cells(0).Value, grl_GrillaStock.Rows(i).Cells(2).Value)
+            Next
+            
+            MsgBox("Se agregó correctamente" + cboLibro.SelectedText + "" + txtCantidad.Text + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
 
-                Me.Estado = EstadoDelFormulario.Consulta
+        End If
 
-            End If
+        Me.Estado = EstadoDelFormulario.Consulta
 
-        Catch
-
-            MsgBox("Sucedió un error", MsgBoxStyle.Critical, "Error")
-
-        End Try
+         
 
     End Sub
 
@@ -303,50 +300,11 @@ Public Class FrmStock
 #End Region
 
 
-    Private Sub grl_GrillaStock_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grl_GrillaStock.CellContentClick
-        BuscarNombre(grl_GrillaStock.CurrentRow.Cells(0).Value)
-        cmd_Agregar.Enabled = False
 
 
-    End Sub
-
-    Private Sub BuscarNombre(ByVal IdStock As Integer)
 
 
-        Dim oDs As New DataSet
-        Dim objLibro As New C_Stock
 
-        oDs = objLibro.BuscarID(IdStock)
-
-        txtBuscardor.Text = oDs.Tables(0).Rows(0).Item("IdStock")
-        cboLibro.SelectedValue = oDs.Tables(0).Rows(0).Item("IdLibro")
-        txtCantidad.Text = oDs.Tables(0).Rows(0).Item("Cantidad")
-
-
-        oDs = Nothing
-        objLibro = Nothing
-
-    End Sub
-
-
-    Private Sub BuscadorLibroGrilla(ByVal IdStock As Integer)
-
-        Dim oDs As New DataSet
-        Dim objLibro As New C_Stock
-
-
-        oDs = objLibro.BuscarID(IdStock)
-
-        grl_GrillaStock.DataSource = oDs.Tables(0)
-
-
-        grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.AllCells
-
-
-        oDs = Nothing
-        objLibro = Nothing
-
-    End Sub
 
 
 

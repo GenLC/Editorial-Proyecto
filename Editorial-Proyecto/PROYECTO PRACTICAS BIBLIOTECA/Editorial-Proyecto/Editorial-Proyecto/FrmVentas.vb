@@ -440,4 +440,8 @@ Public Class FrmVentas
         Me.Close()
 
     End Sub
+
+    Private Sub PanelCompleto_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles PanelCompleto.Paint
+
+    End Sub
 End Class

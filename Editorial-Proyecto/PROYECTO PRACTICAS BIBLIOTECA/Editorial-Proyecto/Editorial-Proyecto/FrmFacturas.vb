@@ -113,6 +113,25 @@ Public Class FrmFacturas
 
     End Sub
 
+    Private Sub DesactivarFactura(ByVal NroFactura As Integer)
+
+        'Dim oDs As New DataSet
+        Dim oFacturasDesactivar As New C_Facturas
+
+        oFacturasDesactivar.DesactivarFactura(NroFactura)
+
+        'grlFacturas.DataSource = oDs.Tables(0)
+
+        grlFacturas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+        'oDs = Nothing
+        oFacturasDesactivar = Nothing
+
+
+        grlFacturaDetalle.DataSource = Nothing
+
+
+    End Sub
 
 
 
@@ -183,7 +202,24 @@ Public Class FrmFacturas
     End Sub
 
    
-    Private Sub grlFacturas_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlFacturas.CellContentClick
+   
+    Private Sub cmdEliminar_Click(sender As System.Object, e As System.EventArgs) Handles cmdEliminar.Click
+        Dim NroFacturaDesactivar As Integer
+
+        NroFacturaDesactivar = grlFacturas.CurrentRow.Cells(6).Value
+
+
+        DesactivarFactura(NroFacturaClienteSeleccionado)
+
+        CargarGrillaFacturas()
+
+
+
+    End Sub
+
+    Private Sub cmdFacturasEliminadas_Click(sender As System.Object, e As System.EventArgs) Handles cmdFacturasEliminadas.Click
+        FrmFacturasEliminadas.ShowDialog()
+        CargarGrillaFacturas()
 
     End Sub
 End Class

@@ -185,13 +185,13 @@ Public Class FrmStock
 
     End Sub
 
-    Public Function Limpiar()
+    Private Sub Limpiar()
         CargarGrilla()
         CargaStock()
         cboLibro.Text = Nothing
         txtCantidad.Text = ""
 
-    End Function
+    End Sub
 
 
 

@@ -129,6 +129,12 @@
     <Compile Include="FrmFacturas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmFacturasEliminadas.Designer.vb">
+      <DependentUpon>FrmFacturasEliminadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFacturasEliminadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmLibros.Designer.vb">
       <DependentUpon>FrmLibros.vb</DependentUpon>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFacturas.resx">
       <DependentUpon>FrmFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturasEliminadas.resx">
+      <DependentUpon>FrmFacturasEliminadas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLibros.resx">
       <DependentUpon>FrmLibros.vb</DependentUpon>

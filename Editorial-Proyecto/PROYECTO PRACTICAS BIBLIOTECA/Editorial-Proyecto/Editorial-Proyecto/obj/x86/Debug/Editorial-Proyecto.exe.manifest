@@ -43,42 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-<<<<<<< HEAD
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDITORIAL.AD.dll" size="22528">
-=======
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDITORIAL.AD.dll" size="23552">
->>>>>>> 55c741a9b70c43176fea98a85e51c4290972c823
       <assemblyIdentity name="EDITORIAL.AD" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-<<<<<<< HEAD
-        <dsig:DigestValue>vghGuM8rLx9fMYDA1ICQaPQsutA=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>QPr7J8XL2Xipe2f/7tfvf3OZgak=</dsig:DigestValue>
->>>>>>> 55c741a9b70c43176fea98a85e51c4290972c823
+        <dsig:DigestValue>y29660PG0dDnUtYgxayTzdAs/Sg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-<<<<<<< HEAD
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1681408">
-=======
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1690624">
->>>>>>> 55c741a9b70c43176fea98a85e51c4290972c823
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1694208">
       <assemblyIdentity name="Editorial-Proyecto" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-<<<<<<< HEAD
-        <dsig:DigestValue>9vU2UKss7LCa9xeGaiWIEZXGQHk=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>PTKHAYb6tNpkfFm9/5H0kDOaClE=</dsig:DigestValue>
->>>>>>> 55c741a9b70c43176fea98a85e51c4290972c823
+        <dsig:DigestValue>N6oe2B+VulL9NdXn3h2uP5C0Ou4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

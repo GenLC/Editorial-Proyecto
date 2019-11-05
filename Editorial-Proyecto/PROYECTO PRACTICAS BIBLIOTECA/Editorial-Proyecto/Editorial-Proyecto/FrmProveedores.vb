@@ -298,7 +298,5 @@ Public Class FrmProveedores
         txt_NombreCompañia.Text = ""
     End Sub
 
-    Private Sub txt_NombreCompañia_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txt_NombreCompañia.TextChanged
 
-    End Sub
 End Class

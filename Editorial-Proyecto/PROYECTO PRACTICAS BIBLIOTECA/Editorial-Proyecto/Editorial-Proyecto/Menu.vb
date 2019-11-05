@@ -53,7 +53,7 @@
 
 
 
-    Private Sub Menu_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Private Sub Menu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         FrmFacturas.Show()
     End Sub
 End Class

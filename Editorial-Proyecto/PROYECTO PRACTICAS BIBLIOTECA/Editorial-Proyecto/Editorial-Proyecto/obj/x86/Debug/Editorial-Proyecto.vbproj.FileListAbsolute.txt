@@ -133,3 +133,4 @@ C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PR
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmFacturas.resources
 >>>>>>> 4448efc83d08eaa8d9319335171b48f32653ff6e
 C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmFacturas.resources
+C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmLibros.resources

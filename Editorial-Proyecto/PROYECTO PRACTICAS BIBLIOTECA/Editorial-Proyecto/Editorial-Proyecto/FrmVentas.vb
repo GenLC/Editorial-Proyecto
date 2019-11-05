@@ -11,7 +11,8 @@ Public Class FrmVentas
 
         Me.Estado = EstadodelFormulario.eSeleccionarCliente
 
-        
+        CargarNumComp()
+
     End Sub
 
     Private eEstado As EstadodelFormulario
@@ -42,9 +43,11 @@ Public Class FrmVentas
         End Get
         Set(ByVal vNewValue As EstadodelFormulario)
 
-            'Actualizar estados
-            'Hacer actualizacion automatica de facturas
+
             'AGREGAR CUANTE CORRIENTE
+            'Hacer funcion limpiar y agegar al boton finalizar
+            'boton finalizar tiene que tener CargarNumComp()
+            'boton aceptar en frmClientes no carga la grilla
 
 
             Select Case vNewValue
@@ -66,7 +69,8 @@ Public Class FrmVentas
                     PuntoVenta = txtPuntoVenta.Text
                     CompNum = txtCompNum.Text
 
-                   
+
+
                     DesactivarFacturas()
                     ActivarClientes()
 
@@ -77,7 +81,9 @@ Public Class FrmVentas
                     cmdModificarFactura.Enabled = True
 
                     If grlResumenVenta.RowCount <> 0 Then
+                        ActivarResumen()
                         ActivarBotones()
+
                     End If
 
                 Case EstadodelFormulario.eSeleccionarLibros
@@ -101,6 +107,21 @@ Public Class FrmVentas
 
 #Region "Funciones"
     'ACTIVO
+    Private Sub CargarNumComp()
+        Dim numeroparamostras As Integer
+
+        Dim oDs As New DataSet
+        Dim NumComp1 As New C_Ventas
+
+        oDs = NumComp1.CargarCompNum()
+
+        txtCompNum.Text = oDs.Tables(0).Rows(0).Item("IdFacturaVenta")
+
+        numeroparamostras = oDs.Tables(0).Rows(0).Item("IdFacturaVenta")
+
+        oDs = Nothing
+
+    End Sub
 
     Private Sub ActivarBotones()
         cmdFinalizar.Enabled = True
@@ -156,6 +177,7 @@ Public Class FrmVentas
     End Sub
 
 
+   
 
     'GRILLAS
 
@@ -188,11 +210,19 @@ Public Class FrmVentas
         txtPuntoVenta.Text = "0001"
         txtCompNum.Text = "0001"
         chkEstadoFactura.Checked = True
+       
+    End Sub
+    Private Sub Limpiar()
+        CargarGrillaClientes()
         txtTotalPrecio.Text = "0.00"
-
+        grlResumenVenta.Rows.Clear()
+        ClienteSeleccionado = Nothing
+        SeleccionClienteNombre = Nothing
+        SeleccionClienteId = Nothing
+        txtTotalPrecio.Text = "0.00"
+        lblClienteSeleccionado.Text = ""
 
     End Sub
-
     Private Sub BuscadorClienteGrilla(ByVal Nombre As String)
 
 
@@ -212,19 +242,19 @@ Public Class FrmVentas
 
     End Sub
 
-
+   
 
 
 #End Region
 
 
+  
 
-
-
+   
 #Region "Grp Factura"
 
-    Private Sub cmdAceptarFacturac_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAceptarFacturac.Click
-
+    Private Sub cmdAceptarFacturac_Click(sender As System.Object, e As System.EventArgs) Handles cmdAceptarFacturac.Click
+     
 
         cmdModificarFactura.Enabled = True
         cmdAceptarFacturac.Enabled = False
@@ -233,11 +263,11 @@ Public Class FrmVentas
         Me.Estado = EstadodelFormulario.eSeleccionarCliente
     End Sub
 
-    Private Sub cmdModificarFactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdModificarFactura.Click
+    Private Sub cmdModificarFactura_Click(sender As System.Object, e As System.EventArgs) Handles cmdModificarFactura.Click
         Me.Estado = EstadodelFormulario.eFacturacion
     End Sub
 
-    Private Sub cmdLimpiarFactura_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdLimpiarFactura.Click
+    Private Sub cmdLimpiarFactura_Click(sender As System.Object, e As System.EventArgs) Handles cmdLimpiarFactura.Click
 
         LimpiarFactura()
 
@@ -247,41 +277,43 @@ Public Class FrmVentas
 
 #End Region
 
-
-
+    
+   
 #Region "grp Cliente"
 
-    Private Sub cmdAgregarCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdAgregarCliente.Click
+    Private Sub cmdAgregarCliente_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregarCliente.Click
 
         FrmABMClientes.Show()
         CargarGrillaClientes()
 
     End Sub
 
-    Private Sub cmdCacelarCliente_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub cmdCacelarCliente_Click(sender As System.Object, e As System.EventArgs)
 
         Me.Estado = EstadodelFormulario.eFacturacion
 
 
     End Sub
 
+  
 
 
-
-    Private Sub txtBuscardor_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtBuscador.Click
+    Private Sub txtBuscardor_Click(sender As Object, e As System.EventArgs) Handles txtBuscador.Click
         txtBuscador.Text = ""
         CargarGrillaClientes()
 
     End Sub
 
-    Private Sub txtBuscardor_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtBuscador.KeyUp
+    Private Sub txtBuscardor_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscador.KeyUp
 
         If txtBuscador.Text <> Nothing Then
             BuscadorClienteGrilla(txtBuscador.Text)
         End If
     End Sub
 
-    Private Sub grlClientes_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellDoubleClick
+   
+
+    Private Sub grlClientes_CellDoubleClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellDoubleClick
 
         'IdCliente
         SeleccionClienteId = grlClientes.CurrentRow.Cells(0).Value
@@ -298,40 +330,33 @@ Public Class FrmVentas
 #End Region
 
 
+    
+    
+   
 
-
-
-
-
+    
 
 #Region "Finalzar"
 
-    Private Sub cmdFinalizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdFinalizar.Click
+    Private Sub cmdFinalizar_Click(sender As System.Object, e As System.EventArgs) Handles cmdFinalizar.Click
 
-        Dim oFactura As New C_Ventas
-        Dim res As Integer
-        Dim oFacturaDetalle As New C_Ventas
-        Dim RestaStock As New C_Ventas
-        Dim objLibro As New C_Libros
+        If SeleccionClienteNombre <> 0 Then
 
-
+            Dim oFactura As New C_Ventas
+            Dim res As Integer
+            Dim oFacturaDetalle As New C_Ventas
 
 
-        res = oFactura.CargarFacturaVenta(cboTipoFactura.SelectedItem, txtPuntoVenta.Text, txtCompNum.Text, SeleccionClienteId, CDbl(txtTotalPrecio.Text), dtFecha.Value, chkEstadoFactura.Checked)
+            res = oFactura.CargarFacturaVenta(cboTipoFactura.SelectedItem, txtPuntoVenta.Text, txtCompNum.Text, SeleccionClienteId, CDbl(txtTotalPrecio.Text), dtFecha.Value, chkEstadoFactura.Checked)
 
-        For i = 0 To grlResumenVenta.RowCount - 2
-            oFacturaDetalle.CargarFacturaVentaDetalle(res, CDbl(grlResumenVenta.Rows(i).Cells(0).Value), CDbl(grlResumenVenta.Rows(i).Cells(3).Value), CDbl(grlResumenVenta.Rows(i).Cells(2).Value), CDbl(txtTotalPrecio.Text))
+            For i = 0 To grlResumenVenta.RowCount - 2
+                oFacturaDetalle.CargarFacturaVentaDetalle(res, CDbl(grlResumenVenta.Rows(i).Cells(0).Value), CDbl(grlResumenVenta.Rows(i).Cells(3).Value), CDbl(grlResumenVenta.Rows(i).Cells(2).Value), CDbl(txtTotalPrecio.Text))
+            Next
 
-            objLibro.RestarStock(grlResumenVenta.Rows(i).Cells(0).Value, grlResumenVenta.Rows(i).Cells(3).Value)
-
-            MsgBox("Felicitaciones")
-
-        Next
-
-
-
-
-        MsgBox("todo oka")
+            MsgBox("Factura regitrada con el nro " + txtCompNum.Text, MsgBoxStyle.OkCancel, "EXITO")
+        Else
+            MsgBox("Seleccione productos y cliente", vbInformation, "ALERTA")
+        End If
 
     End Sub
 
@@ -345,7 +370,7 @@ Public Class FrmVentas
 
 
 
-    Private Sub txtCantidadLibros_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
+    Private Sub txtCantidadLibros_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs)
 
         TotalPrecio = PrecioLibro + TotalPrecio
 
@@ -357,7 +382,7 @@ Public Class FrmVentas
 
 
 
-    Private Sub cmdSeleccionarLibro_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub cmdSeleccionarLibro_Click(sender As System.Object, e As System.EventArgs)
 
         FrmVentaLibroSeleccion.ShowDialog()
         calculartotales()
@@ -387,8 +412,8 @@ Public Class FrmVentas
 
 
 
-
-    Private Sub cmdSeleccionarLibro_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdSeleccionarLibro.Click
+   
+    Private Sub cmdSeleccionarLibro_Click_1(sender As System.Object, e As System.EventArgs) Handles cmdSeleccionarLibro.Click
         If SeleccionClienteNombre <> Nothing Then
 
             FrmVentaLibroSeleccion.ShowDialog()
@@ -399,10 +424,20 @@ Public Class FrmVentas
 
             MsgBox("seleccione un cliente", vbInformation, "ALERTA")
         End If
-
+       
 
     End Sub
 
+  
 
+    Private Sub cmdLimpiar_Click(sender As System.Object, e As System.EventArgs) Handles cmdLimpiar.Click
+        Limpiar()
 
+    End Sub
+
+    Private Sub cmdCancelar_Click(sender As System.Object, e As System.EventArgs) Handles cmdCancelar.Click
+        Limpiar()
+        Me.Close()
+
+    End Sub
 End Class

@@ -16,14 +16,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
+          If you want to change the Windows User Account Control level replace the
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
+         If you want to utilize File and Registry Virtualization for backward
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -51,11 +51,13 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>y29660PG0dDnUtYgxayTzdAs/Sg=</dsig:DigestValue>
+>>>>>>> d08df20f433cac1856397a3d7480b920097f0133
+>>>>>>> e0da77c7ccddcf34f5047da0752673c89209a535
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1694208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Editorial-Proyecto.exe" size="1690112">
       <assemblyIdentity name="Editorial-Proyecto" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
@@ -63,6 +65,8 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>N6oe2B+VulL9NdXn3h2uP5C0Ou4=</dsig:DigestValue>
+>>>>>>> d08df20f433cac1856397a3d7480b920097f0133
+>>>>>>> e0da77c7ccddcf34f5047da0752673c89209a535
       </hash>
     </dependentAssembly>
   </dependency>
@@ -141,7 +145,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>9y9Nrm3oZjtL2+m87Di6SJjNMuo=</dsig:DigestValue>
+      <dsig:DigestValue>/9I9hBOXcLrN2AmiKs3Tm2tPYz4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

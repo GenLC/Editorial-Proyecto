@@ -201,6 +201,7 @@ Public Class FrmFacturas
         End If
     End Sub
 
+<<<<<<< HEAD
    
    
     Private Sub cmdEliminar_Click(sender As System.Object, e As System.EventArgs) Handles cmdEliminar.Click
@@ -220,6 +221,7 @@ Public Class FrmFacturas
     Private Sub cmdFacturasEliminadas_Click(sender As System.Object, e As System.EventArgs) Handles cmdFacturasEliminadas.Click
         FrmFacturasEliminadas.ShowDialog()
         CargarGrillaFacturas()
+=======
+>>>>>>> e0da77c7ccddcf34f5047da0752673c89209a535
 
-    End Sub
 End Class

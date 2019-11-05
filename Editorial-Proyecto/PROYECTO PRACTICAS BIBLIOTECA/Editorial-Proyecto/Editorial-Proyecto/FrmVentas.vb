@@ -344,12 +344,15 @@ Public Class FrmVentas
             Dim oFactura As New C_Ventas
             Dim res As Integer
             Dim oFacturaDetalle As New C_Ventas
+            Dim objLibro As New C_Libros
 
 
             res = oFactura.CargarFacturaVenta(cboTipoFactura.SelectedItem, txtPuntoVenta.Text, txtCompNum.Text, SeleccionClienteId, CDbl(txtTotalPrecio.Text), dtFecha.Value, chkEstadoFactura.Checked)
 
             For i = 0 To grlResumenVenta.RowCount - 2
                 oFacturaDetalle.CargarFacturaVentaDetalle(res, CDbl(grlResumenVenta.Rows(i).Cells(0).Value), CDbl(grlResumenVenta.Rows(i).Cells(3).Value), CDbl(grlResumenVenta.Rows(i).Cells(2).Value), CDbl(txtTotalPrecio.Text))
+
+                objLibro.RestarStock(grlResumenVenta.Rows(i).Cells(0).Value, grlResumenVenta.Rows(i).Cells(3).Value)
             Next
 
             MsgBox("Factura regitrada con el nro " + txtCompNum.Text, MsgBoxStyle.OkCancel, "EXITO")

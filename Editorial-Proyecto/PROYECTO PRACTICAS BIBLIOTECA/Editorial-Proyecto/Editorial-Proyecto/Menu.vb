@@ -56,4 +56,8 @@
     Private Sub Menu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         FrmFacturas.Show()
     End Sub
+
+    Private Sub PanelMenuFondo_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PanelMenuFondo.Paint
+
+    End Sub
 End Class

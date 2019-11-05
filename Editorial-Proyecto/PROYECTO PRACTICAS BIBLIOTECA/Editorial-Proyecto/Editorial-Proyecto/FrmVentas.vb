@@ -340,7 +340,7 @@ Public Class FrmVentas
 
     Private Sub cmdFinalizar_Click(sender As System.Object, e As System.EventArgs) Handles cmdFinalizar.Click
 
-        If SeleccionClienteNombre <> 0 Then
+        If SeleccionClienteNombre <> "" Then
 
             Dim oFactura As New C_Ventas
             Dim res As Integer

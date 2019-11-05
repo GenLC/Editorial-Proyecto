@@ -24,6 +24,7 @@ Partial Class Menu
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
         Me.PanelMenuFondo = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelDer = New System.Windows.Forms.Panel()
         Me.PanelIzq = New System.Windows.Forms.Panel()
         Me.cmdAdmSistema = New System.Windows.Forms.Button()
@@ -32,7 +33,6 @@ Partial Class Menu
         Me.cmdAdmStock = New System.Windows.Forms.Button()
         Me.cmdAdmClientes = New System.Windows.Forms.Button()
         Me.cmdFacturacion = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelMenuFondo.SuspendLayout()
         Me.PanelMenu.SuspendLayout()
         Me.SuspendLayout()
@@ -54,6 +54,15 @@ Partial Class Menu
         Me.PanelMenuFondo.Name = "PanelMenuFondo"
         Me.PanelMenuFondo.Size = New System.Drawing.Size(1012, 515)
         Me.PanelMenuFondo.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(490, 155)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 13
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'PanelDer
         '
@@ -149,15 +158,6 @@ Partial Class Menu
         Me.cmdFacturacion.Text = "Facturacion"
         Me.cmdFacturacion.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.cmdFacturacion.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(490, 155)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Menu
         '

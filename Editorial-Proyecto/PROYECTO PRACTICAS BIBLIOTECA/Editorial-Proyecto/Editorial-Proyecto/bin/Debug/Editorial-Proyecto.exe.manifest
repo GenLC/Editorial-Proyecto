@@ -55,10 +55,14 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <dsig:DigestValue>Fs0vdstmEYvwMt1cCFhjLQ85nQ4=</dsig:DigestValue>
 =======
         <dsig:DigestValue>TrGkvETb8kRlGbvRcU5J9bTwVho=</dsig:DigestValue>
 >>>>>>> 9bc004544492b3ed31e351490cc50328c3e02290
+=======
+        <dsig:DigestValue>Nit/q//JpBYuWmmLdppxJQo2KBA=</dsig:DigestValue>
+>>>>>>> b5eff009b8f194dc29956dacb8c24354389085dd
       </hash>
     </dependentAssembly>
   </dependency>
@@ -75,10 +79,14 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <dsig:DigestValue>C3aOzedg/wTWVeIKE8H/II5jUTA=</dsig:DigestValue>
 =======
         <dsig:DigestValue>Ehd8N4/2eTzd1HH+8+afO90Y9PY=</dsig:DigestValue>
 >>>>>>> 9bc004544492b3ed31e351490cc50328c3e02290
+=======
+        <dsig:DigestValue>ugvUjDXrYOfX/Edu5RncmlrHOwI=</dsig:DigestValue>
+>>>>>>> b5eff009b8f194dc29956dacb8c24354389085dd
       </hash>
     </dependentAssembly>
   </dependency>

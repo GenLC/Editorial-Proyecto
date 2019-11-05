@@ -1,8 +1,0 @@
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.dll
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.pdb
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\bin\Debug\EDITORIAL.AD.xml
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.Resources.resources
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.vbproj.GenerateResource.Cache
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.dll
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.xml
-C:\Users\Olbap\Desktop\Programas\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\EDITORIAL.AD\obj\Debug\EDITORIAL.AD.pdb

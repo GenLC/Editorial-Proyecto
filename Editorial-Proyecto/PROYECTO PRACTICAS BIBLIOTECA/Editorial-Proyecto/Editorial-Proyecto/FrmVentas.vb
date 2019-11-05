@@ -45,8 +45,7 @@ Public Class FrmVentas
 
 
             'AGREGAR CUANTE CORRIENTE
-            'Hacer funcion limpiar y agegar al boton finalizar
-            'boton finalizar tiene que tener CargarNumComp()
+
             'boton aceptar en frmClientes no carga la grilla
 
 
@@ -357,6 +356,7 @@ Public Class FrmVentas
             Next
 
             MsgBox("Factura regitrada con el nro " + txtCompNum.Text, MsgBoxStyle.OkCancel, "EXITO")
+            CargarNumComp()
         Else
             MsgBox("Seleccione productos y cliente", vbInformation, "ALERTA")
         End If

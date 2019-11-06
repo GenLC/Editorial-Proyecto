@@ -269,7 +269,7 @@ Public Class FrmStock
         Dim objStock As New C_Stock
         Dim objLibro As New C_Libros
 
-
+        ...
         If Me.Estado = EstadoDelFormulario.Modificar Then
 
             objStock.Modificar(txtBuscardor.Text, cboLibro.SelectedIndex, txtCantidad.Text)

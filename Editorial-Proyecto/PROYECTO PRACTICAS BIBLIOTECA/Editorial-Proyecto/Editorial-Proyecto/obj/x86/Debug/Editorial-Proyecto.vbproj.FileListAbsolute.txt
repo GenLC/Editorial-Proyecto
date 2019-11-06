@@ -33,3 +33,4 @@ C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO P
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial-Proyecto.pdb
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmFacturasEliminadas.resources
 C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmMenuStock.resources
+C:\Users\genar\Documents\GitHub\Editorial-Proyecto\Editorial-Proyecto\PROYECTO PRACTICAS BIBLIOTECA\Editorial-Proyecto\Editorial-Proyecto\obj\x86\Debug\Editorial_Proyecto.FrmEstadisticas.resources

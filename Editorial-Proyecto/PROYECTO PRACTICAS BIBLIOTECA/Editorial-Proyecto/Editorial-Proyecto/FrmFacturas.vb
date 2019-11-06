@@ -192,6 +192,7 @@ Public Class FrmFacturas
             If rbtNroFactura.Checked = True Then
 
                 BuscadorFacturasGrillaNroFactura(CInt(txtBuscador.Text))
+
             End If
             If rbtMontoMenor.Checked = True Then
 
@@ -223,4 +224,8 @@ Public Class FrmFacturas
         CargarGrillaFacturas()
     End Sub
 
+  
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+        Me.Close()
+    End Sub
 End Class

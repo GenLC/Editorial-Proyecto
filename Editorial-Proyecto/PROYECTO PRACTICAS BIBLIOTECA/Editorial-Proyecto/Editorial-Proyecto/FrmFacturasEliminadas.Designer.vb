@@ -32,6 +32,7 @@ Partial Class FrmFacturasEliminadas
         '
         'grlFacturasEliminadas
         '
+        Me.grlFacturasEliminadas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.grlFacturasEliminadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grlFacturasEliminadas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grlFacturasEliminadas.Location = New System.Drawing.Point(0, 0)
@@ -52,6 +53,7 @@ Partial Class FrmFacturasEliminadas
         '
         'cmdRestaurar
         '
+        Me.cmdRestaurar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdRestaurar.Location = New System.Drawing.Point(49, 272)
         Me.cmdRestaurar.Name = "cmdRestaurar"
         Me.cmdRestaurar.Size = New System.Drawing.Size(98, 36)
@@ -61,6 +63,7 @@ Partial Class FrmFacturasEliminadas
         '
         'cmdSalir
         '
+        Me.cmdSalir.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdSalir.Location = New System.Drawing.Point(579, 272)
         Me.cmdSalir.Name = "cmdSalir"
         Me.cmdSalir.Size = New System.Drawing.Size(98, 36)
@@ -72,6 +75,7 @@ Partial Class FrmFacturasEliminadas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ClientSize = New System.Drawing.Size(723, 320)
         Me.Controls.Add(Me.cmdSalir)
         Me.Controls.Add(Me.cmdRestaurar)

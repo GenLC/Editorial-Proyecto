@@ -16,7 +16,7 @@ Public Class FrmEstadisticas
 
 
     Private Sub TotalLibrosStock()
-        'Dim ods As New Data.DataSet
+        Dim ods As New Data.DataSet
         'Dim oLibros As New C_Clientes
         ''odsoLibros.
         ''Dim objLibros As New C_Libros
@@ -39,4 +39,7 @@ Public Class FrmEstadisticas
 
 
 
+    Private Sub FrmEstadisticas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

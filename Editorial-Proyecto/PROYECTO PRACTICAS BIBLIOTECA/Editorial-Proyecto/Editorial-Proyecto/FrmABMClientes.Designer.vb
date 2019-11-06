@@ -44,16 +44,12 @@ Partial Class FrmABMClientes
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.grlEstadosCuentaClientes = New System.Windows.Forms.GroupBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.txtBuscador = New System.Windows.Forms.TextBox()
         Me.grbCuotas.SuspendLayout()
         CType(Me.grlLibrosClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grlClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.grlEstadosCuentaClientes.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblAccion
@@ -68,44 +64,49 @@ Partial Class FrmABMClientes
         'grbCuotas
         '
         Me.grbCuotas.Controls.Add(Me.grlLibrosClientes)
-        Me.grbCuotas.Location = New System.Drawing.Point(506, 250)
+        Me.grbCuotas.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grbCuotas.Location = New System.Drawing.Point(15, 441)
         Me.grbCuotas.Name = "grbCuotas"
-        Me.grbCuotas.Size = New System.Drawing.Size(282, 237)
+        Me.grbCuotas.Size = New System.Drawing.Size(478, 171)
         Me.grbCuotas.TabIndex = 201
         Me.grbCuotas.TabStop = False
         Me.grbCuotas.Text = "Libros llevados recientemente"
         '
         'grlLibrosClientes
         '
+        Me.grlLibrosClientes.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.grlLibrosClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grlLibrosClientes.Cursor = System.Windows.Forms.Cursors.Default
         Me.grlLibrosClientes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.grlLibrosClientes.Location = New System.Drawing.Point(3, 16)
+        Me.grlLibrosClientes.Location = New System.Drawing.Point(3, 17)
         Me.grlLibrosClientes.Name = "grlLibrosClientes"
         Me.grlLibrosClientes.ReadOnly = True
         Me.grlLibrosClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlLibrosClientes.Size = New System.Drawing.Size(276, 218)
+        Me.grlLibrosClientes.Size = New System.Drawing.Size(472, 151)
         Me.grlLibrosClientes.TabIndex = 3
         '
         'chkEstadoCliente
         '
         Me.chkEstadoCliente.AutoSize = True
-        Me.chkEstadoCliente.Location = New System.Drawing.Point(254, 246)
+        Me.chkEstadoCliente.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkEstadoCliente.Location = New System.Drawing.Point(322, 249)
         Me.chkEstadoCliente.Name = "chkEstadoCliente"
-        Me.chkEstadoCliente.Size = New System.Drawing.Size(91, 17)
+        Me.chkEstadoCliente.Size = New System.Drawing.Size(102, 20)
         Me.chkEstadoCliente.TabIndex = 200
         Me.chkEstadoCliente.Text = "EstadoCliente"
         Me.chkEstadoCliente.UseVisualStyleBackColor = True
         '
         'txtIdCliente
         '
-        Me.txtIdCliente.Location = New System.Drawing.Point(125, 250)
+        Me.txtIdCliente.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIdCliente.Location = New System.Drawing.Point(133, 249)
         Me.txtIdCliente.Name = "txtIdCliente"
-        Me.txtIdCliente.Size = New System.Drawing.Size(74, 20)
+        Me.txtIdCliente.Size = New System.Drawing.Size(74, 21)
         Me.txtIdCliente.TabIndex = 197
         '
         'grlClientes
         '
+        Me.grlClientes.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.grlClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grlClientes.Cursor = System.Windows.Forms.Cursors.Default
         Me.grlClientes.Dock = System.Windows.Forms.DockStyle.Fill
@@ -119,9 +120,10 @@ Partial Class FrmABMClientes
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(44, 250)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(75, 13)
+        Me.Label9.Size = New System.Drawing.Size(89, 16)
         Me.Label9.TabIndex = 196
         Me.Label9.Text = "Codigo Cliente"
         '
@@ -137,6 +139,7 @@ Partial Class FrmABMClientes
         'cmdModif
         '
         Me.cmdModif.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdModif.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdModif.Location = New System.Drawing.Point(673, 209)
         Me.cmdModif.Name = "cmdModif"
         Me.cmdModif.Size = New System.Drawing.Size(115, 35)
@@ -147,6 +150,7 @@ Partial Class FrmABMClientes
         'cmdAceptar
         '
         Me.cmdAceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdAceptar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAceptar.Location = New System.Drawing.Point(509, 554)
         Me.cmdAceptar.Name = "cmdAceptar"
         Me.cmdAceptar.Size = New System.Drawing.Size(115, 35)
@@ -157,6 +161,7 @@ Partial Class FrmABMClientes
         'cmdCancelar
         '
         Me.cmdCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdCancelar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdCancelar.Location = New System.Drawing.Point(670, 554)
         Me.cmdCancelar.Name = "cmdCancelar"
         Me.cmdCancelar.Size = New System.Drawing.Size(115, 35)
@@ -167,6 +172,7 @@ Partial Class FrmABMClientes
         'cmdLimpiar
         '
         Me.cmdLimpiar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdLimpiar.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdLimpiar.Location = New System.Drawing.Point(15, 209)
         Me.cmdLimpiar.Name = "cmdLimpiar"
         Me.cmdLimpiar.Size = New System.Drawing.Size(115, 35)
@@ -177,6 +183,7 @@ Partial Class FrmABMClientes
         'cmdAgregar
         '
         Me.cmdAgregar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdAgregar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdAgregar.Location = New System.Drawing.Point(512, 209)
         Me.cmdAgregar.Name = "cmdAgregar"
         Me.cmdAgregar.Size = New System.Drawing.Size(115, 35)
@@ -186,65 +193,73 @@ Partial Class FrmABMClientes
         '
         'txtMail
         '
-        Me.txtMail.Location = New System.Drawing.Point(128, 405)
+        Me.txtMail.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMail.Location = New System.Drawing.Point(133, 403)
         Me.txtMail.Name = "txtMail"
-        Me.txtMail.Size = New System.Drawing.Size(156, 20)
+        Me.txtMail.Size = New System.Drawing.Size(156, 21)
         Me.txtMail.TabIndex = 174
         '
         'txtTelMovil
         '
-        Me.txtTelMovil.Location = New System.Drawing.Point(128, 361)
+        Me.txtTelMovil.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelMovil.Location = New System.Drawing.Point(133, 359)
         Me.txtTelMovil.Name = "txtTelMovil"
-        Me.txtTelMovil.Size = New System.Drawing.Size(156, 20)
+        Me.txtTelMovil.Size = New System.Drawing.Size(156, 21)
         Me.txtTelMovil.TabIndex = 173
         '
         'txtNombreApellido
         '
-        Me.txtNombreApellido.Location = New System.Drawing.Point(128, 283)
+        Me.txtNombreApellido.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombreApellido.Location = New System.Drawing.Point(133, 281)
         Me.txtNombreApellido.Name = "txtNombreApellido"
-        Me.txtNombreApellido.Size = New System.Drawing.Size(156, 20)
+        Me.txtNombreApellido.Size = New System.Drawing.Size(156, 21)
         Me.txtNombreApellido.TabIndex = 165
         '
         'txtDNI
         '
-        Me.txtDNI.Location = New System.Drawing.Point(128, 320)
+        Me.txtDNI.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDNI.Location = New System.Drawing.Point(133, 318)
         Me.txtDNI.Name = "txtDNI"
-        Me.txtDNI.Size = New System.Drawing.Size(156, 20)
+        Me.txtDNI.Size = New System.Drawing.Size(156, 21)
         Me.txtDNI.TabIndex = 167
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(32, 286)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 13)
+        Me.Label1.Size = New System.Drawing.Size(105, 16)
         Me.Label1.TabIndex = 184
         Me.Label1.Text = "Apellido y nombre"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(93, 323)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(26, 13)
+        Me.Label3.Size = New System.Drawing.Size(27, 16)
         Me.Label3.TabIndex = 186
         Me.Label3.Text = "DNI"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(96, 408)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(26, 13)
+        Me.Label11.Size = New System.Drawing.Size(31, 16)
         Me.Label11.TabIndex = 182
         Me.Label11.Text = "Mail"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(50, 364)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(77, 13)
+        Me.Label10.Size = New System.Drawing.Size(86, 16)
         Me.Label10.TabIndex = 181
         Me.Label10.Text = "Telefono Móvil"
         '
@@ -252,38 +267,18 @@ Partial Class FrmABMClientes
         '
         Me.Panel2.Controls.Add(Me.grlClientes)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(812, 170)
         Me.Panel2.TabIndex = 175
         '
-        'grlEstadosCuentaClientes
-        '
-        Me.grlEstadosCuentaClientes.Controls.Add(Me.DataGridView1)
-        Me.grlEstadosCuentaClientes.Location = New System.Drawing.Point(12, 462)
-        Me.grlEstadosCuentaClientes.Name = "grlEstadosCuentaClientes"
-        Me.grlEstadosCuentaClientes.Size = New System.Drawing.Size(441, 150)
-        Me.grlEstadosCuentaClientes.TabIndex = 202
-        Me.grlEstadosCuentaClientes.TabStop = False
-        Me.grlEstadosCuentaClientes.Text = "Estado de la Cuenta"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 16)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(435, 131)
-        Me.DataGridView1.TabIndex = 3
-        '
         'txtBuscador
         '
+        Me.txtBuscador.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBuscador.Location = New System.Drawing.Point(0, 176)
         Me.txtBuscador.Name = "txtBuscador"
-        Me.txtBuscador.Size = New System.Drawing.Size(312, 20)
+        Me.txtBuscador.Size = New System.Drawing.Size(312, 21)
         Me.txtBuscador.TabIndex = 203
         Me.txtBuscador.Text = "BUSCADOR..."
         '
@@ -291,9 +286,9 @@ Partial Class FrmABMClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ClientSize = New System.Drawing.Size(812, 647)
         Me.Controls.Add(Me.txtBuscador)
-        Me.Controls.Add(Me.grlEstadosCuentaClientes)
         Me.Controls.Add(Me.grbCuotas)
         Me.Controls.Add(Me.chkEstadoCliente)
         Me.Controls.Add(Me.txtIdCliente)
@@ -314,15 +309,13 @@ Partial Class FrmABMClientes
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Panel2)
         Me.Name = "FrmABMClientes"
-        Me.Text = "FrmClientes"
+        Me.Text = "Clientes"
         Me.grbCuotas.ResumeLayout(False)
         CType(Me.grlLibrosClientes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.grlClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        Me.grlEstadosCuentaClientes.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -349,7 +342,5 @@ Partial Class FrmABMClientes
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents grlLibrosClientes As System.Windows.Forms.DataGridView
-    Friend WithEvents grlEstadosCuentaClientes As System.Windows.Forms.GroupBox
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents txtBuscador As System.Windows.Forms.TextBox
 End Class

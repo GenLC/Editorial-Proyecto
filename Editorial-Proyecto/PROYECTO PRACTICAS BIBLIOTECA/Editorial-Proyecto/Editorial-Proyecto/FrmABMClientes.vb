@@ -118,14 +118,14 @@ Public Class FrmABMClientes
     End Sub
     Private Sub HabilitarGrillas()
 
-        grlEstadosCuentaClientes.Enabled = True
+
         grlLibrosClientes.Enabled = True
         grlClientes.Enabled = True
 
     End Sub
     Private Sub DeshabilitarGrillas()
 
-        grlEstadosCuentaClientes.Enabled = False
+
         grlLibrosClientes.Enabled = False
         grlClientes.Enabled = False
     End Sub
@@ -287,6 +287,9 @@ Public Class FrmABMClientes
 
         BuscarCliente(grlClientes.CurrentRow.Cells(0).Value)
 
+
+        LibrosLlevadosRecientes(grlClientes.CurrentRow.Cells(0).Value)
+
         cmdAgregar.Enabled = False
         cmdModif.Enabled = True
     End Sub
@@ -314,6 +317,22 @@ Public Class FrmABMClientes
 
         oDs = Nothing
         oClientes = Nothing
+
+    End Sub
+
+    Private Sub LibrosLlevadosRecientes(ByVal IdCliente As Integer)
+        Dim oDs As New DataSet
+        Dim oLibros As New C_Clientes
+
+        oDs = oLibros.LibrosLlevadosRecientes(IdCliente)
+
+        grlLibrosClientes.DataSource = oDs.Tables(0)
+
+
+        grlClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+        oDs = Nothing
+        oLibros = Nothing
 
     End Sub
 #End Region
@@ -391,7 +410,12 @@ Public Class FrmABMClientes
 
 
     
-    Private Sub txtBuscador_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtBuscador.TextChanged
+    
+    Private Sub grlLibrosClientes_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlLibrosClientes.CellContentClick
+
+    End Sub
+
+    Private Sub grlClientes_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grlClientes.CellContentClick
 
     End Sub
 End Class

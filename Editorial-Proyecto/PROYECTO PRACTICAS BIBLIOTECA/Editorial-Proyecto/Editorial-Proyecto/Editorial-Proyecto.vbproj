@@ -104,13 +104,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmAbmLibros.Designer.vb">
       <DependentUpon>FrmAbmLibros.vb</DependentUpon>
     </Compile>
@@ -121,6 +114,12 @@
       <DependentUpon>FrmAlquileres.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmAlquileres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadisticas.Designer.vb">
+      <DependentUpon>FrmEstadisticas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadisticas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFacturas.Designer.vb">
@@ -141,18 +140,6 @@
     <Compile Include="FrmLibros.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmArticulosGenero.Designer.vb">
-      <DependentUpon>FrmArticulosGenero.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmArticulosGenero.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAutores.Designer.vb">
-      <DependentUpon>FrmAutores.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmAutores.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmABMClientes.Designer.vb">
       <DependentUpon>FrmABMClientes.vb</DependentUpon>
     </Compile>
@@ -165,10 +152,10 @@
     <Compile Include="FrmClientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProveedores.Designer.vb">
-      <DependentUpon>FrmProveedores.vb</DependentUpon>
+    <Compile Include="FrmMenuLibros.Designer.vb">
+      <DependentUpon>FrmMenuLibros.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmProveedores.vb">
+    <Compile Include="FrmMenuLibros.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmStock.Designer.vb">
@@ -187,12 +174,6 @@
       <DependentUpon>FrmVentas.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmVentas.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_ArticulosFormato.Designer.vb">
-      <DependentUpon>Frm_ArticulosFormato.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_ArticulosFormato.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFacturacion.Designer.vb">
@@ -231,23 +212,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmAbmLibros.resx">
       <DependentUpon>FrmAbmLibros.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmArticulosGenero.resx">
-      <DependentUpon>FrmArticulosGenero.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmAutores.resx">
-      <DependentUpon>FrmAutores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmABMClientes.resx">
       <DependentUpon>FrmABMClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticas.resx">
+      <DependentUpon>FrmEstadisticas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFacturacion.resx">
       <DependentUpon>FrmFacturacion.vb</DependentUpon>
@@ -264,8 +239,8 @@
     <EmbeddedResource Include="FrmMenuAltasBajas.resx">
       <DependentUpon>FrmMenuAltasBajas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProveedores.resx">
-      <DependentUpon>FrmProveedores.vb</DependentUpon>
+    <EmbeddedResource Include="FrmMenuLibros.resx">
+      <DependentUpon>FrmMenuLibros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStock.resx">
       <DependentUpon>FrmStock.vb</DependentUpon>
@@ -275,9 +250,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVentas.resx">
       <DependentUpon>FrmVentas.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_ArticulosFormato.resx">
-      <DependentUpon>Frm_ArticulosFormato.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
@@ -290,7 +262,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Editorial-Proyecto_TemporaryKey.pfx" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -332,6 +306,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="biblio.ico" />
+    <None Include="Resources\011-money growth.png" />
+    <None Include="Resources\izquierda.png" />
+    <None Include="Resources\izquierda %281%29.png" />
+    <None Include="Resources\flecha-hacia-atras.png" />
     <None Include="Resources\delivery.png" />
     <None Include="Resources\budget.png" />
     <None Include="Resources\AMBclientes.png" />

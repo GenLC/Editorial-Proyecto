@@ -58,9 +58,9 @@ Public Class FrmVentaLibroSeleccion
     Private Sub CargarGrillaLibros()
 
         Dim ods As New Data.DataSet
-        Dim oClientes As New C_Ventas
+        Dim oLibros As New C_Ventas
 
-        ods = oClientes.CargarGrillaLibros
+        ods = oLibros.CargarGrillaLibros
 
         grlLibros.DataSource = ods.Tables(0)
 
@@ -75,6 +75,7 @@ Public Class FrmVentaLibroSeleccion
         grlLibros.Columns(1).Width = 20
 
         grlLibros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        oLibros = Nothing
     End Sub
 
     
@@ -95,7 +96,7 @@ Public Class FrmVentaLibroSeleccion
     End Sub
 
     Private Sub cmdAgregarNuevoLibro_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregarNuevoLibro.Click
-        FrmLibros.Show()
+        FrmLibros.ShowDialog()
         CargarGrillaLibros()
 
     End Sub

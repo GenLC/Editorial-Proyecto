@@ -4,25 +4,17 @@
 
     End Sub
 
-    Private Sub EditorialToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Form1.Show()
-    End Sub
+    'Private Sub EditorialToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    Form1.Show()
+    'End Sub
 
-    Private Sub ProveedoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        FrmProveedores.Show()
-    End Sub
+    
 
-    Private Sub TipoArtFormatoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Frm_ArticulosFormato.Show()
-    End Sub
+    'Private Sub TipoArtFormatoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    Frm_ArticulosFormato.Show()
+    'End Sub
 
-    Private Sub AutoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        FrmAutores.Show()
-    End Sub
-
-    Private Sub ArtGeneroToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        FrmArticulosGenero.Show()
-    End Sub
+   
 
     Private Sub ClientesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
         FrmABMClientes.Show()
@@ -32,32 +24,26 @@
 
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmStock.Click
-        FrmLibros.Show()
+        FrmMenuStock.Show()
 
     End Sub
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles cmdFacturacion.Click
-        FrmVentas.Show()
+        FrmFacturacion.Show()
 
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmClientes.Click
-        FrmClientes.Show()
+        FrmABMClientes.Show()
+        'FrmClientes.Show()
 
     End Sub
-
-
 
     Private Sub cmdAdmSistema_Click(sender As System.Object, e As System.EventArgs) Handles cmdAdmSistema.Click
         FrmMenuAltasBajas.Show()
     End Sub
 
-
-
-    Private Sub Menu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        FrmFacturas.Show()
-    End Sub
-
-    Private Sub PanelMenuFondo_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PanelMenuFondo.Paint
-
+    
+    Private Sub cmdEstadisticas_Click(sender As System.Object, e As System.EventArgs) Handles cmdEstadisticas.Click
+        FrmEstadisticas.Show()
     End Sub
 End Class

@@ -37,6 +37,9 @@ Public Class C_Clientes
     End Function
 
    
+    Public Function LibrosLlevadosRecientes(ByVal IdCliente As Integer) As DataSet
+        Return odatabase.ExecuteDataSet("LibrosLlevadosRecientes", IdCliente)
+    End Function
 
 
 

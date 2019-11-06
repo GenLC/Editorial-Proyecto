@@ -15,23 +15,24 @@ Public Class FrmEstadisticas
     End Sub
 
 
-    Private Sub TotalLibrosStock(ByVal ID As Integer)
+    Private Sub TotalLibrosStock()
+        'Dim ods As New Data.DataSet
+        'Dim oLibros As New C_Clientes
+        ''odsoLibros.
+        ''Dim objLibros As New C_Libros
 
 
-        Dim oDs As New DataSet
-        Dim objLibros As New C_Libros
+        ''txtTotalLibrosStock.DataBindings = ods.Tables(0)
 
-        oDs = objLibros.BuscarporIDLibro(ID)
-
-        txtIDLibro.Text = oDs.Tables(0).Rows(0).Item("IdLibro")
-        txtLibro.Text = oDs.Tables(0).Rows(0).Item("NombreLibro")
-        txtDescripcion.Text = oDs.Tables(0).Rows(0).Item("Descripcion")
-        txtPrecio.Text = oDs.Tables(0).Rows(0).Item("Precio")
-        txtCantidad.Text = oDs.Tables(0).Rows(0).Item("Cantidad")
+        'txtIDLibro.Text = oDs.Tables(0).Rows(0).Item("IdLibro")
+        'txtLibro.Text = oDs.Tables(0).Rows(0).Item("NombreLibro")
+        'txtDescripcion.Text = oDs.Tables(0).Rows(0).Item("Descripcion")
+        'txtPrecio.Text = oDs.Tables(0).Rows(0).Item("Precio")
+        'txtCantidad.Text = oDs.Tables(0).Rows(0).Item("Cantidad")
 
 
-        oDs = Nothing
-        objLibros = Nothing
+        'oDs = Nothing
+        'objLibros = Nothing
 
     End Sub
 

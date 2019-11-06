@@ -16,7 +16,7 @@ Public Class FrmEstadisticas
 
 
     Private Sub TotalLibrosStock()
-        'Dim ods As New Data.DataSet
+        Dim odzzzz As New Data.DataSet
         'Dim oLibros As New C_Clientes
         ''odsoLibros.
         ''Dim objLibros As New C_Libros

@@ -42,6 +42,19 @@ Public Class C_Facturas
     End Function
 
 
+    Public Function DesactivarFactura(ByVal NroFactura As Double) As Double
+        Return odatabase.ExecuteScalar("DesactivarFactura", NroFactura)
+    End Function
+
+    Public Function RestaurarFactura(ByVal NroFactura As Integer) As Double
+
+        Return odatabase.ExecuteScalar("RestaurarFactura", NroFactura)
+
+    End Function
+
+    Public Function CargarFacturasEliminadas() As DataSet
+        Return odatabase.ExecuteDataSet("CargarFacturasEliminadas")
+    End Function
 
 
 End Class

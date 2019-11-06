@@ -130,7 +130,7 @@ Public Class FrmStock
         Ods = objStock.CargarGrilla
 
         cboLibro.DataSource = Ods.Tables(0)
-        cboLibro.DisplayMember = Ods.Tables(0).Columns("IdLibro").ToString.Trim
+        cboLibro.DisplayMember = Ods.Tables(0).Columns("NombreLibro").ToString.Trim
         cboLibro.ValueMember = Ods.Tables(0).Columns("IdLibro").ToString.Trim
         'cboLibro.SelectedValue = Nothing
         'cboLibro.DataBind()
@@ -185,13 +185,13 @@ Public Class FrmStock
 
     End Sub
 
-    Public Function Limpiar()
+    Private Sub Limpiar()
         CargarGrilla()
         CargaStock()
         cboLibro.Text = Nothing
         txtCantidad.Text = ""
 
-    End Function
+    End Sub
 
 
 
@@ -243,7 +243,24 @@ Public Class FrmStock
     End Function
 #End Region
 
+    Private Sub BuscadorLibroGrilla(ByVal IdLibro As Integer)
 
+
+        Dim oDs As New DataSet
+        Dim oIdLibro As New C_Stock
+
+        oDs = oIdLibro.BuscarID(IdLibro)
+
+        grl_GrillaStock.DataSource = oDs.Tables(0)
+
+
+
+        grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+
+        oDs = Nothing
+        oIdLibro = Nothing
+
+    End Sub
 #Region "Comando"
     Private Sub cmd_Aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Aceptar.Click
 
@@ -266,7 +283,7 @@ Public Class FrmStock
 
             Dim resultado As Integer
 
-            resultado = objStock.Cargar(cboLibro.Text, txtCantidad.Text)
+            resultado = objStock.Cargar(cboLibro.SelectedIndex, txtCantidad.Text)
 
             For i = 0 To grl_GrillaStock.RowCount - 2
 
@@ -299,6 +316,14 @@ Public Class FrmStock
 
 #End Region
 
+    Private Sub txtBuscardor_KeyUp(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles txtBuscardor.KeyUp
+        Dim buscarID As Integer
+
+        buscarID = grl_GrillaStock.CurrentRow.Cells(0).Value
+
+        BuscadorLibroGrilla(buscarID)
+
+    End Sub
 
 
 
@@ -308,4 +333,7 @@ Public Class FrmStock
 
 
 
+    Private Sub txtBuscardor_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtBuscardor.TextChanged
+
+    End Sub
 End Class

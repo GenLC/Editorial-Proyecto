@@ -447,4 +447,8 @@ Public Class FrmVentas
     Private Sub PanelCompleto_Paint(sender As System.Object, e As System.Windows.Forms.PaintEventArgs) Handles PanelCompleto.Paint
 
     End Sub
+
+    Private Sub txtBuscador_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtBuscador.TextChanged
+
+    End Sub
 End Class

@@ -272,7 +272,7 @@ Public Class FrmStock
 
         If Me.Estado = EstadoDelFormulario.Modificar Then
 
-            objStock.Modificar(txtBuscardor.Text, cboLibro.Text, txtCantidad.Text)
+            objStock.Modificar(txtBuscardor.Text, cboLibro.SelectedIndex, txtCantidad.Text)
 
             MsgBox("Se modificó correctamente" + cboLibro.SelectedValue + "" + txtCantidad.Text, MsgBoxStyle.Information, "Exitos!")
 
@@ -285,12 +285,12 @@ Public Class FrmStock
 
             resultado = objStock.Cargar(cboLibro.SelectedIndex, txtCantidad.Text)
 
-            For i = 0 To grl_GrillaStock.RowCount - 2
+            'For i = 0 To grl_GrillaStock.RowCount - 2
 
-                objLibro.RestarStock(grl_GrillaStock.Rows(i).Cells(0).Value, grl_GrillaStock.Rows(i).Cells(2).Value)
-            Next
+            '    objLibro.RestarStock(grl_GrillaStock.Rows(i).Cells(0).Value, grl_GrillaStock.Rows(i).Cells(2).Value)
+            'Next
             
-            MsgBox("Se agregó correctamente" + cboLibro.SelectedText + "" + txtCantidad.Text + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
+            MsgBox("Se agregó correctamente" + cboLibro.SelectedIndex + "" + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
 
         End If
 

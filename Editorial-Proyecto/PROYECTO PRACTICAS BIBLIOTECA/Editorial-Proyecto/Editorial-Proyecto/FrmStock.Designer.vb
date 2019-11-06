@@ -44,13 +44,15 @@ Partial Class FrmStock
         '
         'txtBuscardor
         '
-        Me.txtBuscardor.Location = New System.Drawing.Point(183, 226)
+        Me.txtBuscardor.Font = New System.Drawing.Font("Century Gothic", 8.25!)
+        Me.txtBuscardor.Location = New System.Drawing.Point(198, 227)
         Me.txtBuscardor.Name = "txtBuscardor"
-        Me.txtBuscardor.Size = New System.Drawing.Size(150, 20)
+        Me.txtBuscardor.Size = New System.Drawing.Size(150, 21)
         Me.txtBuscardor.TabIndex = 61
         '
         'grl_GrillaStock
         '
+        Me.grl_GrillaStock.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.grl_GrillaStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grl_GrillaStock.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grl_GrillaStock.Location = New System.Drawing.Point(0, 0)
@@ -62,17 +64,19 @@ Partial Class FrmStock
         '
         'txtCantidad
         '
-        Me.txtCantidad.Location = New System.Drawing.Point(183, 329)
+        Me.txtCantidad.Font = New System.Drawing.Font("Century Gothic", 8.25!)
+        Me.txtCantidad.Location = New System.Drawing.Point(198, 330)
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(69, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(69, 21)
         Me.txtCantidad.TabIndex = 48
         '
         'Cantidad
         '
         Me.Cantidad.AutoSize = True
+        Me.Cantidad.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.Cantidad.Location = New System.Drawing.Point(114, 336)
         Me.Cantidad.Name = "Cantidad"
-        Me.Cantidad.Size = New System.Drawing.Size(49, 13)
+        Me.Cantidad.Size = New System.Drawing.Size(62, 16)
         Me.Cantidad.TabIndex = 60
         Me.Cantidad.Text = "Cantidad"
         '
@@ -96,6 +100,7 @@ Partial Class FrmStock
         'cmd_Cancelar
         '
         Me.cmd_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmd_Cancelar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_Cancelar.Location = New System.Drawing.Point(471, 395)
         Me.cmd_Cancelar.Name = "cmd_Cancelar"
         Me.cmd_Cancelar.Size = New System.Drawing.Size(92, 37)
@@ -106,15 +111,17 @@ Partial Class FrmStock
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.Label2.Location = New System.Drawing.Point(114, 290)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
+        Me.Label2.Size = New System.Drawing.Size(54, 16)
         Me.Label2.TabIndex = 56
         Me.Label2.Text = "Nombre "
         '
         'cmd_Aceptar
         '
         Me.cmd_Aceptar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmd_Aceptar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_Aceptar.Location = New System.Drawing.Point(373, 395)
         Me.cmd_Aceptar.Name = "cmd_Aceptar"
         Me.cmd_Aceptar.Size = New System.Drawing.Size(92, 37)
@@ -125,6 +132,7 @@ Partial Class FrmStock
         'cmd_Modificar
         '
         Me.cmd_Modificar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmd_Modificar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_Modificar.ForeColor = System.Drawing.Color.Blue
         Me.cmd_Modificar.Location = New System.Drawing.Point(471, 187)
         Me.cmd_Modificar.Name = "cmd_Modificar"
@@ -136,6 +144,7 @@ Partial Class FrmStock
         'cmd_Agregar
         '
         Me.cmd_Agregar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmd_Agregar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_Agregar.ForeColor = System.Drawing.Color.Red
         Me.cmd_Agregar.Location = New System.Drawing.Point(373, 187)
         Me.cmd_Agregar.Name = "cmd_Agregar"
@@ -147,6 +156,7 @@ Partial Class FrmStock
         'cmd_Limpiar
         '
         Me.cmd_Limpiar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmd_Limpiar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmd_Limpiar.Location = New System.Drawing.Point(0, 187)
         Me.cmd_Limpiar.Name = "cmd_Limpiar"
         Me.cmd_Limpiar.Size = New System.Drawing.Size(92, 37)
@@ -158,6 +168,7 @@ Partial Class FrmStock
         '
         Me.Panel1.Controls.Add(Me.grl_GrillaStock)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(570, 181)
@@ -165,18 +176,20 @@ Partial Class FrmStock
         '
         'cboLibro
         '
+        Me.cboLibro.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.cboLibro.FormattingEnabled = True
-        Me.cboLibro.Location = New System.Drawing.Point(183, 281)
+        Me.cboLibro.Location = New System.Drawing.Point(198, 282)
         Me.cboLibro.Name = "cboLibro"
-        Me.cboLibro.Size = New System.Drawing.Size(150, 21)
+        Me.cboLibro.Size = New System.Drawing.Size(150, 24)
         Me.cboLibro.TabIndex = 62
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.Label1.Location = New System.Drawing.Point(114, 233)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.Size = New System.Drawing.Size(58, 16)
         Me.Label1.TabIndex = 63
         Me.Label1.Text = "Buscador"
         '
@@ -184,6 +197,7 @@ Partial Class FrmStock
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ClientSize = New System.Drawing.Size(570, 469)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cboLibro)

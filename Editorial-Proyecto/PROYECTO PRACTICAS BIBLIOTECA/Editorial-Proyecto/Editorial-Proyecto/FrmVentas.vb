@@ -282,7 +282,7 @@ Public Class FrmVentas
 
     Private Sub cmdAgregarCliente_Click(sender As System.Object, e As System.EventArgs) Handles cmdAgregarCliente.Click
 
-        FrmABMClientes.Show()
+        FrmABMClientes.ShowDialog()
         CargarGrillaClientes()
 
     End Sub
@@ -353,9 +353,11 @@ Public Class FrmVentas
                 oFacturaDetalle.CargarFacturaVentaDetalle(res, CDbl(grlResumenVenta.Rows(i).Cells(0).Value), CDbl(grlResumenVenta.Rows(i).Cells(3).Value), CDbl(grlResumenVenta.Rows(i).Cells(2).Value), CDbl(txtTotalPrecio.Text))
 
                 objLibro.RestarStock(grlResumenVenta.Rows(i).Cells(0).Value, grlResumenVenta.Rows(i).Cells(3).Value)
+
             Next
 
             MsgBox("Factura regitrada con el nro " + txtCompNum.Text, MsgBoxStyle.OkCancel, "EXITO")
+            Limpiar()
             CargarNumComp()
         Else
             MsgBox("Seleccione productos y cliente", vbInformation, "ALERTA")

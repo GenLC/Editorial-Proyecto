@@ -105,7 +105,7 @@ Partial Class FrmClientes
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(152, 124)
         Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Alta y Baja de Clientes"
+        Me.Button3.Text = "Conslta de Clientes"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button3.UseVisualStyleBackColor = True
         '

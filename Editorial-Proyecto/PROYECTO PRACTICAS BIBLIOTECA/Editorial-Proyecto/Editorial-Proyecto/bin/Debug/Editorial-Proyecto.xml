@@ -127,7 +127,19 @@ Editorial-Proyecto
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.flecha_hacia_atras">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Editorial_Proyecto.My.Resources.Resources.growth">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.izquierda">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Editorial_Proyecto.My.Resources.Resources.izquierda__1_">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

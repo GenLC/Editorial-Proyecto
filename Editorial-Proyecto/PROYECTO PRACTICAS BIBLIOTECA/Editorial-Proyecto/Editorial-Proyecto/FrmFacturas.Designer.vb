@@ -65,9 +65,10 @@ Partial Class FrmFacturas
         'txtBuscador
         '
         Me.txtBuscador.Dock = System.Windows.Forms.DockStyle.Top
+        Me.txtBuscador.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBuscador.Location = New System.Drawing.Point(0, 0)
         Me.txtBuscador.Name = "txtBuscador"
-        Me.txtBuscador.Size = New System.Drawing.Size(675, 20)
+        Me.txtBuscador.Size = New System.Drawing.Size(675, 21)
         Me.txtBuscador.TabIndex = 3
         Me.txtBuscador.Text = "BUSCADOR"
         Me.txtBuscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -79,43 +80,47 @@ Partial Class FrmFacturas
         Me.PanelBotones.Controls.Add(Me.Button2)
         Me.PanelBotones.Controls.Add(Me.cmdEliminar)
         Me.PanelBotones.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelBotones.Location = New System.Drawing.Point(0, 405)
+        Me.PanelBotones.Location = New System.Drawing.Point(0, 417)
         Me.PanelBotones.Name = "PanelBotones"
         Me.PanelBotones.Size = New System.Drawing.Size(675, 54)
         Me.PanelBotones.TabIndex = 1
         '
         'cmdLimpiar
         '
-        Me.cmdLimpiar.Location = New System.Drawing.Point(355, 17)
+        Me.cmdLimpiar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLimpiar.Location = New System.Drawing.Point(195, 12)
         Me.cmdLimpiar.Name = "cmdLimpiar"
-        Me.cmdLimpiar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdLimpiar.Size = New System.Drawing.Size(93, 33)
         Me.cmdLimpiar.TabIndex = 3
         Me.cmdLimpiar.Text = "Limpiar"
         Me.cmdLimpiar.UseVisualStyleBackColor = True
         '
         'cmdFacturasEliminadas
         '
-        Me.cmdFacturasEliminadas.Location = New System.Drawing.Point(579, 6)
+        Me.cmdFacturasEliminadas.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdFacturasEliminadas.Location = New System.Drawing.Point(558, 0)
         Me.cmdFacturasEliminadas.Name = "cmdFacturasEliminadas"
-        Me.cmdFacturasEliminadas.Size = New System.Drawing.Size(75, 38)
+        Me.cmdFacturasEliminadas.Size = New System.Drawing.Size(96, 48)
         Me.cmdFacturasEliminadas.TabIndex = 2
         Me.cmdFacturasEliminadas.Text = "Facturas Eliminadas"
         Me.cmdFacturasEliminadas.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(186, 17)
+        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(386, 11)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(84, 34)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Salir"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'cmdEliminar
         '
-        Me.cmdEliminar.Location = New System.Drawing.Point(13, 17)
+        Me.cmdEliminar.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdEliminar.Location = New System.Drawing.Point(12, 11)
         Me.cmdEliminar.Name = "cmdEliminar"
-        Me.cmdEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.cmdEliminar.Size = New System.Drawing.Size(85, 34)
         Me.cmdEliminar.TabIndex = 0
         Me.cmdEliminar.Text = "Eliminar"
         Me.cmdEliminar.UseVisualStyleBackColor = True
@@ -136,9 +141,10 @@ Partial Class FrmFacturas
         'rbtMontoMenor
         '
         Me.rbtMontoMenor.AutoSize = True
-        Me.rbtMontoMenor.Location = New System.Drawing.Point(414, 23)
+        Me.rbtMontoMenor.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtMontoMenor.Location = New System.Drawing.Point(416, 23)
         Me.rbtMontoMenor.Name = "rbtMontoMenor"
-        Me.rbtMontoMenor.Size = New System.Drawing.Size(97, 17)
+        Me.rbtMontoMenor.Size = New System.Drawing.Size(111, 20)
         Me.rbtMontoMenor.TabIndex = 4
         Me.rbtMontoMenor.TabStop = True
         Me.rbtMontoMenor.Text = "Monto Menor a"
@@ -147,9 +153,10 @@ Partial Class FrmFacturas
         'rbtNombreCliente
         '
         Me.rbtNombreCliente.AutoSize = True
-        Me.rbtNombreCliente.Location = New System.Drawing.Point(218, 23)
+        Me.rbtNombreCliente.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbtNombreCliente.Location = New System.Drawing.Point(206, 23)
         Me.rbtNombreCliente.Name = "rbtNombreCliente"
-        Me.rbtNombreCliente.Size = New System.Drawing.Size(97, 17)
+        Me.rbtNombreCliente.Size = New System.Drawing.Size(110, 20)
         Me.rbtNombreCliente.TabIndex = 4
         Me.rbtNombreCliente.TabStop = True
         Me.rbtNombreCliente.Text = "Nombre Cliente"
@@ -158,9 +165,10 @@ Partial Class FrmFacturas
         'rbtNroFactura
         '
         Me.rbtNroFactura.AutoSize = True
+        Me.rbtNroFactura.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbtNroFactura.Location = New System.Drawing.Point(321, 23)
         Me.rbtNroFactura.Name = "rbtNroFactura"
-        Me.rbtNroFactura.Size = New System.Drawing.Size(81, 17)
+        Me.rbtNroFactura.Size = New System.Drawing.Size(89, 20)
         Me.rbtNroFactura.TabIndex = 3
         Me.rbtNroFactura.TabStop = True
         Me.rbtNroFactura.Text = "Nro Factura"
@@ -186,18 +194,20 @@ Partial Class FrmFacturas
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 13)
+        Me.Label1.Size = New System.Drawing.Size(62, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "FACTURAS"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(3, 239)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(149, 13)
+        Me.Label2.Size = New System.Drawing.Size(139, 16)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "DETALLES DE LA FACTURA"
         '
@@ -212,8 +222,10 @@ Partial Class FrmFacturas
         '
         'grlFacturas
         '
+        Me.grlFacturas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.grlFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grlFacturas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grlFacturas.GridColor = System.Drawing.SystemColors.ActiveCaption
         Me.grlFacturas.Location = New System.Drawing.Point(0, 0)
         Me.grlFacturas.Name = "grlFacturas"
         Me.grlFacturas.Size = New System.Drawing.Size(675, 133)
@@ -228,22 +240,24 @@ Partial Class FrmFacturas
         Me.PanelGeneral.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelGeneral.Location = New System.Drawing.Point(0, 21)
         Me.PanelGeneral.Name = "PanelGeneral"
-        Me.PanelGeneral.Size = New System.Drawing.Size(675, 384)
+        Me.PanelGeneral.Size = New System.Drawing.Size(675, 396)
         Me.PanelGeneral.TabIndex = 2
         '
         'PanelDetalleFactura
         '
         Me.PanelDetalleFactura.Controls.Add(Me.grlFacturaDetalle)
         Me.PanelDetalleFactura.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelDetalleFactura.Location = New System.Drawing.Point(0, 255)
+        Me.PanelDetalleFactura.Location = New System.Drawing.Point(0, 267)
         Me.PanelDetalleFactura.Name = "PanelDetalleFactura"
         Me.PanelDetalleFactura.Size = New System.Drawing.Size(675, 129)
         Me.PanelDetalleFactura.TabIndex = 3
         '
         'grlFacturaDetalle
         '
+        Me.grlFacturaDetalle.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
         Me.grlFacturaDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.grlFacturaDetalle.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.grlFacturaDetalle.GridColor = System.Drawing.SystemColors.ActiveCaption
         Me.grlFacturaDetalle.Location = New System.Drawing.Point(0, 0)
         Me.grlFacturaDetalle.Name = "grlFacturaDetalle"
         Me.grlFacturaDetalle.Size = New System.Drawing.Size(675, 129)
@@ -253,12 +267,13 @@ Partial Class FrmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(675, 459)
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ClientSize = New System.Drawing.Size(675, 471)
         Me.Controls.Add(Me.PanelGeneral)
         Me.Controls.Add(Me.PanelBotones)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FrmFacturas"
-        Me.Text = "FrmFacturas"
+        Me.Text = "Facturas"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.PanelBotones.ResumeLayout(False)

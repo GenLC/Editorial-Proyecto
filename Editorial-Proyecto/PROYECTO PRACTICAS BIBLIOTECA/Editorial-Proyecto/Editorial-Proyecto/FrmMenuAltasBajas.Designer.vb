@@ -23,7 +23,7 @@ Partial Class FrmMenuAltasBajas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.cmdStock = New System.Windows.Forms.Button()
+        Me.cmdAgregarStock = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -37,7 +37,7 @@ Partial Class FrmMenuAltasBajas
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Controls.Add(Me.cmdStock)
+        Me.Panel1.Controls.Add(Me.cmdAgregarStock)
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.Button5)
@@ -49,18 +49,18 @@ Partial Class FrmMenuAltasBajas
         Me.Panel1.Size = New System.Drawing.Size(589, 448)
         Me.Panel1.TabIndex = 0
         '
-        'cmdStock
+        'cmdAgregarStock
         '
-        Me.cmdStock.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdStock.Image = Global.Editorial_Proyecto.My.Resources.Resources.safebox
-        Me.cmdStock.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.cmdStock.Location = New System.Drawing.Point(82, 64)
-        Me.cmdStock.Name = "cmdStock"
-        Me.cmdStock.Size = New System.Drawing.Size(152, 124)
-        Me.cmdStock.TabIndex = 21
-        Me.cmdStock.Text = "Stock"
-        Me.cmdStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.cmdStock.UseVisualStyleBackColor = True
+        Me.cmdAgregarStock.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdAgregarStock.Image = Global.Editorial_Proyecto.My.Resources.Resources.safebox
+        Me.cmdAgregarStock.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.cmdAgregarStock.Location = New System.Drawing.Point(82, 64)
+        Me.cmdAgregarStock.Name = "cmdAgregarStock"
+        Me.cmdAgregarStock.Size = New System.Drawing.Size(152, 124)
+        Me.cmdAgregarStock.TabIndex = 21
+        Me.cmdAgregarStock.Text = "Agregar Stock"
+        Me.cmdAgregarStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.cmdAgregarStock.UseVisualStyleBackColor = True
         '
         'Button6
         '
@@ -143,7 +143,7 @@ Partial Class FrmMenuAltasBajas
         Me.Controls.Add(Me.Panel1)
         Me.Name = "FrmMenuAltasBajas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Frm_MenuAltasBajas"
+        Me.Text = "MenuAltasBajas"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -157,5 +157,5 @@ Partial Class FrmMenuAltasBajas
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents cmdStock As System.Windows.Forms.Button
+    Friend WithEvents cmdAgregarStock As System.Windows.Forms.Button
 End Class

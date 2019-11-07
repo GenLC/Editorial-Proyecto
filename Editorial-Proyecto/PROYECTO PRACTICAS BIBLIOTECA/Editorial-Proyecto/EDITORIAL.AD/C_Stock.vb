@@ -30,11 +30,11 @@ Public Class C_Stock
 
     End Function
 
-    'Public Function BuscarID(ByVal IdStock As String) As DataSet
+    Public Function BuscarID(ByVal IdStock As String) As DataSet
 
-    '    Return objStock.ExecuteDataSet("BuscarNombre", IdStock)
+        Return objStock.ExecuteDataSet("BuscarNombre", IdStock)
 
-    'End Function
+    End Function
 
     Public Function Modificar(ByVal IdStock As Integer, ByVal IdLibro As Integer, ByVal Cantidad As Integer) As Double
 

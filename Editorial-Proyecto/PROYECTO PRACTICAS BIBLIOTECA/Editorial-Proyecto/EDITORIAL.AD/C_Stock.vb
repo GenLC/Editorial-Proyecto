@@ -42,6 +42,15 @@ Public Class C_Stock
 
     End Function
 
+    Public Function BuscarLibroStock(ByVal NombreLibro As String) As DataSet
+        Try
+            Return objStock.ExecuteDataSet("LibroNombreStock", NombreLibro)
+        Catch ex As System.Exception
+            Throw ex
+        End Try
+
+    End Function
+
 
 
 

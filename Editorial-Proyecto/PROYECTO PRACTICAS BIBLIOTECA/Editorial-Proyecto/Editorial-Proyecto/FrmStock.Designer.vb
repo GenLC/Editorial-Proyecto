@@ -58,6 +58,7 @@ Partial Class FrmStock
         Me.grl_GrillaStock.Location = New System.Drawing.Point(0, 0)
         Me.grl_GrillaStock.Name = "grl_GrillaStock"
         Me.grl_GrillaStock.ReadOnly = True
+        Me.grl_GrillaStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.grl_GrillaStock.Size = New System.Drawing.Size(570, 181)
         Me.grl_GrillaStock.TabIndex = 0
         Me.grl_GrillaStock.TabStop = False

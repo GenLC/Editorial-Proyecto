@@ -5,18 +5,18 @@ Public Class FrmEstadisticas
 
 
 
+    'Private Sub TotalLibrosStock()
+    '    Dim ods As New Data.DataSet
+    '    Dim oLibro As New C_Estadisticas
+
+    '    oLibro.
+
+    '    txtTotalLibrosStock.Text = ods.Tables(0)
+    'End Sub
+
+
     Private Sub TotalLibrosStock()
         Dim ods As New Data.DataSet
-        Dim oLibro As New C_Estadisticas
-
-        oLibro.
-
-        txtTotalLibrosStock.Text = ods.Tables(0)
-    End Sub
-
-
-    Private Sub TotalLibrosStock()
-        'Dim ods As New Data.DataSet
         'Dim oLibros As New C_Clientes
         ''odsoLibros.
         ''Dim objLibros As New C_Libros

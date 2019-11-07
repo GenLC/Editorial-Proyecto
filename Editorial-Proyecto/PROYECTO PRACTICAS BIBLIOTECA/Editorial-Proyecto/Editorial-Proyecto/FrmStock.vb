@@ -57,6 +57,7 @@ Public Class FrmStock
 
                     lbl_Accion.Text = "Consultando"
 
+                    CargarGrilla()
 
                 Case EstadoDelFormulario.Agregar
 
@@ -259,19 +260,19 @@ Public Class FrmStock
     Private Sub BuscadorLibroGrilla(ByVal IdStock As Integer)
 
 
-        Dim oDs As New DataSet
-        Dim oIdLibro As New C_Stock
+        'Dim oDs As New DataSet
+        'Dim oIdLibro As New C_Stock
 
         oDs = oIdLibro.BuscarID(IdStock)
 
-        grl_GrillaStock.DataSource = oDs.Tables(0)
+        'grl_GrillaStock.DataSource = oDs.Tables(0)
 
 
 
-        grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        'grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
-        oDs = Nothing
-        oIdLibro = Nothing
+        'oDs = Nothing
+        'oIdLibro = Nothing
 
     End Sub
 #Region "Comando"

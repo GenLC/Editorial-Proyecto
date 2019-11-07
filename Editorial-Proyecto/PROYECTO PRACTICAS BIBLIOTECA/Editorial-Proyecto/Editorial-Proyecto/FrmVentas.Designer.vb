@@ -290,7 +290,7 @@ Partial Class FrmVentas
         Me.grpCliente.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpCliente.Location = New System.Drawing.Point(12, 249)
         Me.grpCliente.Name = "grpCliente"
-        Me.grpCliente.Size = New System.Drawing.Size(429, 239)
+        Me.grpCliente.Size = New System.Drawing.Size(463, 239)
         Me.grpCliente.TabIndex = 2
         Me.grpCliente.TabStop = False
         Me.grpCliente.Text = "SELECCIONE EL CLIENTE"
@@ -299,7 +299,7 @@ Partial Class FrmVentas
         '
         Me.txtBuscador.Location = New System.Drawing.Point(6, 31)
         Me.txtBuscador.Name = "txtBuscador"
-        Me.txtBuscador.Size = New System.Drawing.Size(420, 21)
+        Me.txtBuscador.Size = New System.Drawing.Size(451, 21)
         Me.txtBuscador.TabIndex = 1
         Me.txtBuscador.Text = "Buscador"
         Me.txtBuscador.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -315,7 +315,7 @@ Partial Class FrmVentas
         Me.grlClientes.Name = "grlClientes"
         Me.grlClientes.ReadOnly = True
         Me.grlClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.grlClientes.Size = New System.Drawing.Size(423, 179)
+        Me.grlClientes.Size = New System.Drawing.Size(457, 179)
         Me.grlClientes.TabIndex = 3
         '
         'Panel2

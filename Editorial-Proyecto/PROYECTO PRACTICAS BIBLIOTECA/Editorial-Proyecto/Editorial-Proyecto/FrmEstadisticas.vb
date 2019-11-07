@@ -26,6 +26,14 @@ Public Class FrmEstadisticas
 
     Private Sub CalcularTotalIngresos()
 
+        Dim oDs As New DataSet
+        Dim TotalIngresos As New C_Estadisticas
+
+        oDs = TotalIngresos.CalcularTotalIngresos()
+
+        txtTotalIngresos.Text = oDs.Tables(0).Rows(0).Item(0)
+
+        oDs = Nothing
     End Sub
 
     Private Sub TotalLibrosStock()
@@ -90,5 +98,9 @@ Public Class FrmEstadisticas
     Private Sub cmd_Actualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Actualizar.Click
         Calcular()
 
+    End Sub
+
+    Private Sub cmd_Salir_Click(sender As System.Object, e As System.EventArgs) Handles cmd_Salir.Click
+        Me.Close()
     End Sub
 End Class

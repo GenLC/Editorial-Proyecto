@@ -38,7 +38,7 @@ Partial Class FrmEstadisticas
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 10.25!)
-        Me.Label6.Location = New System.Drawing.Point(27, 199)
+        Me.Label6.Location = New System.Drawing.Point(27, 215)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(202, 19)
         Me.Label6.TabIndex = 27
@@ -48,7 +48,7 @@ Partial Class FrmEstadisticas
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 10.25!)
-        Me.Label5.Location = New System.Drawing.Point(27, 143)
+        Me.Label5.Location = New System.Drawing.Point(26, 158)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(122, 19)
         Me.Label5.TabIndex = 26
@@ -58,7 +58,7 @@ Partial Class FrmEstadisticas
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 10.25!)
-        Me.Label4.Location = New System.Drawing.Point(27, 92)
+        Me.Label4.Location = New System.Drawing.Point(27, 101)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(121, 19)
         Me.Label4.TabIndex = 25
@@ -98,34 +98,38 @@ Partial Class FrmEstadisticas
         '
         'txtTotalLibrosStock
         '
-        Me.txtTotalLibrosStock.Location = New System.Drawing.Point(259, 48)
+        Me.txtTotalLibrosStock.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalLibrosStock.Location = New System.Drawing.Point(258, 25)
         Me.txtTotalLibrosStock.Name = "txtTotalLibrosStock"
         Me.txtTotalLibrosStock.ReadOnly = True
-        Me.txtTotalLibrosStock.Size = New System.Drawing.Size(100, 20)
+        Me.txtTotalLibrosStock.Size = New System.Drawing.Size(196, 41)
         Me.txtTotalLibrosStock.TabIndex = 54
         '
         'txtTotalIngresos
         '
-        Me.txtTotalIngresos.Location = New System.Drawing.Point(259, 91)
+        Me.txtTotalIngresos.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalIngresos.Location = New System.Drawing.Point(258, 79)
         Me.txtTotalIngresos.Name = "txtTotalIngresos"
         Me.txtTotalIngresos.ReadOnly = True
-        Me.txtTotalIngresos.Size = New System.Drawing.Size(100, 20)
+        Me.txtTotalIngresos.Size = New System.Drawing.Size(196, 41)
         Me.txtTotalIngresos.TabIndex = 55
         '
         'txtTotalClientes
         '
-        Me.txtTotalClientes.Location = New System.Drawing.Point(259, 144)
+        Me.txtTotalClientes.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotalClientes.Location = New System.Drawing.Point(257, 136)
         Me.txtTotalClientes.Name = "txtTotalClientes"
         Me.txtTotalClientes.ReadOnly = True
-        Me.txtTotalClientes.Size = New System.Drawing.Size(100, 20)
+        Me.txtTotalClientes.Size = New System.Drawing.Size(196, 41)
         Me.txtTotalClientes.TabIndex = 56
         '
         'txtMaxCompraCliente
         '
-        Me.txtMaxCompraCliente.Location = New System.Drawing.Point(259, 200)
+        Me.txtMaxCompraCliente.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMaxCompraCliente.Location = New System.Drawing.Point(257, 193)
         Me.txtMaxCompraCliente.Name = "txtMaxCompraCliente"
         Me.txtMaxCompraCliente.ReadOnly = True
-        Me.txtMaxCompraCliente.Size = New System.Drawing.Size(100, 20)
+        Me.txtMaxCompraCliente.Size = New System.Drawing.Size(196, 41)
         Me.txtMaxCompraCliente.TabIndex = 57
         '
         'FrmEstadisticas

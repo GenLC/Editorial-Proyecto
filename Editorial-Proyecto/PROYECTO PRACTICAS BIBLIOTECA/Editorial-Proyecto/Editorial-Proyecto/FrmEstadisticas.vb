@@ -26,9 +26,10 @@ Public Class FrmEstadisticas
 
     Private Sub CalcularTotalIngresos()
 
+    End Sub
 
     Private Sub TotalLibrosStock()
-        Dim ods As New Data.DataSet
+        'Dim ods As New Data.DataSet
         'Dim oLibros As New C_Clientes
         ''odsoLibros.
         ''Dim objLibros As New C_Libros
@@ -81,12 +82,12 @@ Public Class FrmEstadisticas
 
 
 
-    
-    Private Sub FrmEstadisticas_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    Private Sub FrmEstadisticas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Calcular()
     End Sub
 
-    Private Sub cmd_Actualizar_Click(sender As System.Object, e As System.EventArgs) Handles cmd_Actualizar.Click
+    Private Sub cmd_Actualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Actualizar.Click
         Calcular()
 
     End Sub

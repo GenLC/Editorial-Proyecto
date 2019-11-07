@@ -257,24 +257,24 @@ Public Class FrmStock
     End Function
 #End Region
 
-    Private Sub BuscadorLibroGrilla(ByVal IdStock As Integer)
+    'Private Sub BuscadorLibroGrilla(ByVal IdStock As Integer)
 
 
-        'Dim oDs As New DataSet
-        'Dim oIdLibro As New C_Stock
+    '    Dim oDs As New DataSet
+    '    Dim oIdLibro As New C_Stock
 
-        oDs = oIdLibro.BuscarID(IdStock)
+    '    oDs = oIdLibro.BuscarID(IdStock)
 
-        'grl_GrillaStock.DataSource = oDs.Tables(0)
+    '    'grl_GrillaStock.DataSource = oDs.Tables(0)
 
 
 
-        'grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+    '    'grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
-        'oDs = Nothing
-        'oIdLibro = Nothing
+    '    oDs = Nothing
+    '    oIdLibro = Nothing
 
-    End Sub
+    'End Sub
 #Region "Comando"
     Private Sub cmd_Aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Aceptar.Click
 
@@ -286,7 +286,7 @@ Public Class FrmStock
 
         If Me.Estado = EstadoDelFormulario.Modificar Then
 
-            objStock.Modificar(txtBuscardor.Text, cboLibro.SelectedIndex, txtCantidad.Text)
+            objStock.Modificar(txtBuscardor.Text, cboLibro.SelectedValue, txtCantidad.Text)
 
             MsgBox("Se modificó correctamente", MsgBoxStyle.Information, "Exitos!")
 
@@ -358,7 +358,19 @@ Public Class FrmStock
 
 
 
-    Private Sub grl_GrillaStock_CellContentDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grl_GrillaStock.CellContentDoubleClick
+    'Private Sub grl_GrillaStock_CellContentDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grl_GrillaStock.CellContentDoubleClick
+
+
+    '    BuscarLibro(grl_GrillaStock.CurrentRow.Cells(0).Value)
+
+
+    '    cmd_Agregar.Enabled = False
+
+    'End Sub
+
+
+
+    Private Sub grl_GrillaStock_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grl_GrillaStock.CellDoubleClick
 
 
         BuscarLibro(grl_GrillaStock.CurrentRow.Cells(0).Value)

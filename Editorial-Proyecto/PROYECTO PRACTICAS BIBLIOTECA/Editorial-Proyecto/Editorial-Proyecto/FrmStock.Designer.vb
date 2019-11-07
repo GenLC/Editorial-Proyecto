@@ -190,9 +190,9 @@ Partial Class FrmStock
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 8.25!)
         Me.Label1.Location = New System.Drawing.Point(114, 233)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 16)
+        Me.Label1.Size = New System.Drawing.Size(51, 16)
         Me.Label1.TabIndex = 63
-        Me.Label1.Text = "Buscador"
+        Me.Label1.Text = "ID Stock"
         '
         'FrmStock
         '

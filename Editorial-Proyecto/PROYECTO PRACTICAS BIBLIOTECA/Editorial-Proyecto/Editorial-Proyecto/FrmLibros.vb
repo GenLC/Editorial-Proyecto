@@ -157,7 +157,7 @@ Public Class FrmLibros
 
         ods = objLibros.CargarGrilla
         grl_GrillaLibros.DataSource = ods.Tables(0)
-        ' grl_Autores.DataBindings
+        'grl_GrillaLibros.DataBindings()
 
         grl_GrillaLibros.Columns(0).HeaderText = "Cod."
         grl_GrillaLibros.Columns(0).Width = 70
@@ -200,7 +200,9 @@ Public Class FrmLibros
 
     End Sub
     Private Sub grl_GrillaLibros_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles grl_GrillaLibros.CellContentClick
+
         BuscarPorIDLibro(grl_GrillaLibros.CurrentRow.Cells(0).Value)
+
         cmd_Agregar.Enabled = False
 
 
@@ -210,7 +212,9 @@ Public Class FrmLibros
 
 #Region "Comandos"
     Private Sub cmd_Limpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmd_Limpiar.Click
+
         Me.Estado = EstadodelFormulario.eConsulta
+
 
     End Sub
 

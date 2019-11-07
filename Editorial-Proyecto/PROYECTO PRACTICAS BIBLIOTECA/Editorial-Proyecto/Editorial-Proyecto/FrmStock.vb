@@ -57,6 +57,7 @@ Public Class FrmStock
 
                     lbl_Accion.Text = "Consultando"
 
+                    CargarGrilla()
 
                 Case EstadoDelFormulario.Agregar
 
@@ -246,19 +247,19 @@ Public Class FrmStock
     Private Sub BuscadorLibroGrilla(ByVal IdLibro As Integer)
 
 
-        Dim oDs As New DataSet
-        Dim oIdLibro As New C_Stock
+        'Dim oDs As New DataSet
+        'Dim oIdLibro As New C_Stock
 
-        oDs = oIdLibro.BuscarID(IdLibro)
+        'oDs = oIdLibro.BuscarID(IdLibro)
 
-        grl_GrillaStock.DataSource = oDs.Tables(0)
+        'grl_GrillaStock.DataSource = oDs.Tables(0)
 
 
 
-        grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        'grl_GrillaStock.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
 
-        oDs = Nothing
-        oIdLibro = Nothing
+        'oDs = Nothing
+        'oIdLibro = Nothing
 
     End Sub
 #Region "Comando"
@@ -274,23 +275,25 @@ Public Class FrmStock
 
             objStock.Modificar(txtBuscardor.Text, cboLibro.SelectedIndex, txtCantidad.Text)
 
-            MsgBox("Se modificó correctamente" + cboLibro.SelectedValue + "" + txtCantidad.Text, MsgBoxStyle.Information, "Exitos!")
+            MsgBox("Se modificó correctamente" + cboLibro.SelectedIndex + "" + txtCantidad.Text, MsgBoxStyle.Information, "Exitos!")
 
         End If
 
 
         If Me.Estado = EstadoDelFormulario.Agregar Then
 
-            Dim resultado As Integer
+            'Dim resultado As Integer
 
-            resultado = objStock.Cargar(cboLibro.SelectedIndex, txtCantidad.Text)
+            'resultado =
+            objStock.Cargar(cboLibro.SelectedValue, txtCantidad.Text)
 
             'For i = 0 To grl_GrillaStock.RowCount - 2
 
             '    objLibro.RestarStock(grl_GrillaStock.Rows(i).Cells(0).Value, grl_GrillaStock.Rows(i).Cells(2).Value)
             'Next
             
-            MsgBox("Se agregó correctamente" + cboLibro.SelectedIndex + "" + resultado.ToString, MsgBoxStyle.Information, "Exitos!")
+            'MsgBox("Se agregó correctamente" + cboLibro.SelectedIndex + "", MsgBoxStyle.Information, "Exitos!")
+            CargarGrilla()
 
         End If
 

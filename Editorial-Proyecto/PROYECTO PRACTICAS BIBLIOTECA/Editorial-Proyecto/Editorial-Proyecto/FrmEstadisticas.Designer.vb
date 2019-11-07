@@ -22,7 +22,6 @@ Partial Class FrmEstadisticas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -33,18 +32,7 @@ Partial Class FrmEstadisticas
         Me.txtTotalIngresos = New System.Windows.Forms.TextBox()
         Me.txtTotalClientes = New System.Windows.Forms.TextBox()
         Me.txtMaxCompraCliente = New System.Windows.Forms.TextBox()
-        Me.txtLibroMasVendido = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 10.25!)
-        Me.Label7.Location = New System.Drawing.Point(27, 246)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(135, 19)
-        Me.Label7.TabIndex = 28
-        Me.Label7.Text = "Libro más vendido"
         '
         'Label6
         '
@@ -140,28 +128,18 @@ Partial Class FrmEstadisticas
         Me.txtMaxCompraCliente.Size = New System.Drawing.Size(100, 20)
         Me.txtMaxCompraCliente.TabIndex = 57
         '
-        'txtLibroMasVendido
-        '
-        Me.txtLibroMasVendido.Location = New System.Drawing.Point(259, 247)
-        Me.txtLibroMasVendido.Name = "txtLibroMasVendido"
-        Me.txtLibroMasVendido.ReadOnly = True
-        Me.txtLibroMasVendido.Size = New System.Drawing.Size(100, 20)
-        Me.txtLibroMasVendido.TabIndex = 58
-        '
         'FrmEstadisticas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ClientSize = New System.Drawing.Size(446, 369)
-        Me.Controls.Add(Me.txtLibroMasVendido)
+        Me.ClientSize = New System.Drawing.Size(465, 369)
         Me.Controls.Add(Me.txtMaxCompraCliente)
         Me.Controls.Add(Me.txtTotalClientes)
         Me.Controls.Add(Me.txtTotalIngresos)
         Me.Controls.Add(Me.txtTotalLibrosStock)
         Me.Controls.Add(Me.cmd_Salir)
         Me.Controls.Add(Me.cmd_Actualizar)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -172,7 +150,6 @@ Partial Class FrmEstadisticas
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
@@ -183,5 +160,4 @@ Partial Class FrmEstadisticas
     Friend WithEvents txtTotalIngresos As System.Windows.Forms.TextBox
     Friend WithEvents txtTotalClientes As System.Windows.Forms.TextBox
     Friend WithEvents txtMaxCompraCliente As System.Windows.Forms.TextBox
-    Friend WithEvents txtLibroMasVendido As System.Windows.Forms.TextBox
 End Class

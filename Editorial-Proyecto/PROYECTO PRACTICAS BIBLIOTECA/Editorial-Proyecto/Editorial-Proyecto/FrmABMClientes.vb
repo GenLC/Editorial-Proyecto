@@ -230,6 +230,7 @@ Public Class FrmABMClientes
                 If Me.Estado = EstadodelFormulario.eAgregar Then
                     oCliente.AgregarCliente(txtNombreApellido.Text, txtDNI.Text, txtTelMovil.Text, txtMail.Text, chkEstadoCliente.Checked)
                     MsgBox("Se agregó correctamente el Cliente " + txtNombreApellido.Text.ToUpper + " con un nuevo código ", MsgBoxStyle.Information, "Exitos!")
+                    Limpiar()
 
 
                 End If
